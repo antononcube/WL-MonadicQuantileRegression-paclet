@@ -1,0 +1,1688 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     69668,       1678]
+NotebookOptionsPosition[     55484,       1422]
+NotebookOutlinePosition[     56286,       1448]
+CellTagsIndexPosition[     56206,       1443]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["QRMonConditionalCDFPlot", "ObjectName",
+ CellID->1224619764,ExpressionUUID->"9b2a1366-56ab-4009-bece-3d6f86079021"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"d376f2f6-fdd5-43d9-ad64-44c6c5d2d88d"],
+ "QRMonConditional",
+ Cell[BoxData[
+  ButtonBox["CDF",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "c681e71a-0362-47d4-b527-c9de4da64506"],
+ "Plot[ points_.,opts]\[LineSeparator]plots approximations of conditional \
+CDF. ",
+ Cell[BoxData[
+  ButtonBox["If",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "c2b3440b-a3a7-49d3-890e-e9a688bbd96c"],
+ " the points are not specified the pipeline value is used if it is an \
+association of CDF's."
+}], "Usage",
+ CellChangeTimes->{{3.89162129728001*^9, 3.891621297305299*^9}},
+ CellID->701100700,ExpressionUUID->"8ed40dc7-7613-4e2b-b62b-dc4c816bbce0"],
+
+Cell["The following options can be given: ", "Notes",
+ CellID->156693811,ExpressionUUID->"f4b8e561-ad7d-4541-99c4-f1efb2575bb7"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "b90c6a53-d580-4175-8f71-ac9b418a83a6"], "\"\<Echo\>\"", 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "97fea9af-f3c0-4ff5-adb0-bde87f555275"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "1b7dca01-b87e-402a-96cd-2487e476cf6a"], "\"\<QuantileGridLines\>\"", 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "2f684cb5-f99d-4703-8956-2567bd3c5326"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "92694b78-c461-467f-b708-540f72f2c23b"], 
+    ButtonBox["AlignmentPoint",
+     BaseStyle->"Link"], 
+    ButtonBox["Center",
+     BaseStyle->"Link"], Cell["\<\
+AlignmentPoint is an option which specifies how objects should by default be \
+aligned when they appear in Inset.\
+\>", "TableText",ExpressionUUID->"d3254c89-7624-4d68-a692-8f5ce0146768"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "01ff36f5-10d2-4dcc-af41-55623d13a357"], 
+    ButtonBox["AspectRatio",
+     BaseStyle->"Link"], 
+    RowBox[{"     ", 
+     RowBox[{"1", "\n", 
+      RowBox[{"--", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"-", "\n", "GoldenRatio"}]}]}]}]}]}]}]}], Cell["\<\
+AspectRatio is an option for Graphics and related functions that specifies \
+the ratio of height to width for a plot. \
+\>", "TableText",ExpressionUUID->"e194c2e5-7f5a-4eef-8d2a-80376bdbb16e"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "927c0cb9-335a-4bb2-8ec9-d553c65e97d0"], 
+    ButtonBox["Axes",
+     BaseStyle->"Link"], 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+Axes is an option for graphics functions that specifies whether axes should \
+be drawn. \
+\>", "TableText",ExpressionUUID->"5f51906e-0dd4-4c55-9c7c-89019363f1d3"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "7058845e-f4c4-4331-a566-e21d29f60043"], 
+    ButtonBox["AxesLabel",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+AxesLabel is an option for graphics functions that specifies labels for axes. \
+\>", "TableText",ExpressionUUID->"8b1338c4-258e-46dc-942c-8664ba812a44"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "4d9ea18f-808d-4574-97d9-6811b0eb37df"], 
+    ButtonBox["AxesOrigin",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+AxesOrigin is an option for graphics functions that specifies where any axes \
+drawn should cross. \
+\>", "TableText",ExpressionUUID->"fb8fe7a6-ea82-42c5-a61b-e738243edae6"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "2d44d7fc-53bc-4c88-8857-f50dc3af290f"], 
+    ButtonBox["AxesStyle",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+AxesStyle is an option for graphics functions that specifies how axes should \
+be rendered. \
+\>", "TableText",ExpressionUUID->"987c8845-3d72-4087-a032-9a89d3da9e2c"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "f814c29b-f247-414b-86ae-33b363bedbf5"], 
+    ButtonBox["Background",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+Background is an option that specifies what background color to use. \
+\>", "TableText",ExpressionUUID->"4150d95e-6d17-4389-ba57-ea90f0a795a5"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "47a1bab2-2219-40e7-93ee-2c6b01e26b71"], 
+    ButtonBox["BaselinePosition",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+BaselinePosition is an option that specifies where the baseline of an object \
+is considered to be for purposes of alignment with surrounding text or other \
+expressions. \
+\>", "TableText",ExpressionUUID->"e867dc37-65e5-4ffd-b8b2-5fd9d89e83be"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "b98653bd-d6f2-44b0-bbfd-face69e10982"], 
+    ButtonBox["BaseStyle",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+BaseStyle is an option for formatting and related constructs that specifies \
+the base style to use for them. \
+\>", "TableText",ExpressionUUID->"5a5e5756-5226-466f-ac7f-db67ddae2245"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "e2ac6cc2-0bd6-4ae2-9e7d-f7b33d87b796"], 
+    ButtonBox["ClippingStyle",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+ClippingStyle is an option for plotting functions that specifies the style of \
+what should be drawn when curves or surfaces would extend beyond the plot \
+range. \
+\>", "TableText",ExpressionUUID->"9021e5cc-bea9-41da-924a-4a878a643b27"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "35c7a0ad-da77-49ce-9e29-691bd2573bf1"], 
+    ButtonBox["ColorFunction",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+ColorFunction is an option for graphics functions that specifies a function \
+to apply to determine colors of elements. \
+\>", "TableText",ExpressionUUID->"c6229670-9d88-4748-8fcb-8c046eac7f7f"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "2f775c5d-4997-422c-b059-8f3b3891d699"], 
+    ButtonBox["ColorFunctionScaling",
+     BaseStyle->"Link"], 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+ColorFunctionScaling is an option for graphics functions that specifies \
+whether arguments supplied to a color function should be scaled to lie \
+between 0 and 1. \
+\>", "TableText",ExpressionUUID->"1038dd5a-1763-411d-91b3-f565a0f4f33a"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "4b69a701-96d6-408e-a599-fb4937d34b0b"], 
+    ButtonBox["ColorOutput",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+ColorOutput is an option for graphics functions that specifies the type of \
+color output to produce. \
+\>", "TableText",ExpressionUUID->"79cf027c-da2a-4251-9b15-49c3f77b8f0f"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "d9aaf829-2aea-4473-b7d0-e837d5162e3a"], 
+    ButtonBox["ContentSelectable",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+ContentSelectable is an option to constructs such as Inset, Graphics, and \
+GraphicsGroup that specifies whether and how content within them should be \
+selectable. \
+\>", "TableText",ExpressionUUID->"78b5df47-8a8b-45d0-a779-658c301c13a4"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "24fe1be3-58aa-4ae4-b6a1-88a3e5324ff4"], 
+    ButtonBox["CoordinatesToolOptions",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell[TextData[{
+     "CoordinatesToolOptions is an option for Graphics that gives values of \
+options associated with the ",
+     Cell[BoxData[
+      StyleBox[
+       RowBox[{"Get", " ", "Coordinates"}], "MenuName"]], "InlineFormula",
+      ExpressionUUID->"79e6361b-0a4f-4a16-be9a-af2f41ccc700"],
+     " tool."
+    }], "TableText",ExpressionUUID->"0b59d886-9f21-494e-9c6c-374658875d5d"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "d24246e6-d1fc-4277-8f70-35139bfcb9b3"], 
+    ButtonBox["DisplayFunction",
+     BaseStyle->"Link"], 
+    ButtonBox["$DisplayFunction",
+     BaseStyle->"Link"], Cell["\<\
+DisplayFunction is an option for graphics and sound functions that specifies \
+a function to apply to graphics and sound objects before returning them.\
+\>", "TableText",ExpressionUUID->"5de03029-efd2-4e41-aa66-3f918eff661c"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "d872598a-a1e7-43e7-8de1-0c820208619c"], 
+    ButtonBox["Epilog",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+Epilog is an option for graphics functions that gives a list of graphics \
+primitives to be rendered after the main part of the graphics is rendered. \
+\>", "TableText",ExpressionUUID->"5ac964a7-044f-4f0f-872f-d62645f5e6a4"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "f376e0ac-83d0-4a98-91d8-74951237c20c"], 
+    ButtonBox["Evaluated",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "1ce46858-993a-48c8-8d09-7d8d33fd930e"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "fc156a5c-a53a-42bc-aee6-9cc6b540bb19"], 
+    ButtonBox["EvaluationMonitor",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+EvaluationMonitor is an option for various numerical computation and plotting \
+functions that gives an expression to evaluate whenever functions derived \
+from the input are evaluated numerically. \
+\>", "TableText",ExpressionUUID->"a36c4364-e550-4135-b2e1-88a0bd273fc4"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "1448cc90-ef2d-4977-a200-97c7abfaa70d"], 
+    ButtonBox["Exclusions",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+Exclusions is an option that specifies where to exclude in regions used by \
+functions like Plot, Plot3D, and NIntegrate.\
+\>", "TableText",ExpressionUUID->"be453ae1-dfe2-419e-874f-8dea5ba2da83"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "4fcf5373-2e84-484d-b2f9-d3b0eec41f67"], 
+    ButtonBox["ExclusionsStyle",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+ExclusionsStyle is an option to plotting functions that specifies how to \
+render subregions excluded according to Exclusions. \
+\>", "TableText",ExpressionUUID->"664dc48e-3456-46ba-b763-759b9b55a7e6"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "8a763663-a5ef-46f9-8bc3-17ae53340578"], 
+    ButtonBox["Filling",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+Filling is an option for ListPlot, Plot, Plot3D, and related functions that \
+specifies what filling to add under points, curves, and surfaces. \
+\>", "TableText",ExpressionUUID->"1558e945-2166-46a3-8624-3d60f7983ed7"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "2b9f7713-251a-4ae8-be45-9e6f205126b2"], 
+    ButtonBox["FillingStyle",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+FillingStyle is an option for ListPlot, Plot, Plot3D, and related functions \
+that specifies the default style of filling to be used. \
+\>", "TableText",ExpressionUUID->"778e3187-9e3f-4e4b-b57f-b61b4e2f2d18"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "315c8157-9633-448c-a03b-2119ba644453"], 
+    ButtonBox["FormatType",
+     BaseStyle->"Link"], 
+    ButtonBox["TraditionalForm",
+     BaseStyle->"Link"], Cell["\<\
+FormatType is an option for output streams, graphics, and functions such as \
+Text that specifies the default format type to use when outputting \
+expressions. \
+\>", "TableText",ExpressionUUID->"aafb0e7a-c60f-44ff-aad6-fd55aca01c1d"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "d8fdf902-8816-4d04-ae39-0830c69ac7ea"], 
+    ButtonBox["Frame",
+     BaseStyle->"Link"], 
+    ButtonBox["False",
+     BaseStyle->"Link"], Cell["\<\
+Frame is an option for Graphics, Grid, and other constructs that specifies \
+whether to include a frame. \
+\>", "TableText",ExpressionUUID->"0e62b05d-f112-4422-9538-0dcdaef9f727"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "72217b88-428d-43d0-9619-9a76198244fb"], 
+    ButtonBox["FrameLabel",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+FrameLabel is an option for Graphics, Manipulate, and related functions that \
+specifies labels to be placed on the edges of a frame. \
+\>", "TableText",ExpressionUUID->"64059529-ec70-41bf-ae28-130b9f3901f0"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "b0529552-b0e8-461d-b2ae-3fc0b82b0029"], 
+    ButtonBox["FrameStyle",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+FrameStyle is an option for Graphics, Grid, and other constructs that \
+specifies the style in which to draw frames.\
+\>", "TableText",ExpressionUUID->"ff5f3d9d-aca8-4834-86f3-04af5560096a"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "c7544df9-2864-4937-a255-e7538d1d6ab9"], 
+    ButtonBox["FrameTicks",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+FrameTicks is an option for 2D graphics functions that specifies tick marks \
+for the edges of a frame. \
+\>", "TableText",ExpressionUUID->"6f5bec28-af5d-410f-97e9-95ddc4a64db7"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "5050c123-f4eb-4493-8bc9-b212d3487ebc"], 
+    ButtonBox["FrameTicksStyle",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+FrameTicksStyle is an option for 2D graphics functions that specifies how \
+frame ticks should be rendered.\
+\>", "TableText",ExpressionUUID->"d6d0410f-caa7-467b-81a0-785b9fe13740"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "ad35c4cc-cf6a-4483-a1cd-d0332ada185a"], 
+    ButtonBox["GridLines",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+GridLines is an option for two-dimensional graphics functions that specifies \
+grid lines. \
+\>", "TableText",ExpressionUUID->"fd144867-464a-4203-a905-c5a511acaf94"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "13666493-b015-44ef-a44d-5d235d246609"], 
+    ButtonBox["GridLinesStyle",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+GridLinesStyle is an option for 2D graphics functions that specifies how grid \
+lines should be rendered.\
+\>", "TableText",ExpressionUUID->"1875ea20-a44b-4aa2-8b45-fdbd72d9b670"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "d56636bb-aef9-4533-9e34-3e613e3f8971"], 
+    ButtonBox["ImageMargins",
+     BaseStyle->"Link"], "0.", Cell["\<\
+ImageMargins is an option that specifies the absolute margins to leave around \
+the image displayed for an object. \
+\>", "TableText",ExpressionUUID->"42988326-55db-40ae-92ba-796b2f5f1192"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "046222d2-c7fb-487a-a15b-bca3ca1bc6dd"], 
+    ButtonBox["ImagePadding",
+     BaseStyle->"Link"], 
+    ButtonBox["All",
+     BaseStyle->"Link"], Cell["\<\
+ImagePadding is an option for graphics functions that specifies what absolute \
+extra padding should be left for extended objects such as thick lines and \
+annotations such as tick and axis labels.\
+\>", "TableText",ExpressionUUID->"16a8757f-5e5b-4fd6-a3c9-ef0e700f38ff"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "761bda57-f3f3-40bb-9543-ad41820b1a79"], 
+    ButtonBox["ImageSize",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+ImageSize is an option that specifies the overall size of an image to display \
+for an object. \
+\>", "TableText",ExpressionUUID->"efd60e0d-0655-4f48-a5dd-4885ecda1fc3"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "e0acee83-2a1f-46b9-95f4-5c45ef2c14c1"], 
+    ButtonBox["ImageSizeRaw",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell[
+    "XXXX", "TableText",ExpressionUUID->
+     "3447a8d2-9a6f-45d2-9b71-b3bfecf82366"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "5d4e946a-6076-4cf4-b658-07574cc77c7c"], 
+    ButtonBox["LabelingSize",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+LabelingSize is an option to visualization functions that specifies the size \
+to be used for labels and callouts.\
+\>", "TableText",ExpressionUUID->"9eafeb8e-3ce9-49b3-ad4c-d7bd385b29d6"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "5c405f16-dfce-4aaf-b1d5-92b1ebe5a643"], 
+    ButtonBox["LabelStyle",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+LabelStyle is an option for formatting and related constructs that specifies \
+the style to use in displaying their label-like elements. \
+\>", "TableText",ExpressionUUID->"61e5792d-c72f-4c39-afd2-c80ec24570da"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "dff389b2-831b-480e-879e-20365039982a"], 
+    ButtonBox["MaxRecursion",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+MaxRecursion is an option for functions like NIntegrate and Plot that \
+specifies how many recursive subdivisions can be made. \
+\>", "TableText",ExpressionUUID->"a7cabaff-9e21-4ac0-be95-d0cb5ea3c3fe"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "29c1af79-b429-4938-8ea7-6b6b5865a593"], 
+    ButtonBox["Mesh",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+Mesh is an option for Plot3D, DensityPlot, and other plotting functions that \
+specifies what mesh should be drawn. \
+\>", "TableText",ExpressionUUID->"6b4124c7-a123-41f2-84ee-a10f0c6073e9"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "d20b8f46-0d84-446f-88a2-26dad038b340"], 
+    ButtonBox["MeshFunctions",
+     BaseStyle->"Link"], 
+    RowBox[{"{", 
+     RowBox[{"#1", " ", "&"}], " ", "}"}], Cell["\<\
+MeshFunctions is an option for plotting functions that specifies functions to \
+use to determine the placement of mesh divisions. \
+\>", "TableText",ExpressionUUID->"1e04afb2-632f-479b-b05a-d91a35b1ce96"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "360f244d-dd9e-4fb0-9626-74595d42c94c"], 
+    ButtonBox["MeshShading",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+MeshShading is an option for plotting functions that gives lists of colors to \
+use for regions between mesh divisions. \
+\>", "TableText",ExpressionUUID->"5315063e-966f-4427-8da1-62ffe4ad72a9"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "0216104c-e255-46fc-af28-6970cd0650db"], 
+    ButtonBox["MeshStyle",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+MeshStyle is an option for Plot3D, DensityPlot, and other plotting functions \
+that specifies the style in which to draw a mesh. \
+\>", "TableText",ExpressionUUID->"c9f193c7-7011-49e4-839e-3a977923361a"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "be98fc13-e058-4ebc-8413-77d679abf316"], 
+    ButtonBox["Method",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+Method is an option for various algorithm-intensive functions that specifies \
+what internal methods they should use.\
+\>", "TableText",ExpressionUUID->"a6a06844-d71c-44d7-89f2-dab75601d463"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "05e69e76-8da2-4f10-a643-79ddf230879a"], 
+    ButtonBox["PerformanceGoal",
+     BaseStyle->"Link"], 
+    ButtonBox["$PerformanceGoal",
+     BaseStyle->"Link"], Cell["\<\
+PerformanceGoal is an option for various algorithmic and presentational \
+functions that specifies what aspect of performance to try to optimize with \
+Automatic settings for options.\
+\>", "TableText",ExpressionUUID->"375c335d-d429-4859-8f45-987d32bf6fe8"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "54f6e588-030e-4ed7-9297-9df3cb567f4b"], 
+    ButtonBox["PlotLabel",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+PlotLabel is an option for graphics functions that specifies an overall label \
+for a plot. \
+\>", "TableText",ExpressionUUID->"f88b79c2-dafb-4b2c-98fe-981ba937d09f"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "5ba33ae9-c003-47d9-8a05-a139193903b9"], 
+    ButtonBox["PlotLabels",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+PlotLabels is an option for visualization functions that specifies what \
+labels to use for each data source.\
+\>", "TableText",ExpressionUUID->"ca94fa2e-38d1-42e6-a1ef-fd24171e482e"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "82ddc473-a80a-4cdc-9a8e-5e394b16686a"], 
+    ButtonBox["PlotLayout",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+PlotLayout is an option for plotting functions that specifies the layout of \
+multiple components in a plot.\
+\>", "TableText",ExpressionUUID->"bad0bf73-6ad4-4992-b6b0-560b9ea4a9d7"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "89c0aa51-9c31-45a8-875f-7f4490619583"], 
+    ButtonBox["PlotLegends",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+PlotLegends is an option for plot functions that specifies what legends to \
+use. \
+\>", "TableText",ExpressionUUID->"6c9de7ce-a3a1-4ac1-9384-1d1ec2b97da1"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "37577730-3b24-48e7-b856-b706c1f9b677"], 
+    ButtonBox["PlotPoints",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+PlotPoints is an option for plotting functions that specifies how many \
+initial sample points to use. \
+\>", "TableText",ExpressionUUID->"a90eb0b1-1ca0-49be-861d-647396aa94cf"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "6ab1aef2-e744-4969-9d5b-9e23addf2311"], 
+    ButtonBox["PlotRange",
+     BaseStyle->"Link"], 
+    RowBox[{"{", 
+     RowBox[{"Full", ",", " ", "Automatic"}], "}"}], Cell["\<\
+PlotRange is an option for graphics functions that specifies what range of \
+coordinates to include in a plot. \
+\>", "TableText",ExpressionUUID->"35149a88-2f48-4c67-b494-2af618d67643"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "3ed81da7-35a4-414b-8b95-26c9b483c0a3"], 
+    ButtonBox["PlotRangeClipping",
+     BaseStyle->"Link"], 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+PlotRangeClipping is an option for graphics functions that specifies whether \
+graphics objects should be clipped at the edge of the region defined by \
+PlotRange, or should be allowed to extend to the actual edge of the image. \
+\>", "TableText",ExpressionUUID->"9af53d5d-a71d-494d-9cd3-d97d50179a32"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "635dec83-3c4d-48fc-b37a-08588ff138e6"], 
+    ButtonBox["PlotRangePadding",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+PlotRangePadding is an option for graphics functions that specifies how much \
+further axes etc. should extend beyond the range of coordinates specified by \
+PlotRange. \
+\>", "TableText",ExpressionUUID->"6743eef1-2587-47d9-a974-b60763d80774"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "c2451264-a3ac-47f3-bc30-40ae63835ed7"], 
+    ButtonBox["PlotRegion",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+PlotRegion is an option for graphics functions that specifies what region of \
+the final display area a plot should fill. \
+\>", "TableText",ExpressionUUID->"dab95343-25d6-499d-a3fe-6a1e37c3d6eb"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "c1d23d9e-65da-407b-8a30-a636c0764d30"], 
+    ButtonBox["PlotStyle",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+PlotStyle is an option for plotting and related functions that specifies \
+styles in which objects are to be drawn. \
+\>", "TableText",ExpressionUUID->"349022e6-5d65-423c-be70-c842f24068f7"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "e03b5247-d31b-4edc-a72e-7f974ff937e9"], 
+    ButtonBox["PlotTheme",
+     BaseStyle->"Link"], 
+    ButtonBox["$PlotTheme",
+     BaseStyle->"Link"], Cell["\<\
+PlotTheme is an option for plotting and related functions that specifies an \
+overall theme for visualization elements and styles. \
+\>", "TableText",ExpressionUUID->"96629a7f-3769-4aff-a8d7-f4431304acbd"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "63790f43-9112-4e13-a116-e2e3a2fa4b7a"], 
+    ButtonBox["PreserveImageOptions",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+PreserveImageOptions is an option to graphics and related functions that \
+specifies whether image size and certain other options should be preserved \
+from the previous version of a graphic if the graphic is replaced by a new \
+one in output.\
+\>", "TableText",ExpressionUUID->"48ba4a95-3981-4fa8-9218-fb44148dad12"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "6edccba3-e8b3-4e20-a0a9-5dda3b446fef"], 
+    ButtonBox["Prolog",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+Prolog is an option for graphics functions which gives a list of graphics \
+primitives to be rendered before the main part of the graphics is rendered. \
+\>", "TableText",ExpressionUUID->"20309567-8272-4467-a805-3b52682adcca"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "8ca29b4c-4ae6-4356-92e7-63afa957cd1e"], 
+    ButtonBox["RegionFunction",
+     BaseStyle->"Link"], 
+    RowBox[{
+     RowBox[{"True", " ", "&"}], " "}], Cell["\<\
+RegionFunction is an option for plotting functions that specifies the region \
+to include in the plot drawn. \
+\>", "TableText",ExpressionUUID->"9376b2d8-8b10-4935-854f-f69c42db00e7"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "ac90e87a-e98d-4394-a00b-db2cbe5c0cae"], 
+    ButtonBox["RotateLabel",
+     BaseStyle->"Link"], 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+RotateLabel is an option for graphics and related functions that specifies \
+whether labels on vertical frame axes should be rotated to be vertical. \
+\>", "TableText",ExpressionUUID->"183c8fdd-efa7-4331-a782-85c01d27de96"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "727fe73d-26c4-4289-a18a-de677925a87e"], 
+    ButtonBox["ScalingFunctions",
+     BaseStyle->"Link"], 
+    ButtonBox["None",
+     BaseStyle->"Link"], Cell["\<\
+ScalingFunctions is an option for ListPlot, BarChart, Histogram, and other \
+plotting functions that specifies what scaling functions should be used. \
+\>", "TableText",ExpressionUUID->"ea4808f3-3b63-4b9e-924e-f95c6e3d83c8"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "812fe3a8-77c7-48cc-986c-5ae462b4d642"], 
+    ButtonBox["TargetUnits",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+TargetUnits is an option used to specify the desired output units for \
+visualization functions operating on Quantity expressions.\
+\>", "TableText",ExpressionUUID->"11e0f7c2-58a0-4be7-9a99-31399bbc3ac1"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "005d8988-ae37-4c4d-9809-1977fd632323"], 
+    ButtonBox["Ticks",
+     BaseStyle->"Link"], 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell["\<\
+Ticks is an option for graphics functions that specifies tick marks for axes. \
+\>", "TableText",ExpressionUUID->"b8ed3d7a-0275-4a62-a854-e5bf2519d732"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "824e7efa-faa3-41fe-a759-a4a124d8d505"], 
+    ButtonBox["TicksStyle",
+     BaseStyle->"Link"], 
+    RowBox[{"{", "}"}], Cell["\<\
+TicksStyle is an option for graphics functions which specifies how ticks \
+should be rendered.\
+\>", "TableText",ExpressionUUID->"aa2a06ed-bf5d-43cf-8d07-f37841f948e4"]},
+   {Cell["   ", "ModInfo",ExpressionUUID->
+     "8154ae72-5ed2-43ae-98b4-c5c86d6cb20b"], 
+    ButtonBox["WorkingPrecision",
+     BaseStyle->"Link"], 
+    ButtonBox["MachinePrecision",
+     BaseStyle->"Link"], Cell["\<\
+WorkingPrecision is an option for various numerical operations that specifies \
+how many digits of precision should be maintained in internal computations. \
+\>", "TableText",ExpressionUUID->"9f05f087-58f6-4193-bdd9-47d6a2b6aa89"]}
+  }]], "3ColumnTableMod",
+ CellID->737930255,ExpressionUUID->"ce9d6fef-f4b2-4683-ba38-e22299f60fa3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "41caa499-0213-40e9-a05a-1c104e319fae"]
+}], "TechNotesSection",
+ CellID->675734360,ExpressionUUID->"b66060c3-0fe6-491c-adbc-0a01575f692d"],
+
+Cell["XXXX", "Tutorials",
+ CellID->1173863184,ExpressionUUID->"bc30a2fb-2373-422b-9050-ce56081cacb7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "23b9605a-4c9c-4c5b-b9e7-edd29b8d5479"]
+}], "RelatedLinksSection",
+ CellID->186268499,ExpressionUUID->"57e44f23-6821-4797-8602-bbc2d70a11ad"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1730989014,ExpressionUUID->"9febfa40-44f8-4a18-9ecc-e90b6820499a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "5138a987-7c69-4bf5-91b8-5b497391ff4d"]
+}], "SeeAlsoSection",
+ CellID->771392389,ExpressionUUID->"711bc6df-d6cd-44b5-b156-733c8ec612b0"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "22e152ed-b1ab-49de-a8cf-ace3efce196e"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "a6495c83-a850-426b-9db5-51722ac9542c"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+     FrontEndObject[
+      LinkObject["hmt58_shm", 537, 6]], 17], $CellContext`cellobj$$ = 
+    CellObject[7121]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "60951c00-f478-4ec6-9667-f0f9a0d4ff4f"]
+}], "SeeAlso",
+ CellID->433104984,ExpressionUUID->"825d85dc-2ae1-41d3-a581-7f5d76d96092"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellChangeTimes->{{3.843042374232973*^9, 3.843042375545676*^9}},
+ CellID->1373386405,ExpressionUUID->"d2945019-123a-4bf2-adc1-180475f10b6f"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1351070879,ExpressionUUID->"50e86a40-41eb-471f-81b2-8ca5e915595f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "a923e94a-dab7-426a-9545-19aae29c1fa4"]
+}], "ExamplesInitializationSection",
+ CellID->2103663622,ExpressionUUID->"5f2da509-a0dd-4ea4-a4c6-8100d8829049"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<AntonAntonov`MonadicQuantileRegression`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->103730746,ExpressionUUID->"13b0647b-6627-4769-ac0a-2515c21268ca"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->1793410305,ExpressionUUID->"9a1fdf90-3007-4b9a-a7d3-e753607785d6"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "90d308c5-6df3-48d7-b38c-06d92635e1c5"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1914010490,ExpressionUUID->"964503b4-a8d2-4ff4-aa91-600b88b5ed81"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "42d59ab9-a8e0-4039-87b5-0c62853cc225"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1616757017,ExpressionUUID->"88188d2d-fb7f-4ed7-8686-09ccf2277d11"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "3e7672b7-2406-4b41-b915-d838d24a74af"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->724599228,ExpressionUUID->"c128c736-c73b-48ab-bf41-b54e1843c279"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "b6eeaa68-a493-4ce8-9feb-c3576c8e353b"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1554971712,ExpressionUUID->"538f63db-d517-4844-a8a7-28c814213e82"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "\"Echo\"", "ExampleSubsection",ExpressionUUID->
+   "3ed8a495-066c-4103-91f7-088b2e28949a"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1681063241,ExpressionUUID->"95b40b1b-b4b6-47cc-8c92-9a928ad1a3a6"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "\"QuantileGridLines\"", "ExampleSubsection",ExpressionUUID->
+   "538b149a-4f5e-4d52-b2e0-b5b6ce611e02"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1335031555,ExpressionUUID->"2478c12e-f9a7-42ee-b576-da47f68927ba"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "AlignmentPoint", "ExampleSubsection",ExpressionUUID->
+   "7fd5ce07-5610-45fc-972b-a145c92930cd"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->966201029,ExpressionUUID->"21dd5970-4d63-4330-a567-d0f3794e017c"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "AspectRatio", "ExampleSubsection",ExpressionUUID->
+   "90135a9a-bcac-4e23-9f89-09904f82e51f"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1816839436,ExpressionUUID->"5fa1fe46-a37e-4eda-98df-2ba4934fdfe5"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Axes", "ExampleSubsection",ExpressionUUID->
+   "f7604191-cc70-44da-bec4-4312ab1fef40"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->550424159,ExpressionUUID->"66625157-3f07-49cf-b9f4-dd85995e480f"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "AxesLabel", "ExampleSubsection",ExpressionUUID->
+   "b534d913-a0d8-4c49-a6e7-4a271a04ab7e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1766772684,ExpressionUUID->"2ec05d7b-ac7d-442e-b74a-2e7e2f130f10"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "AxesOrigin", "ExampleSubsection",ExpressionUUID->
+   "c25d65a4-ba7b-41ed-adc7-346e9898979b"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->892112919,ExpressionUUID->"de02c0db-9f33-4fb1-b6f2-f7ca750c2ff3"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "AxesStyle", "ExampleSubsection",ExpressionUUID->
+   "83d46c84-7925-48aa-aa6b-4e4befc61568"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->11006279,ExpressionUUID->"ea486bc2-cbd9-4ee9-a8de-a62c59091773"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Background", "ExampleSubsection",ExpressionUUID->
+   "288fa73d-d353-4f61-ae32-14da0f70353c"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->298937511,ExpressionUUID->"f280aa2a-ca2a-419b-b177-dbe23ca49bef"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "BaselinePosition", "ExampleSubsection",ExpressionUUID->
+   "a3de997e-fb7e-4953-b459-3737ff0d95da"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1278497044,ExpressionUUID->"c9677133-d006-4669-9509-68893fc981c5"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "BaseStyle", "ExampleSubsection",ExpressionUUID->
+   "772b8ca0-8eb5-4d8d-b928-3fef39e7e74d"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2125930273,ExpressionUUID->"a29a64aa-b58b-4581-9889-4b507ceb0751"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ClippingStyle", "ExampleSubsection",ExpressionUUID->
+   "18682740-36b1-4603-b573-bf55a2b497d9"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->677179525,ExpressionUUID->"479f5b09-baa5-4532-9b62-0b0e3c42c00b"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ColorFunction", "ExampleSubsection",ExpressionUUID->
+   "262be799-d93d-4902-b888-f4984f86ef67"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1840431222,ExpressionUUID->"464638bb-c539-43cb-8225-62d9354e29bf"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ColorFunctionScaling", "ExampleSubsection",ExpressionUUID->
+   "06b3a611-6fcb-49a3-9ebd-a61c0fbd3834"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1920580413,ExpressionUUID->"d1047f76-e8c2-4eac-ae8c-c7f9b8ca9f4d"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ColorOutput", "ExampleSubsection",ExpressionUUID->
+   "65b349c1-491c-4819-9c3b-998989208efd"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->368303234,ExpressionUUID->"5b3aef2b-111c-48cb-94b8-cdadf0c1c1c5"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ContentSelectable", "ExampleSubsection",ExpressionUUID->
+   "9f4cfde4-2b8a-439c-80ac-d4819719dcfa"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1024583184,ExpressionUUID->"c804dd6d-de8b-4b83-beca-26c90229c2da"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "CoordinatesToolOptions", "ExampleSubsection",ExpressionUUID->
+   "b62e1b8e-1593-4d29-9da3-24a0653e8642"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1645691842,ExpressionUUID->"f7db37ec-6854-4713-8ec6-08a2bd4b4e6b"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "DisplayFunction", "ExampleSubsection",ExpressionUUID->
+   "be828433-5599-4a97-8ca6-4575598da531"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1700898781,ExpressionUUID->"6f5a6911-a974-42a9-b6e6-d1bd5861b95c"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Epilog", "ExampleSubsection",ExpressionUUID->
+   "f56743ee-fffe-4f0e-8705-877adbe85cbf"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1850987050,ExpressionUUID->"338d894d-b980-49d7-a7c5-af3cea416c3c"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Evaluated", "ExampleSubsection",ExpressionUUID->
+   "9101b702-0840-4c0f-a94a-2f2fbb2de013"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1091238908,ExpressionUUID->"6a0cd336-ddbd-4349-a635-3e2f26078076"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "EvaluationMonitor", "ExampleSubsection",ExpressionUUID->
+   "383fe3d0-7722-4d37-8ae7-6f2029206f81"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->941981376,ExpressionUUID->"92476c9a-9406-4c87-b2e9-f9db19b2aa19"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Exclusions", "ExampleSubsection",ExpressionUUID->
+   "aecb4393-4efa-489a-a8f7-5afac23b5f8c"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->631540748,ExpressionUUID->"f0f90fd4-a611-4a02-9fc3-fe72da5cca11"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ExclusionsStyle", "ExampleSubsection",ExpressionUUID->
+   "9b48595c-909c-4ace-a4fb-1cf399484717"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1441168162,ExpressionUUID->"2a7b1529-fe34-4008-94fe-4b9548f6ac0c"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Filling", "ExampleSubsection",ExpressionUUID->
+   "870a635c-27ff-4d4c-a565-b8bbbfcb3740"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->245244221,ExpressionUUID->"48df5299-32b5-4b3a-b2c7-f7e29299423c"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "FillingStyle", "ExampleSubsection",ExpressionUUID->
+   "17e515b0-7624-4bc6-be52-125ac13db5c8"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->798503754,ExpressionUUID->"78c1b07b-bd1f-4252-abaf-d7bb572c70ca"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "FormatType", "ExampleSubsection",ExpressionUUID->
+   "a57da6f3-ca14-4de9-9f80-0dc3231c2d4b"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->827283375,ExpressionUUID->"4c20f575-53aa-4e57-8ffb-a6ed9987f3f4"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Frame", "ExampleSubsection",ExpressionUUID->
+   "8b9ba24a-49a8-45db-b6e9-ac138a05d614"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1342552947,ExpressionUUID->"2001dca9-f70e-40a4-88fe-0aa97fca9dca"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "FrameLabel", "ExampleSubsection",ExpressionUUID->
+   "428837d3-f52c-44da-9a9c-8ddea8477e5e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->676701200,ExpressionUUID->"1491cd3a-6fd0-4088-bfba-332ca091848d"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "FrameStyle", "ExampleSubsection",ExpressionUUID->
+   "81802f96-88a0-4a0a-bab6-c8a5e221defc"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->243673888,ExpressionUUID->"70f821b1-f7af-4404-b52a-ec2f810a23e1"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "FrameTicks", "ExampleSubsection",ExpressionUUID->
+   "4a9106c1-3112-455f-b792-44492a2c9329"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->175720787,ExpressionUUID->"60d157b8-727c-4f7c-9e5b-3a39f65d6abb"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "FrameTicksStyle", "ExampleSubsection",ExpressionUUID->
+   "b5a05f20-d90a-48d4-a959-76d9f7dec430"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->549252484,ExpressionUUID->"55062f9a-d8ea-4222-873c-e9a6ba889430"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "GridLines", "ExampleSubsection",ExpressionUUID->
+   "ee0e737d-0654-4e0a-b67c-dcb36fd79095"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1401783782,ExpressionUUID->"7d412020-7be5-465b-951c-a72dc16afcfc"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "GridLinesStyle", "ExampleSubsection",ExpressionUUID->
+   "6561588e-d54f-41d1-8b75-84ae1183cb29"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1884416484,ExpressionUUID->"fdd2aeb0-46c4-477b-a582-dfc7f1de1728"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ImageMargins", "ExampleSubsection",ExpressionUUID->
+   "69ecc04d-9ded-4660-b236-1b6ab74dad70"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->299020632,ExpressionUUID->"6656656b-3ad1-4a42-8ad3-7e655fb2cc64"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ImagePadding", "ExampleSubsection",ExpressionUUID->
+   "54351fa4-8fba-413e-a782-f1acfee10977"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->528028044,ExpressionUUID->"4fd5a6b0-7587-4dec-ad31-e2e4d84c0729"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ImageSize", "ExampleSubsection",ExpressionUUID->
+   "514a12f3-fffb-469d-85d6-8592dd63da54"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1164906104,ExpressionUUID->"fd1ab998-9d6c-495f-bcb3-c7bc13f908c1"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ImageSizeRaw", "ExampleSubsection",ExpressionUUID->
+   "f3dc7c45-0a5e-453a-b3bc-7368be12a84e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2115963876,ExpressionUUID->"1171d7eb-11e0-44d4-aed4-5085786b9b1a"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "LabelingSize", "ExampleSubsection",ExpressionUUID->
+   "74667779-1c35-4b83-be13-d9d0c88fd9d9"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->675669612,ExpressionUUID->"d848f31a-8e85-4a11-b2b9-2eaf1836cb87"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "LabelStyle", "ExampleSubsection",ExpressionUUID->
+   "df62ea49-e57b-4f7f-8fc8-d1e5c7f53a96"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->85643548,ExpressionUUID->"18a98fe2-d069-4553-b20f-fc5caee2d708"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "MaxRecursion", "ExampleSubsection",ExpressionUUID->
+   "b2e9b0e9-9b76-48af-b72e-dda04d51c30a"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->597067746,ExpressionUUID->"b61fc2f8-ac51-4c1e-a9c5-8f18e722ed2a"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Mesh", "ExampleSubsection",ExpressionUUID->
+   "92351c6a-c5e0-436d-8385-e34c78adb303"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1874008238,ExpressionUUID->"a9cda4af-54e4-49cc-ad87-4dfeb0c88f5b"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "MeshFunctions", "ExampleSubsection",ExpressionUUID->
+   "5f326554-3b64-4785-8ee4-ec918ac41b55"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1461289164,ExpressionUUID->"c667fc74-90e0-420a-9689-aa137b3d3cc9"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "MeshShading", "ExampleSubsection",ExpressionUUID->
+   "2f2fb134-bf8c-431d-b4c3-c69cbec5b609"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1263992256,ExpressionUUID->"c1a2af5a-d0de-4cdf-87c2-64a96f6d5b57"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "MeshStyle", "ExampleSubsection",ExpressionUUID->
+   "f9162c6e-0397-4137-b2d3-131b7691288f"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1009610468,ExpressionUUID->"cabe7f98-406d-4937-a377-b84ccd44e20e"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Method", "ExampleSubsection",ExpressionUUID->
+   "eaf6faa3-a0ad-4277-9d5a-7fe4c88b535f"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1254840729,ExpressionUUID->"ba0a1e2e-1aa4-40eb-97eb-6d8bd1e6ca4f"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PerformanceGoal", "ExampleSubsection",ExpressionUUID->
+   "5f0397ea-33e5-4bd6-bed7-021142183588"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1818718763,ExpressionUUID->"c1810573-bafc-4045-9630-a00b50e9ad8a"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotLabel", "ExampleSubsection",ExpressionUUID->
+   "01ec61ee-e9e6-4618-8ac5-77cf568936ec"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2071501990,ExpressionUUID->"e3dd5579-b94f-4e54-8ba6-6d5a0adca549"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotLabels", "ExampleSubsection",ExpressionUUID->
+   "28ecbb67-d99f-4b48-a304-c9ca8c8b4c5c"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->729060766,ExpressionUUID->"da6c7df5-eaad-4b06-939f-23efb98083ac"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotLayout", "ExampleSubsection",ExpressionUUID->
+   "91c8cfd1-ae60-4c81-99d7-7d1fb5572c9a"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1930088027,ExpressionUUID->"508301b1-9355-4787-a85b-d657a39f4f96"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotLegends", "ExampleSubsection",ExpressionUUID->
+   "64110678-c120-4e90-8a5d-85338444257b"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1248981854,ExpressionUUID->"2b4fda96-00de-480f-b1b6-82d947f1e274"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotPoints", "ExampleSubsection",ExpressionUUID->
+   "fba66155-6616-44af-aef2-2586f287710e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2132854400,ExpressionUUID->"0a755556-4c93-4d6f-9941-1528df21751b"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotRange", "ExampleSubsection",ExpressionUUID->
+   "30eddf18-e54d-4005-91d6-95c79e44a63a"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1086865076,ExpressionUUID->"17df5f16-0939-4a9e-bba1-fe3474b6bdc8"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotRangeClipping", "ExampleSubsection",ExpressionUUID->
+   "31e9e09a-3b92-46b2-9d90-c44160d85503"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->445430950,ExpressionUUID->"26f3293d-5175-4e0b-a999-46ec5df45c12"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotRangePadding", "ExampleSubsection",ExpressionUUID->
+   "7b1720b2-489b-4b37-8977-ab65dd204a9a"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->229983208,ExpressionUUID->"2b2f7e22-00fb-4aa3-9c50-814532bfb067"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotRegion", "ExampleSubsection",ExpressionUUID->
+   "da0b8416-49dd-4ff0-bb72-64a3e38b3fee"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2004695903,ExpressionUUID->"abc6ea45-9ffa-4e4c-9089-9e0f4445bd3d"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotStyle", "ExampleSubsection",ExpressionUUID->
+   "6ce15727-48c2-48cd-b4d2-a81db147b255"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1053103938,ExpressionUUID->"f3dd710e-bd92-41bf-9f8f-e982d03311ce"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PlotTheme", "ExampleSubsection",ExpressionUUID->
+   "85ec88a5-328f-4206-a156-33959d67ea2e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2105151039,ExpressionUUID->"96324326-511a-4aaf-b191-901a208cc2f1"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "PreserveImageOptions", "ExampleSubsection",ExpressionUUID->
+   "46a76761-939a-4353-adfc-4e0172443a0a"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1480428148,ExpressionUUID->"51caa569-0972-4c0c-9981-ab7fb21a8634"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Prolog", "ExampleSubsection",ExpressionUUID->
+   "4b2aef2d-53f1-4cdc-8822-40fdce94c697"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->810349294,ExpressionUUID->"0d1080c2-b6c9-43e8-8930-8aeeb4f2586f"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "RegionFunction", "ExampleSubsection",ExpressionUUID->
+   "dbdb9d31-7781-444c-a49e-157416cd6932"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->199294984,ExpressionUUID->"91f548a6-bd7f-4501-bef9-02dc1c9030ef"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "RotateLabel", "ExampleSubsection",ExpressionUUID->
+   "cb3ba3d7-53f5-41f7-8bed-585d7d27e547"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1623790415,ExpressionUUID->"0981c969-32ab-4cad-9a38-29958632839e"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "ScalingFunctions", "ExampleSubsection",ExpressionUUID->
+   "e0e32ed2-7093-4ad9-8fa0-1f29aa77da21"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->823318829,ExpressionUUID->"311b5ffd-88bb-42ea-8ca7-480615fee8ff"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "TargetUnits", "ExampleSubsection",ExpressionUUID->
+   "cfb67d0e-cc3c-4d69-907c-c5b4501b5781"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1282421382,ExpressionUUID->"646d35c0-6143-428f-b7d1-132ff22dd0f3"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Ticks", "ExampleSubsection",ExpressionUUID->
+   "fd449b82-975d-41a1-a121-54cc591eae2d"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1510285982,ExpressionUUID->"ccb27d5a-cec0-43ae-8410-29fca1b6f472"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "TicksStyle", "ExampleSubsection",ExpressionUUID->
+   "fe177447-c247-4242-9778-db7db15a54ef"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->119791934,ExpressionUUID->"d6953433-119d-4ed1-9edd-6cf7992e2a04"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "WorkingPrecision", "ExampleSubsection",ExpressionUUID->
+   "b43631a1-4c93-4fd2-87e7-e294cbf4f2ad"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1150857499,ExpressionUUID->"f4690f3f-ba6d-4cfd-92ba-adc7c9488d56"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "2b422a67-92c4-4c29-9ad6-a28badab56af"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1103440467,ExpressionUUID->"fedcb4ab-ea9d-4fed-9a63-144d829b1463"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "6f73ecef-9275-4359-892f-dcc9ec1a9cc0"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2002637024,ExpressionUUID->"bade087b-aaf5-4701-8f19-1d52614da026"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "ff436a98-8e80-4a1a-8281-1754a42062b2"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->809262937,ExpressionUUID->"481594e6-e8f6-406c-b32c-2666e061b7de"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "1baeb39b-f58b-40b3-a762-1bd75b693616"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1268245708,ExpressionUUID->"660ce5c1-2baa-4d0a-8188-571ff415d243"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "c8b3cb3a-4825-4a07-b226-83856d10dac3"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1630417881,ExpressionUUID->"40284ff9-a088-4179-b273-842fe1f2d953"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->541990247,ExpressionUUID->"6e6ed297-f809-4ee6-bd62-d1f30a629dca"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"f8910761-fb79-44cf-99a2-9b7361b6ce4e"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"edebaefc-60c0-43aa-b862-3cefcf11ec72"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "c559f11c-875f-43ea-a6dd-6175a5d140cd"]
+}], "History",
+ CellID->1751934402,ExpressionUUID->"ef74466d-0b58-47ed-9d7f-721860678914"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "e0135652-a019-47d9-ba29-a7866c58f2dd"]
+}], "CategorizationSection",
+ CellID->613210397,ExpressionUUID->"3869ccec-3a76-45ca-9848-2ea366f4fbd1"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->453120426,ExpressionUUID->"c9efc35f-85fa-4a00-aed5-6eccbf8b52a7"],
+
+Cell["AntonAntonov/MonadicQuantileRegression", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->76777164,ExpressionUUID->"3c3d9f13-e711-4a27-9fe0-959a69f8243f"],
+
+Cell["AntonAntonov`MonadicQuantileRegression`", "Categorization",
+ CellLabel->"Context",
+ CellID->1903607148,ExpressionUUID->"bfa1e847-b2fd-4140-8085-ec08843dc721"],
+
+Cell["\<\
+AntonAntonov/MonadicQuantileRegression/ref/QRMonConditionalCDFPlot\
+\>", "Categorization",
+ CellLabel->"URI",
+ CellID->713963430,ExpressionUUID->"7ef5e39f-1027-48b9-8402-49f753cdbfe1"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->348127587,ExpressionUUID->"cfb9900d-712b-4469-8ff1-a3ce90ba7554"],
+
+Cell["XXXX", "Keywords",
+ CellID->1234900281,ExpressionUUID->"dd254c72-e178-4def-b2c6-180638d03566"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1687058159,ExpressionUUID->"38b2d86d-0f97-40fc-91d8-dab491069e6f"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1159886972,ExpressionUUID->"d40b2b50-0475-4cef-8172-d98d7f5b60df"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->1511274585,ExpressionUUID->"9bc7c260-74e1-47af-b85b-4f1da274ee4a"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1702857026,ExpressionUUID->"4d8f47d6-c111-4478-a23e-31f9de1a7f50"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->403472413,ExpressionUUID->"99dea380-17ed-45c7-906d-e246fe5721c3"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "AntonAntonov/MonadicQuantileRegression"|>,
+CellContext->"Global`",
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"cd9aa843-1cc7-4504-b18b-4555cc3478ee"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[33147, 798, 488, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"964503b4-a8d2-4ff4-aa91-600b88b5ed81",
+   CellTags->"ExtendedExamples",
+   CellID->1914010490]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 56011, 1436}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 121, 1, 74, "ObjectName",ExpressionUUID->"9b2a1366-56ab-4009-bece-3d6f86079021",
+ CellID->1224619764],
+Cell[704, 25, 716, 17, 99, "Usage",ExpressionUUID->"8ed40dc7-7613-4e2b-b62b-dc4c816bbce0",
+ CellID->701100700],
+Cell[1423, 44, 128, 1, 27, "Notes",ExpressionUUID->"f4b8e561-ad7d-4541-99c4-f1efb2575bb7",
+ CellID->156693811],
+Cell[1554, 47, 26783, 597, 3467, "3ColumnTableMod",ExpressionUUID->"ce9d6fef-f4b2-4683-ba38-e22299f60fa3",
+ CellID->737930255]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28374, 649, 435, 12, 41, "TechNotesSection",ExpressionUUID->"b66060c3-0fe6-491c-adbc-0a01575f692d",
+ CellID->675734360],
+Cell[28812, 663, 101, 1, 19, "Tutorials",ExpressionUUID->"bc30a2fb-2373-422b-9050-ce56081cacb7",
+ CellID->1173863184]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28950, 669, 472, 13, 40, "RelatedLinksSection",ExpressionUUID->"57e44f23-6821-4797-8602-bbc2d70a11ad",
+ CellID->186268499],
+Cell[29425, 684, 104, 1, 19, "RelatedLinks",ExpressionUUID->"9febfa40-44f8-4a18-9ecc-e90b6820499a",
+ CellID->1730989014]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29566, 690, 458, 13, 40, "SeeAlsoSection",ExpressionUUID->"711bc6df-d6cd-44b5-b156-733c8ec612b0",
+ CellID->771392389],
+Cell[30027, 705, 1543, 40, 26, "SeeAlso",ExpressionUUID->"825d85dc-2ae1-41d3-a581-7f5d76d96092",
+ CellID->433104984]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31607, 750, 184, 2, 40, "MoreAboutSection",ExpressionUUID->"d2945019-123a-4bf2-adc1-180475f10b6f",
+ CellID->1373386405],
+Cell[31794, 754, 101, 1, 19, "MoreAbout",ExpressionUUID->"50e86a40-41eb-471f-81b2-8ca5e915595f",
+ CellID->1351070879]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31932, 760, 531, 14, 70, "ExamplesInitializationSection",ExpressionUUID->"5f2da509-a0dd-4ea4-a4c6-8100d8829049",
+ CellID->2103663622],
+Cell[32466, 776, 198, 3, 47, "ExampleInitialization",ExpressionUUID->"13b0647b-6627-4769-ac0a-2515c21268ca",
+ CellID->103730746]
+}, Open  ]],
+Cell[32679, 782, 443, 12, 73, "PrimaryExamplesSection",ExpressionUUID->"9a1fdf90-3007-4b9a-a7d3-e753607785d6",
+ CellID->1793410305],
+Cell[CellGroupData[{
+Cell[33147, 798, 488, 13, 58, "ExtendedExamplesSection",ExpressionUUID->"964503b4-a8d2-4ff4-aa91-600b88b5ed81",
+ CellTags->"ExtendedExamples",
+ CellID->1914010490],
+Cell[33638, 813, 242, 5, 35, "ExampleSection",ExpressionUUID->"88188d2d-fb7f-4ed7-8686-09ccf2277d11",
+ CellID->1616757017],
+Cell[33883, 820, 264, 5, 23, "ExampleSection",ExpressionUUID->"c128c736-c73b-48ab-bf41-b54e1843c279",
+ CellID->724599228],
+Cell[CellGroupData[{
+Cell[34172, 829, 244, 5, 23, "ExampleSection",ExpressionUUID->"538f63db-d517-4844-a8a7-28c814213e82",
+ CellID->1554971712],
+Cell[34419, 836, 251, 5, 26, "ExampleSubsection",ExpressionUUID->"95b40b1b-b4b6-47cc-8c92-9a928ad1a3a6",
+ CellID->1681063241],
+Cell[34673, 843, 264, 5, 22, "ExampleSubsection",ExpressionUUID->"2478c12e-f9a7-42ee-b576-da47f68927ba",
+ CellID->1335031555],
+Cell[34940, 850, 256, 5, 22, "ExampleSubsection",ExpressionUUID->"21dd5970-4d63-4330-a567-d0f3794e017c",
+ CellID->966201029],
+Cell[35199, 857, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"5fa1fe46-a37e-4eda-98df-2ba4934fdfe5",
+ CellID->1816839436],
+Cell[35456, 864, 246, 5, 22, "ExampleSubsection",ExpressionUUID->"66625157-3f07-49cf-b9f4-dd85995e480f",
+ CellID->550424159],
+Cell[35705, 871, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"2ec05d7b-ac7d-442e-b74a-2e7e2f130f10",
+ CellID->1766772684],
+Cell[35960, 878, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"de02c0db-9f33-4fb1-b6f2-f7ca750c2ff3",
+ CellID->892112919],
+Cell[36215, 885, 250, 5, 22, "ExampleSubsection",ExpressionUUID->"ea486bc2-cbd9-4ee9-a8de-a62c59091773",
+ CellID->11006279],
+Cell[36468, 892, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"f280aa2a-ca2a-419b-b177-dbe23ca49bef",
+ CellID->298937511],
+Cell[36723, 899, 259, 5, 22, "ExampleSubsection",ExpressionUUID->"c9677133-d006-4669-9509-68893fc981c5",
+ CellID->1278497044],
+Cell[36985, 906, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"a29a64aa-b58b-4581-9889-4b507ceb0751",
+ CellID->2125930273],
+Cell[37240, 913, 255, 5, 22, "ExampleSubsection",ExpressionUUID->"479f5b09-baa5-4532-9b62-0b0e3c42c00b",
+ CellID->677179525],
+Cell[37498, 920, 256, 5, 22, "ExampleSubsection",ExpressionUUID->"464638bb-c539-43cb-8225-62d9354e29bf",
+ CellID->1840431222],
+Cell[37757, 927, 263, 5, 22, "ExampleSubsection",ExpressionUUID->"d1047f76-e8c2-4eac-ae8c-c7f9b8ca9f4d",
+ CellID->1920580413],
+Cell[38023, 934, 253, 5, 22, "ExampleSubsection",ExpressionUUID->"5b3aef2b-111c-48cb-94b8-cdadf0c1c1c5",
+ CellID->368303234],
+Cell[38279, 941, 260, 5, 22, "ExampleSubsection",ExpressionUUID->"c804dd6d-de8b-4b83-beca-26c90229c2da",
+ CellID->1024583184],
+Cell[38542, 948, 265, 5, 22, "ExampleSubsection",ExpressionUUID->"f7db37ec-6854-4713-8ec6-08a2bd4b4e6b",
+ CellID->1645691842],
+Cell[38810, 955, 258, 5, 22, "ExampleSubsection",ExpressionUUID->"6f5a6911-a974-42a9-b6e6-d1bd5861b95c",
+ CellID->1700898781],
+Cell[39071, 962, 249, 5, 22, "ExampleSubsection",ExpressionUUID->"338d894d-b980-49d7-a7c5-af3cea416c3c",
+ CellID->1850987050],
+Cell[39323, 969, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"6a0cd336-ddbd-4349-a635-3e2f26078076",
+ CellID->1091238908],
+Cell[39578, 976, 259, 5, 22, "ExampleSubsection",ExpressionUUID->"92476c9a-9406-4c87-b2e9-f9db19b2aa19",
+ CellID->941981376],
+Cell[39840, 983, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"f0f90fd4-a611-4a02-9fc3-fe72da5cca11",
+ CellID->631540748],
+Cell[40095, 990, 258, 5, 22, "ExampleSubsection",ExpressionUUID->"2a7b1529-fe34-4008-94fe-4b9548f6ac0c",
+ CellID->1441168162],
+Cell[40356, 997, 249, 5, 22, "ExampleSubsection",ExpressionUUID->"48df5299-32b5-4b3a-b2c7-f7e29299423c",
+ CellID->245244221],
+Cell[40608, 1004, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"78c1b07b-bd1f-4252-abaf-d7bb572c70ca",
+ CellID->798503754],
+Cell[40865, 1011, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"4c20f575-53aa-4e57-8ffb-a6ed9987f3f4",
+ CellID->827283375],
+Cell[41120, 1018, 248, 5, 22, "ExampleSubsection",ExpressionUUID->"2001dca9-f70e-40a4-88fe-0aa97fca9dca",
+ CellID->1342552947],
+Cell[41371, 1025, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"1491cd3a-6fd0-4088-bfba-332ca091848d",
+ CellID->676701200],
+Cell[41626, 1032, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"70f821b1-f7af-4404-b52a-ec2f810a23e1",
+ CellID->243673888],
+Cell[41881, 1039, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"60d157b8-727c-4f7c-9e5b-3a39f65d6abb",
+ CellID->175720787],
+Cell[42136, 1046, 257, 5, 22, "ExampleSubsection",ExpressionUUID->"55062f9a-d8ea-4222-873c-e9a6ba889430",
+ CellID->549252484],
+Cell[42396, 1053, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"7d412020-7be5-465b-951c-a72dc16afcfc",
+ CellID->1401783782],
+Cell[42651, 1060, 257, 5, 22, "ExampleSubsection",ExpressionUUID->"fdd2aeb0-46c4-477b-a582-dfc7f1de1728",
+ CellID->1884416484],
+Cell[42911, 1067, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"6656656b-3ad1-4a42-8ad3-7e655fb2cc64",
+ CellID->299020632],
+Cell[43168, 1074, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"4fd5a6b0-7587-4dec-ad31-e2e4d84c0729",
+ CellID->528028044],
+Cell[43425, 1081, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"fd1ab998-9d6c-495f-bcb3-c7bc13f908c1",
+ CellID->1164906104],
+Cell[43680, 1088, 255, 5, 22, "ExampleSubsection",ExpressionUUID->"1171d7eb-11e0-44d4-aed4-5085786b9b1a",
+ CellID->2115963876],
+Cell[43938, 1095, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"d848f31a-8e85-4a11-b2b9-2eaf1836cb87",
+ CellID->675669612],
+Cell[44195, 1102, 251, 5, 22, "ExampleSubsection",ExpressionUUID->"18a98fe2-d069-4553-b20f-fc5caee2d708",
+ CellID->85643548],
+Cell[44449, 1109, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"b61fc2f8-ac51-4c1e-a9c5-8f18e722ed2a",
+ CellID->597067746],
+Cell[44706, 1116, 247, 5, 22, "ExampleSubsection",ExpressionUUID->"a9cda4af-54e4-49cc-ad87-4dfeb0c88f5b",
+ CellID->1874008238],
+Cell[44956, 1123, 256, 5, 22, "ExampleSubsection",ExpressionUUID->"c667fc74-90e0-420a-9689-aa137b3d3cc9",
+ CellID->1461289164],
+Cell[45215, 1130, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"c1a2af5a-d0de-4cdf-87c2-64a96f6d5b57",
+ CellID->1263992256],
+Cell[45472, 1137, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"cabe7f98-406d-4937-a377-b84ccd44e20e",
+ CellID->1009610468],
+Cell[45727, 1144, 249, 5, 22, "ExampleSubsection",ExpressionUUID->"ba0a1e2e-1aa4-40eb-97eb-6d8bd1e6ca4f",
+ CellID->1254840729],
+Cell[45979, 1151, 258, 5, 22, "ExampleSubsection",ExpressionUUID->"c1810573-bafc-4045-9630-a00b50e9ad8a",
+ CellID->1818718763],
+Cell[46240, 1158, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"e3dd5579-b94f-4e54-8ba6-6d5a0adca549",
+ CellID->2071501990],
+Cell[46495, 1165, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"da6c7df5-eaad-4b06-939f-23efb98083ac",
+ CellID->729060766],
+Cell[46750, 1172, 253, 5, 22, "ExampleSubsection",ExpressionUUID->"508301b1-9355-4787-a85b-d657a39f4f96",
+ CellID->1930088027],
+Cell[47006, 1179, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"2b4fda96-00de-480f-b1b6-82d947f1e274",
+ CellID->1248981854],
+Cell[47263, 1186, 253, 5, 22, "ExampleSubsection",ExpressionUUID->"0a755556-4c93-4d6f-9941-1528df21751b",
+ CellID->2132854400],
+Cell[47519, 1193, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"17df5f16-0939-4a9e-bba1-fe3474b6bdc8",
+ CellID->1086865076],
+Cell[47774, 1200, 259, 5, 22, "ExampleSubsection",ExpressionUUID->"26f3293d-5175-4e0b-a999-46ec5df45c12",
+ CellID->445430950],
+Cell[48036, 1207, 258, 5, 22, "ExampleSubsection",ExpressionUUID->"2b2f7e22-00fb-4aa3-9c50-814532bfb067",
+ CellID->229983208],
+Cell[48297, 1214, 253, 5, 22, "ExampleSubsection",ExpressionUUID->"abc6ea45-9ffa-4e4c-9089-9e0f4445bd3d",
+ CellID->2004695903],
+Cell[48553, 1221, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"f3dd710e-bd92-41bf-9f8f-e982d03311ce",
+ CellID->1053103938],
+Cell[48808, 1228, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"96324326-511a-4aaf-b191-901a208cc2f1",
+ CellID->2105151039],
+Cell[49063, 1235, 263, 5, 22, "ExampleSubsection",ExpressionUUID->"51caa569-0972-4c0c-9981-ab7fb21a8634",
+ CellID->1480428148],
+Cell[49329, 1242, 248, 5, 22, "ExampleSubsection",ExpressionUUID->"0d1080c2-b6c9-43e8-8930-8aeeb4f2586f",
+ CellID->810349294],
+Cell[49580, 1249, 256, 5, 22, "ExampleSubsection",ExpressionUUID->"91f548a6-bd7f-4501-bef9-02dc1c9030ef",
+ CellID->199294984],
+Cell[49839, 1256, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"0981c969-32ab-4cad-9a38-29958632839e",
+ CellID->1623790415],
+Cell[50096, 1263, 258, 5, 22, "ExampleSubsection",ExpressionUUID->"311b5ffd-88bb-42ea-8ca7-480615fee8ff",
+ CellID->823318829],
+Cell[50357, 1270, 254, 5, 22, "ExampleSubsection",ExpressionUUID->"646d35c0-6143-428f-b7d1-132ff22dd0f3",
+ CellID->1282421382],
+Cell[50614, 1277, 248, 5, 22, "ExampleSubsection",ExpressionUUID->"ccb27d5a-cec0-43ae-8410-29fca1b6f472",
+ CellID->1510285982],
+Cell[50865, 1284, 252, 5, 22, "ExampleSubsection",ExpressionUUID->"d6953433-119d-4ed1-9edd-6cf7992e2a04",
+ CellID->119791934],
+Cell[51120, 1291, 259, 5, 22, "ExampleSubsection",ExpressionUUID->"f4690f3f-ba6d-4cfd-92ba-adc7c9488d56",
+ CellID->1150857499]
+}, Open  ]],
+Cell[51394, 1299, 249, 5, 35, "ExampleSection",ExpressionUUID->"fedcb4ab-ea9d-4fed-9a63-144d829b1463",
+ CellID->1103440467],
+Cell[51646, 1306, 259, 5, 23, "ExampleSection",ExpressionUUID->"bade087b-aaf5-4701-8f19-1d52614da026",
+ CellID->2002637024],
+Cell[51908, 1313, 251, 5, 23, "ExampleSection",ExpressionUUID->"481594e6-e8f6-406c-b32c-2666e061b7de",
+ CellID->809262937],
+Cell[52162, 1320, 257, 5, 23, "ExampleSection",ExpressionUUID->"660ce5c1-2baa-4d0a-8188-571ff415d243",
+ CellID->1268245708],
+Cell[52422, 1327, 250, 5, 23, "ExampleSection",ExpressionUUID->"40284ff9-a088-4179-b273-842fe1f2d953",
+ CellID->1630417881]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52709, 1337, 110, 1, 72, "MetadataSection",ExpressionUUID->"6e6ed297-f809-4ee6-bd62-d1f30a629dca",
+ CellID->541990247],
+Cell[52822, 1340, 477, 12, 26, "History",ExpressionUUID->"ef74466d-0b58-47ed-9d7f-721860678914",
+ CellID->1751934402],
+Cell[CellGroupData[{
+Cell[53324, 1356, 484, 13, 21, "CategorizationSection",ExpressionUUID->"3869ccec-3a76-45ca-9848-2ea366f4fbd1",
+ CellID->613210397],
+Cell[53811, 1371, 134, 2, 35, "Categorization",ExpressionUUID->"c9efc35f-85fa-4a00-aed5-6eccbf8b52a7",
+ CellID->453120426],
+Cell[53948, 1375, 165, 2, 35, "Categorization",ExpressionUUID->"3c3d9f13-e711-4a27-9fe0-959a69f8243f",
+ CellID->76777164],
+Cell[54116, 1379, 164, 2, 35, "Categorization",ExpressionUUID->"bfa1e847-b2fd-4140-8085-ec08843dc721",
+ CellID->1903607148],
+Cell[54283, 1383, 194, 4, 35, "Categorization",ExpressionUUID->"7ef5e39f-1027-48b9-8402-49f753cdbfe1",
+ CellID->713963430]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[54514, 1392, 110, 1, 21, "KeywordsSection",ExpressionUUID->"cfb9900d-712b-4469-8ff1-a3ce90ba7554",
+ CellID->348127587],
+Cell[54627, 1395, 100, 1, 70, "Keywords",ExpressionUUID->"dd254c72-e178-4def-b2c6-180638d03566",
+ CellID->1234900281]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[54764, 1401, 120, 1, 21, "TemplatesSection",ExpressionUUID->"38b2d86d-0f97-40fc-91d8-dab491069e6f",
+ CellID->1687058159],
+Cell[54887, 1404, 149, 2, 70, "Template",ExpressionUUID->"d40b2b50-0475-4cef-8172-d98d7f5b60df",
+ CellID->1159886972],
+Cell[55039, 1408, 138, 2, 70, "Template",ExpressionUUID->"9bc7c260-74e1-47af-b85b-4f1da274ee4a",
+ CellID->1511274585],
+Cell[55180, 1412, 136, 2, 70, "Template",ExpressionUUID->"4d8f47d6-c111-4478-a23e-31f9de1a7f50",
+ CellID->1702857026],
+Cell[55319, 1416, 137, 2, 70, "Template",ExpressionUUID->"99dea380-17ed-45c7-906d-e246fe5721c3",
+ CellID->403472413]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
