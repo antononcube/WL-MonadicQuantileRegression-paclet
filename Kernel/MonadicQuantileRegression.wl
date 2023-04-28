@@ -1,5 +1,3 @@
-
-
 BeginPackage["AntonAntonov`MonadicQuantileRegression`"];
 
 
@@ -83,9 +81,9 @@ QRMonFindLocalExtrema::usage = "Finds local extrema. (Same as QRMonLocalExtrema.
 
 QRMonChowTestStatistic::usage = "Computes the Chow test statistic for identifying structural breaks in time series.";
 
-PacletInstall["AntonAntonov/MonadMakers"];
-PacletInstall["AntonAntonov/QuantileRegression"];
-PacletInstall["AntonAntonov/OutlierIdentifiers"];
+PacletInstall["AntonAntonov/MonadMakers", AllowVersionUpdate -> False];
+PacletInstall["AntonAntonov/QuantileRegression", AllowVersionUpdate -> False];
+PacletInstall["AntonAntonov/OutlierIdentifiers", AllowVersionUpdate -> False];
 
 Begin["`Private`"];
 
