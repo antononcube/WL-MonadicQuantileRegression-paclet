@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Anton Antonov",
     "License" -> "Artistic-2.0",
     "PublisherID" -> "AntonAntonov",
-    "Version" -> "1.0.1",
+    "Version" -> "1.0.2",
     "WolframVersion" -> "12.1+",
     "Extensions" -> {
       {
@@ -47,6 +47,9 @@ PacletObject[
           "AntonAntonov`MonadicQuantileRegression`QRMonErrors",
           "AntonAntonov`MonadicQuantileRegression`QRMonEvaluate",
           "AntonAntonov`MonadicQuantileRegression`QRMonFail",
+          "AntonAntonov`MonadicQuantileRegression`QRMonFindAnomaliesByResiduals",
+          "AntonAntonov`MonadicQuantileRegression`QRMonFindChowTestLocalMaxima",
+          "AntonAntonov`MonadicQuantileRegression`QRMonFindStructuralBreaks",
           "AntonAntonov`MonadicQuantileRegression`QRMonFindLocalExtrema",
           "AntonAntonov`MonadicQuantileRegression`QRMonFit",
           "AntonAntonov`MonadicQuantileRegression`QRMonFold",
@@ -70,6 +73,7 @@ PacletObject[
           "AntonAntonov`MonadicQuantileRegression`QRMonOutliersPlot",
           "AntonAntonov`MonadicQuantileRegression`QRMonPickPathPoints",
           "AntonAntonov`MonadicQuantileRegression`QRMonPlot",
+          "AntonAntonov`MonadicQuantileRegression`QRMonPlotStructuralBreakSplits",
           "AntonAntonov`MonadicQuantileRegression`QRMonPutContext",
           "AntonAntonov`MonadicQuantileRegression`QRMonPutValue",
           "AntonAntonov`MonadicQuantileRegression`QRMonQuantileRegression",

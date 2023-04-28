@@ -81,6 +81,21 @@ QRMonFindLocalExtrema::usage = "Finds local extrema. (Same as QRMonLocalExtrema.
 
 QRMonChowTestStatistic::usage = "Computes the Chow test statistic for identifying structural breaks in time series.";
 
+QRMonFindAnomaliesByResiduals::usage = "QRMonFindAnomaliesByResiduals[ opts:OptionsPattern[] ] \
+finds anomalies by finding outliers in fit errors.";
+
+QRMonFindChowTestLocalMaxima::usage = "QRMonFindChowTestLocalMaxima[points : ( { _?NumberQ.. } | Automatic ), fitFuncs_, opts___] \
+finds structural breaks in the data using the Chow Test. \
+It takes as options the options of QRMonQuantileRegression, QRMonFindLocalExtrema, and QRMonPlot.";
+
+QRMonFindStructuralBreaks::usage = "QRMonFindStructuralBreaks[points : ( { _?NumberQ.. } | Automatic ), fitFuncs_, opts___] \
+finds structural breaks in the data using the Chow Test. \
+It takes as options the options of QRMonQuantileRegression, QRMonFindLocalExtrema, and QRMonPlot. \
+A synonym of QRMonFindChowTestLocalMaxima.";
+
+QRMonPlotStructuralBreakSplits::usage = "QRMonPlotStructuralBreakSplits[ points, fitFuncs, opts___] \
+makes a list of plots of structural break splits.";
+
 PacletInstall["AntonAntonov/MonadMakers", AllowVersionUpdate -> False];
 PacletInstall["AntonAntonov/QuantileRegression", AllowVersionUpdate -> False];
 PacletInstall["AntonAntonov/OutlierIdentifiers", AllowVersionUpdate -> False];
@@ -88,6 +103,8 @@ PacletInstall["AntonAntonov/OutlierIdentifiers", AllowVersionUpdate -> False];
 Begin["`Private`"];
 
 Needs["AntonAntonov`MonadicQuantileRegression`QRMon`"];
+Needs["AntonAntonov`MonadicQuantileRegression`AnomaliesFinder`"];
+Needs["AntonAntonov`MonadicQuantileRegression`StructuralBreaksFinder`"];
 
 End[]; (* `Private` *)
 
