@@ -1851,6 +1851,31 @@ QRMonChowTestStatistic[args___][__] :=
       $QRMonFailure;
     ];
 
+(*=========================================================*)
+(* Summary Box                                             *)
+(*=========================================================*)
+
+QRMon /: MakeBoxes[obj_QRMon, form : StandardForm] :=
+    Block[{ctx = QRMonBind[obj, QRMonTakeContext]},
+      BoxForm`ArrangeSummaryBox[
+        QRMon, obj,
+        None, (*the next argument is the always visible properties*)
+        If[KeyExistsQ[ctx, "data"],
+          {
+            BoxForm`SummaryItem@{"Data dimensions: ", Dimensions[QRMonBind[obj, QRMonTakeData]]}
+          },
+          (*ELSE*)
+          {BoxForm`SummaryItem@{"No data"}}
+        ],
+        {
+          If[KeyExistsQ[ctx, "regressionFunctions"],
+            BoxForm`SummaryItem@{"Number of regression quantiles: ", Length[ctx["regressionFunctions"]]},
+            Nothing
+          ],
+          BoxForm`SummaryItem@{"Value: ", Short @ QRMonBind[obj, QRMonTakeValue]}
+        },
+        form]
+    ];
 
 End[]; (* `Private` *)
 
