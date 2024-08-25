@@ -867,9 +867,9 @@ QRMonConditionalCDF[$QRMonFailure] := $QRMonFailure;
 
 QRMonConditionalCDF[__][$QRMonFailure] := $QRMonFailure;
 
-QRMonConditionalCDF[t0_?NumberQ][xs_, context_] := QRMonConditionalCDF[{t0}][xs, context];
+QRMonConditionalCDF[t0_?NumericQ][xs_, context_] := QRMonConditionalCDF[{t0}][xs, context];
 
-QRMonConditionalCDF[ts : {_?NumberQ..}][xs_, context_] :=
+QRMonConditionalCDF[ts : {_?NumericQ..}][xs_, context_] :=
     Block[{},
       Which[
         KeyExistsQ[context, "regressionFunctions"],
@@ -881,7 +881,7 @@ QRMonConditionalCDF[ts : {_?NumberQ..}][xs_, context_] :=
       ]
     ];
 
-QRMonConditionalCDF[___][___] :=
+QRMonConditionalCDF[args___][___] :=
     Block[{},
       Echo["The first argument is expected to be a number or a list of numbers.", "QRMonConditionalCDF:"];
       $QRMonFailure
@@ -907,7 +907,7 @@ QRMonConditionalCDFPlot[xs_, context_Association] := QRMonConditionalCDFPlot[ Op
 QRMonConditionalCDFPlot[ point_?NumericQ, opts : OptionsPattern[]][xs_, context_] :=
     QRMonConditionalCDFPlot[ {point}, opts][xs, context];
 
-QRMonConditionalCDFPlot[ points_?VectorQ, opts : OptionsPattern[]][xs_, context_] :=
+QRMonConditionalCDFPlot[ points : {_?NumericQ..}, opts : OptionsPattern[]][xs_, context_] :=
     Fold[ QRMonBind, QRMonUnit[xs, context], {QRMonConditionalCDF[points], QRMonConditionalCDFPlot[opts]}];
 
 QRMonConditionalCDFPlot[ opts : OptionsPattern[] ][xs_, context_] :=
