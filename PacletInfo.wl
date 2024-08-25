@@ -9,6 +9,7 @@ PacletObject[
     "PublisherID" -> "AntonAntonov",
     "Version" -> "1.0.4",
     "WolframVersion" -> "12.1+",
+    "PrimaryContext" -> "AntonAntonov`MonadicQuantileRegression`",
     "Extensions" -> {
       {
         "Kernel",
