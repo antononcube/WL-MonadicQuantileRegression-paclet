@@ -1566,7 +1566,7 @@ QRMonSimulate[nTimePoints_Integer, opts : OptionsPattern[]][xs_, context_] :=
     ];
 
 QRMonSimulate[timePoints : {_?NumericQ..}, opts : OptionsPattern[]][xs_, context_] :=
-    Block[{qValues, qs, tValues, enoughQuantiles },
+    Block[{qValues, qs, tValues},
 
       If[ ! ( KeyExistsQ[context, "regressionFunctions"] && Length[KeyDrop[context["regressionFunctions"], "mean"]] > 1),
         Echo["Compute two or more regression quantiles first.", "QRMonSimulate:"];
