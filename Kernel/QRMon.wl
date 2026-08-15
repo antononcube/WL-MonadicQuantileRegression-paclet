@@ -470,6 +470,28 @@ QRMonRegression = QRMonQuantileRegression;
 (* Quantile regression fit                                    *)
 (**************************************************************)
 
+Clear[ToPureFunctions];
+
+ToPureFunctions[funcs_] := ToPureFunctions[funcs, Automatic];
+
+ToPureFunctions[funcs_, Automatic] :=
+    Block[{vars},
+      vars =
+          With[{globalQ = Context@# === "Global`" &},
+            DeleteDuplicates@Cases[funcs, _Symbol?globalQ, Infinity]
+          ];
+      ToPureFunctions[funcs, vars]
+    ];
+
+ToPureFunctions[funcs_, var_Symbol] := ToPureFunctions[funcs, {var}];
+
+ToPureFunctions[funcs_, vars : {_Symbol..}] :=
+    Map[With[{f = #}, f &] &, ReplaceAll[funcs, Thread[vars -> Map[Slot, Range[Length[vars]]]]]];
+
+(**************************************************************)
+(* Quantile regression fit                                    *)
+(**************************************************************)
+
 Clear[QRMonQuantileRegressionFit];
 
 SyntaxInformation[QRMonQuantileRegressionFit] = { "ArgumentsPattern" -> { _., _., _., OptionsPattern[] } };
@@ -507,7 +529,7 @@ QRMonQuantileRegressionFit[opts : OptionsPattern[]][xs_, context_Association] :=
 
       If[ ! ( TrueQ[var === Automatic] || TrueQ[ Head[var] === Symbol ] ) ,
         Echo[
-          "The value of the option \"Variabls\" is expected to be a symbol or Automatic. ",
+          "The value of the option \"Variables\" is expected to be a symbol, a list of symbols, or Automatic.",
           "QRMonQuantileRegressionFit:"];
         Return[$QRMonFailure];
       ];
@@ -561,22 +583,22 @@ QRMonQuantileRegressionFit[funcs_List, Automatic, ps : {_?NumberQ..}, opts : Opt
       If[ Length[var] == 0,
         $QRMonFailure,
         (*ELSE*)
-        QRMonQuantileRegressionFit[funcs, First[var], ps, opts][xs, context]
+        QRMonQuantileRegressionFit[funcs, var, ps, opts][xs, context]
       ]
     ];
 
-QRMonQuantileRegressionFit[funcs_List, var_Symbol, opts : OptionsPattern[]][xs_, context_] :=
-    QRMonQuantileRegressionFit[funcs, var, {0.25, 0.5, 0.75}, opts][xs, context];
+QRMonQuantileRegressionFit[funcs_List, vars: (_Symbol | {_Symbol ..}), opts : OptionsPattern[]][xs_, context_] :=
+    QRMonQuantileRegressionFit[funcs, vars, {0.25, 0.5, 0.75}, opts][xs, context];
 
-QRMonQuantileRegressionFit[funcs_List, var_Symbol, ps : {_?NumberQ..}, opts : OptionsPattern[]][xs_, context_] :=
-    Block[{data, qFuncs},
+QRMonQuantileRegressionFit[funcs_List, varsArg: (_Symbol | {_Symbol ..}), ps : {_?NumberQ..}, opts : OptionsPattern[]][xs_, context_] :=
+    Block[{vars = Flatten[{varsArg}], data, qFuncs},
 
       data = QRMonBind[ QRMonGetData[xs, context], QRMonTakeValue ];
 
-      qFuncs = QuantileRegressionFit[data, funcs, var, ps, FilterRules[ {opts}, Options[QuantileRegressionFit] ] ];
+      qFuncs = QuantileRegressionFit[data, funcs, vars, ps, FilterRules[ {opts}, Options[QuantileRegressionFit] ] ];
 
       If[ ListQ[qFuncs] && Length[qFuncs] == Length[ps],
-        qFuncs = Map[Function[{expr}, Function[Evaluate[expr /. var -> Slot[1]]]], qFuncs];
+        qFuncs = Map[Function[{expr}, Function[Evaluate[expr /. Table[vars[[i]] -> Slot[i], {i, Length@vars}]]]], qFuncs];
         qFuncs = AssociationThread[ps, qFuncs];
         QRMonUnit[qFuncs, Join[context, <|"data" -> data, "regressionFunctions" -> Join[ Lookup[context, "regressionFunctions", <||>], qFuncs] |> ] ],
         (* ELSE *)
