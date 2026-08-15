@@ -226,7 +226,7 @@ QRMonEchoDataSummary[][xs_, context_] :=
       QRMonUnit[xs, context],
       {
         QRMonGetData,
-        QRMonEchoFunctionValue["Data summary:", ResourceFunction["RecordsSummary"][#, Append[If[Length[#[[1]]] == 2, "Regressor", Table["Regressor"<>ToString[i], {i, Length[#[[1]]]-1}]], "Value"]]& ]
+        QRMonEchoFunctionValue["Data summary:", ResourceFunction["RecordsSummary"][#, Append[If[Length[#[[1]]] == 2, {"Regressor"}, Table["Regressor"<>ToString[i], {i, Length[#[[1]]]-1}]], "Value"]]& ]
       }
     ];
 
@@ -1237,7 +1237,7 @@ QRMonSeparate[][xs_, context_Association] := QRMonSeparate[Automatic][xs, contex
 QRMonSeparate[opts : OptionsPattern[]][xs_, context_Association] := QRMonSeparate[Automatic, opts][xs, context];
 
 QRMonSeparate[dataArg_, opts : OptionsPattern[] ][xs_, context_] :=
-    Block[{data, indGroups, pointGroups, cumulativeQ, fractionsQ},
+    Block[{data, dim, fNormalize, indGroups, pointGroups, cumulativeQ, fractionsQ},
 
       cumulativeQ = TrueQ[ OptionValue[ QRMonSeparate, "Cumulative" ] ];
       fractionsQ = TrueQ[ OptionValue[ QRMonSeparate, "Fractions" ] ];
@@ -1257,13 +1257,17 @@ QRMonSeparate[dataArg_, opts : OptionsPattern[] ][xs_, context_] :=
         Return[$QRMonFailure]
       ];
 
+      (* Data dimensions *)
+      dim = Last @ Dimensions @ data;
+      fNormalize = If[ListQ @ #, First @ #, #, #]&;
+
       (* This has to be optimized. Currently is O[ Length[data] * Length[regressionFunctions] ] . Can be at least halved. *)
       If[ cumulativeQ,
 
         pointGroups =
             Association @
                 KeyValueMap[
-                  Function[{k, f}, k -> Select[ data, #[[2]] <= f[#[[1]]] & ] ],
+                  Function[{k, f}, k -> Select[ data, #[[-1]] <= If[ dim == 2, f[#[[1]]], fNormalize[f @@ Most[#]] ]& ] ],
                   context["regressionFunctions"]
                 ],
 
@@ -1272,7 +1276,7 @@ QRMonSeparate[dataArg_, opts : OptionsPattern[] ][xs_, context_] :=
         indGroups =
             Association @
                 KeyValueMap[
-                  Function[{k, f}, k -> Select[ Range[Length[data]], data[[#, 2]] <= f[data[[#, 1]]] & ] ],
+                  Function[{k, f}, k -> Select[ Range[Length[data]], data[[#, -1]] <= If[ dim == 2, f[data[[#, 1]]], fNormalize[f @@ data[[#, 1;;(dim-1)]]] ]& ] ],
                   KeyDrop[ context["regressionFunctions"], "mean" ]
                 ];
 
