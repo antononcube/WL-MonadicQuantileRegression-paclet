@@ -163,7 +163,7 @@ QRMonGetData[xs_, context_] :=
 
       Which[
 
-        KeyExistsQ[context, "data"] && MatrixQ[context["data"], NumericQ] && Dimensions[context["data"]][[2]] == 2,
+        KeyExistsQ[context, "data"] && MatrixQ[context["data"], NumericQ] && Dimensions[context["data"]][[2]] >= 2,
         QRMonUnit[ context["data"], context],
 
         KeyExistsQ[context, "data"] && VectorQ[context["data"], NumericQ],
@@ -181,7 +181,7 @@ QRMonGetData[xs_, context_] :=
         data = context["data"]["Path"] /. Quantity[x_, u_] :> x;
         QRMonUnit[ SetPrecision[data, Precision[data]], context],
 
-        MatrixQ[xs, NumericQ] && Dimensions[xs][[2]] == 2,
+        MatrixQ[xs, NumericQ] && Dimensions[xs][[2]] >= 2,
         QRMonUnit[xs, context],
 
         VectorQ[xs, NumericQ],
@@ -221,7 +221,14 @@ QRMonEchoDataSummary[$QRMonFailure] := $QRMonFailure;
 QRMonEchoDataSummary[xs_, context_] := QRMonEchoDataSummary[][xs, context];
 
 QRMonEchoDataSummary[][xs_, context_] :=
-    Fold[ QRMonBind, QRMonUnit[xs, context], { QRMonGetData, QRMonEchoFunctionValue["Data summary:", ResourceFunction["RecordsSummary"][#, {"Regressor", "Value"}]& ] } ]
+    Fold[
+      QRMonBind,
+      QRMonUnit[xs, context],
+      {
+        QRMonGetData,
+        QRMonEchoFunctionValue["Data summary:", ResourceFunction["RecordsSummary"][#, Append[If[Length[#[[1]]] == 2, "Regressor", Table["Regressor"<>ToString[i], {i, Length[#[[1]]]-1}]], "Value"]]& ]
+      }
+    ];
 
 QRMonEchoDataSummary[___][__] := $QRMonFailure;
 
