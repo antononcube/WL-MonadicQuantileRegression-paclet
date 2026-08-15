@@ -103,7 +103,7 @@ QRMonFindAnomaliesByResiduals[ opts : OptionsPattern[] ][xs_, context_Associatio
 
         If[ TrueQ[outliers === $QRMonFailure], Return[$QRMonFailure] ];
 
-        outPos = OutlierPosition[ Abs[errs[[1, All, 2]]], TopOutliers @* outlierFunc ];
+        outPos = OutlierPosition[ Abs[errs[[1, All, -1]]], TopOutliers @* outlierFunc ];
 
         outliers = QRMonBind[ QRMonUnit[xs, context], QRMonTakeData];
         outliers = outliers[[outPos]],
