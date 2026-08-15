@@ -1079,7 +1079,7 @@ QRMonOutliers[__][$QRMonFailure] := $QRMonFailure;
 QRMonOutliers[xs_, context_Association] := QRMonOutliers[][xs, context];
 
 QRMonOutliers[][xs_, context_] :=
-    Block[{fn, tq, bq, tfunc, bfunc, outliers, data},
+    Block[{fn, tq, bq, tfunc, bfunc, outliers, data, dim, fNormalize},
 
       If[ !( KeyExistsQ[context, "regressionFunctions"] && Length[KeyDrop[context["regressionFunctions"], "mean"]] > 0 ),
         Echo["Calculate (top and bottom) regression quantiles first.", "QRMonOutliers:"];
@@ -1093,6 +1093,10 @@ QRMonOutliers[][xs_, context_] :=
         Return[$QRMonFailure]
       ];
 
+      (* Data dimensions *)
+      dim = Last @ Dimensions @ data;
+      fNormalize = If[ListQ @ #, First @ #, #, #]&;
+
       fn = KeySort[KeyDrop[context["regressionFunctions"], "mean"]];
 
       {bq, tq} = Keys[fn][[{1, -1}]];
@@ -1103,15 +1107,15 @@ QRMonOutliers[][xs_, context_] :=
           Which[
             Length[fn] == 1 && bq < 0.5,
             (* One regression quantile found for bottom outliers. *)
-            <| "bottomOutliers" -> Select[data, bfunc[#[[1]]] >= #[[2]]&] |>,
+            <| "bottomOutliers" -> Select[data, fNormalize[ bfunc @@ #[[1;;(dim-1)]] ] >= #[[-1]]&] |>,
 
             Length[fn] == 1 && tq > 0.5,
             (* One regression quantile found for top outliers. *)
-            <| "topOutliers" -> Select[data, tfunc[#[[1]]] <= #[[2]]&] |>,
+            <| "topOutliers" -> Select[data, fNormalize[ tfunc @@ #[[1;;(dim-1)]] ] <= #[[-1]]&] |>,
 
             True,
-            <| "bottomOutliers" -> Select[data, bfunc[#[[1]]] >= #[[2]]&],
-              "topOutliers" -> Select[data, tfunc[#[[1]]] <= #[[2]]&] |>
+            <| "bottomOutliers" -> Select[data, fNormalize[ bfunc @@ #[[1;;(dim-1)]] ] >= #[[-1]]&],
+              "topOutliers" -> Select[data, fNormalize[ tfunc @@ #[[1;;(dim-1)]] ] <= #[[-1]]&] |>
           ];
 
       QRMonUnit[
