@@ -814,15 +814,26 @@ QRMonErrors[xs_, context_Association] := QRMonErrors[][xs, context];
 QRMonErrors[][xs_, context_] := QRMonErrors["RelativeErrors" -> True][xs, context];
 
 QRMonErrors[opts : OptionsPattern[]][xs_, context_] :=
-    Block[{res, relativeErrorsQ},
+    Block[{res, relativeErrorsQ, data, dim, fNormalize},
 
       relativeErrorsQ = TrueQ[OptionValue[QRMonErrors, "RelativeErrors"]];
+
+      data = QRMonTakeData[xs, context];
+
+      If[ TrueQ[data === $QRMonFailure],
+        Echo["Cannot find data.", "QRMonErrors:"];
+        Return[$QRMonFailure]
+      ];
+
+      (* Data dimensions *)
+      dim = Last @ Dimensions @ data;
+      fNormalize = If[ListQ @ #, First @ #, #, #]&;
 
       res =
           Association @
               KeyValueMap[
                 Function[{k, f},
-                  k -> Map[ Function[{p}, {p[[1]], (p[[2]] - f[p[[1]]]) / If[ !relativeErrorsQ || p[[2]] == 0, 1, p[[2]] ]}], context["data"] ]
+                  k -> Map[ Function[{p}, Append[p[[1;;(dim-1)]], (p[[-1]] - fNormalize[f @@ p[[1;;(dim-1)]]]) / If[ !relativeErrorsQ || p[[-1]] == 0, 1, p[[-1]] ]]], data ]
                 ],
                 context["regressionFunctions"]
               ];
