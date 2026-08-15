@@ -701,13 +701,21 @@ QRMonPlot[QRMonPlot] := $QRMonFailure;
 QRMonPlot[xs_, context_Association] := QRMonPlot[][xs, context];
 
 QRMonPlot[opts : OptionsPattern[]][xs_, context_] :=
-    Block[{data, res, listPlotFunc = ListPlot, listPlotOpts, plotOpts},
+    Block[{data, res, dim, listPlotFunc = ListPlot, listPlotOpts, plotOpts},
 
       data = QRMonTakeData[xs, context];
 
       If[data === $QRMonFailure, Return[$QRMonFailure]];
 
-      If[ TrueQ[OptionValue[QRMonPlot, "DateListPlot"]], listPlotFunc = DateListPlot ];
+      (* Data dimension *)
+      dim = Last @ Dimensions @ data;
+
+      If[dim > 2,
+        Echo["Plotting is for two dimensional data only.", "QRMonPlot:"];
+        Return[$QRMonFailure]
+      ];
+
+      If[ TrueQ[OptionValue[QRMonPlot, "DateListPlot"]], listPlotFunc = DateListPlot];
 
       listPlotOpts = Normal @ KeyTake[ {opts}, First /@ Options[listPlotFunc]];
       plotOpts = Normal @ KeyTake[ {opts}, First /@ Options[Plot]];
