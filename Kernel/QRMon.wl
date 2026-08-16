@@ -798,6 +798,13 @@ QRMonDateListPlot[__][__] := $QRMonFailure;
 
 
 (**************************************************************)
+(* Normalize basis functions application                      *)
+(**************************************************************)
+(*Applying a NURBS basis function would produce list of one element. *)
+
+fNormalize = If[ListQ @ #, First @ #, #, #]&;
+
+(**************************************************************)
 (* Errors                                                     *)
 (**************************************************************)
 
@@ -814,7 +821,7 @@ QRMonErrors[xs_, context_Association] := QRMonErrors[][xs, context];
 QRMonErrors[][xs_, context_] := QRMonErrors["RelativeErrors" -> True][xs, context];
 
 QRMonErrors[opts : OptionsPattern[]][xs_, context_] :=
-    Block[{res, relativeErrorsQ, data, dim, fNormalize},
+    Block[{res, relativeErrorsQ, data, dim},
 
       relativeErrorsQ = TrueQ[OptionValue[QRMonErrors, "RelativeErrors"]];
 
@@ -827,7 +834,6 @@ QRMonErrors[opts : OptionsPattern[]][xs_, context_] :=
 
       (* Data dimensions *)
       dim = Last @ Dimensions @ data;
-      fNormalize = If[ListQ @ #, First @ #, #, #]&;
 
       res =
           Association @
@@ -1090,7 +1096,7 @@ QRMonOutliers[__][$QRMonFailure] := $QRMonFailure;
 QRMonOutliers[xs_, context_Association] := QRMonOutliers[][xs, context];
 
 QRMonOutliers[][xs_, context_] :=
-    Block[{fn, tq, bq, tfunc, bfunc, outliers, data, dim, fNormalize},
+    Block[{fn, tq, bq, tfunc, bfunc, outliers, data, dim},
 
       If[ !( KeyExistsQ[context, "regressionFunctions"] && Length[KeyDrop[context["regressionFunctions"], "mean"]] > 0 ),
         Echo["Calculate (top and bottom) regression quantiles first.", "QRMonOutliers:"];
@@ -1106,7 +1112,6 @@ QRMonOutliers[][xs_, context_] :=
 
       (* Data dimensions *)
       dim = Last @ Dimensions @ data;
-      fNormalize = If[ListQ @ #, First @ #, #, #]&;
 
       fn = KeySort[KeyDrop[context["regressionFunctions"], "mean"]];
 
@@ -1230,7 +1235,7 @@ QRMonPickPathPoints[$QRMonFailure] := $QRMonFailure;
 QRMonPickPathPoints[__][$QRMonFailure] := $QRMonFailure;
 
 QRMonPickPathPoints[threshold_?NumberQ, opts : OptionsPattern[] ][xs_, context_] :=
-    Block[{data, qFuncs, res, criteriaFunc = LessEqual},
+    Block[{data, qFuncs, res, criteriaFunc = LessEqual, dim},
 
       data = QRMonTakeData[xs, context];
 
@@ -1245,10 +1250,13 @@ QRMonPickPathPoints[threshold_?NumberQ, opts : OptionsPattern[] ][xs_, context_]
         criteriaFunc = Greater;
       ];
 
+      (* Data dimensions *)
+      dim = Last @ Dimensions @ data;
+
       If[ TrueQ[OptionValue[QRMonPickPathPoints, "RelativeErrors"]],
-        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[ (qf[#[[1]]] - #[[2]]) / #[[2]] ], threshold] &]], qFuncs ],
+        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[ (fNormalize[qf @@ #[[1;;(dim-1)]]] - #[[-1]]) / #[[-1]] ], threshold] &]], qFuncs ],
         (*ELSE*)
-        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[qf[#[[1]]] - #[[2]]], threshold] &]], qFuncs ]
+        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[fNormalize[qf @@ #[[1;;(dim-1)]]]  - #[[-1]]], threshold] &]], qFuncs ]
       ];
 
       QRMonUnit[res, context]
@@ -1282,7 +1290,7 @@ QRMonSeparate[][xs_, context_Association] := QRMonSeparate[Automatic][xs, contex
 QRMonSeparate[opts : OptionsPattern[]][xs_, context_Association] := QRMonSeparate[Automatic, opts][xs, context];
 
 QRMonSeparate[dataArg_, opts : OptionsPattern[] ][xs_, context_] :=
-    Block[{data, dim, fNormalize, indGroups, pointGroups, cumulativeQ, fractionsQ},
+    Block[{data, dim, indGroups, pointGroups, cumulativeQ, fractionsQ},
 
       cumulativeQ = TrueQ[ OptionValue[ QRMonSeparate, "Cumulative" ] ];
       fractionsQ = TrueQ[ OptionValue[ QRMonSeparate, "Fractions" ] ];
@@ -1304,7 +1312,6 @@ QRMonSeparate[dataArg_, opts : OptionsPattern[] ][xs_, context_] :=
 
       (* Data dimensions *)
       dim = Last @ Dimensions @ data;
-      fNormalize = If[ListQ @ #, First @ #, #, #]&;
 
       (* This has to be optimized. Currently is O[ Length[data] * Length[regressionFunctions] ] . Can be at least halved. *)
       If[ cumulativeQ,
