@@ -1254,7 +1254,7 @@ QRMonPickPathPoints[threshold_?NumberQ, opts : OptionsPattern[] ][xs_, context_]
       dim = Last @ Dimensions @ data;
 
       If[ TrueQ[OptionValue[QRMonPickPathPoints, "RelativeErrors"]],
-        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[ (fNormalize[qf @@ #[[1;;(dim-1)]]] - #[[-1]]) / #[[-1]] ], threshold] &]], qFuncs ],
+        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[ (fNormalize[qf @@ #[[1;;(dim-1)]]] - #[[-1]]) / If[ #[[-1]] == 0, 1, #[[-1]] ], threshold] &]], qFuncs ],
         (*ELSE*)
         res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[fNormalize[qf @@ #[[1;;(dim-1)]]]  - #[[-1]]], threshold] &]], qFuncs ]
       ];
