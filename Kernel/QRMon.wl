@@ -742,7 +742,7 @@ QRMonEvaluate[arr_List][x_, context_] :=
         dim > 2 && VectorQ[arr, AtomQ],
         QRMonUnit[ Map[fNormalize[# @@ arr]&, context["regressionFunctions"] ], context ],
 
-        dim > 2 && ArrayQ[arr, d_ /; d > 1, NumericQ] && Last[Dimensions @ arr] == dim,
+        dim > 2 && ArrayQ[arr, d_ /; d > 1, NumericQ] && Last[Dimensions @ arr] == dim - 1,
         QRMonUnit[ Map[Function[{qf}, Map[fNormalize[qf @@ #]&, arr, {-2}]], context["regressionFunctions"] ], context ],
 
         True,
@@ -1721,17 +1721,25 @@ QRMonSimulate[___][$QRMonFailure] := $QRMonFailure;
 QRMonSimulate[xs_, context_Association ] := $QRMonFailure;
 
 QRMonSimulate[nTimePoints_Integer, opts : OptionsPattern[]][xs_, context_] :=
-    Block[{r, tPoints},
+    Block[{r, dim, tPoints},
 
+      (* Data dimension *)
       r = QRMonBind[ QRMonUnit[xs, context], QRMonTakeData ];
-      r = MinMax @ r[[All, 1]];
+      dim = Last @ Dimensions @ r;
 
-      tPoints = Range[ r[[1]], r[[2]], (r[[2]] - r[[1]]) / (nTimePoints - 1) ];
+      If[ dim == 2,
+        r = MinMax @ r[[All, 1]];
+        tPoints = Range[ r[[1]], r[[2]], (r[[2]] - r[[1]]) / (nTimePoints - 1) ],
+
+        (*ELSE*)
+        r = MinMax /@ Transpose @ r[[All, 1;;(dim-1)]];
+        tPoints = Flatten[Outer[List, Sequence @@ Map[ Range[ #[[1]], #[[2]], (#[[2]] - #[[1]]) / (Round[nTimePoints ^ (1/(dim-1))] - 1) ]&, r]], dim-2];
+      ];
 
       QRMonSimulate[tPoints, opts][xs, context]
     ];
 
-QRMonSimulate[timePoints : {_?NumericQ..}, opts : OptionsPattern[]][xs_, context_] :=
+QRMonSimulate[timePoints : ({_?NumericQ..} | {{_?NumericQ..}..}), opts : OptionsPattern[]][xs_, context_] :=
     Block[{qValues, qs, tValues},
 
       If[ ! ( KeyExistsQ[context, "regressionFunctions"] && Length[KeyDrop[context["regressionFunctions"], "mean"]] > 1),
@@ -1753,12 +1761,12 @@ QRMonSimulate[timePoints : {_?NumericQ..}, opts : OptionsPattern[]][xs_, context
       tValues =
           Flatten@Map[RandomReal[RandomChoice[#], 1] &, Differences[qs] -> Partition[#, 2, 1] & /@ qValues];
 
-      QRMonUnit[ Transpose[{timePoints, tValues}], context]
+      QRMonUnit[ Flatten /@ Transpose[{timePoints, tValues}], context]
     ];
 
 QRMonSimulate[___][__] :=
     Block[{},
-      Echo["The first argument is expected to be an integer or a list of numbers.", "QRMonSimulate:"];
+      Echo["The first argument is expected to be an integer, a list of numbers, or a matrix of numbers.", "QRMonSimulate:"];
       $QRMonFailure
     ];
 
