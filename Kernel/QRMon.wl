@@ -674,6 +674,13 @@ QRMonNetRegression[___][__] :=
       $QRMonFailure
     ];
 
+(**************************************************************)
+(* Normalize basis functions application                      *)
+(**************************************************************)
+(*Applying a NURBS basis function would produce list of one element. *)
+
+fNormalize = If[ListQ @ #, First @ #, #, #]&;
+
 
 (**************************************************************)
 (* Evaluate                                                   *)
@@ -692,17 +699,56 @@ QRMonEvaluate[xs_, context_Association] := $QRMonFailure;
 QRMonEvaluate[___][$QRMonFailure] := $QRMonFailure;
 
 QRMonEvaluate[n_?AtomQ][x_, context_] :=
-    If[KeyExistsQ[context, "regressionFunctions"],
-      QRMonUnit[ Map[#[n]&, context["regressionFunctions"] ], context ],
-      (*ELSE*)
-      $QRMonFailure
+    Block[{dim = None},
+      (*
+        The Block and dimension checking makes the evaluation slower than the original version.
+        But ideally, this signature is not used with Map, Table, etc.
+        Also, having data in the monad is not necessary -- regression quantiles can be assigned to an empty QRMon object.
+        So, probably, it is better to have a MonadDimension function or similar.
+      *)
+      If[KeyExistsQ[context, "data"],
+        dim = Last @ Dimensions @ context["data"]
+      ];
+
+      Which[
+        dim == 2 && KeyExistsQ[context, "regressionFunctions"],
+        QRMonUnit[ Map[#[n]&, context["regressionFunctions"] ], context ],
+
+        dim > 2 && KeyExistsQ[context, "regressionFunctions"],
+        Echo["The argument is atomic but the data is in " <> ToString[dim] <> "-dimensional space.", "QRMonEvaluate:"],
+
+        True,
+        Echo["Cannot find regression quantiles.", "QRMonEvaluate:"];
+        $QRMonFailure
+      ]
     ];
 
 QRMonEvaluate[arr_List][x_, context_] :=
-    If[KeyExistsQ[context, "regressionFunctions"],
-      QRMonUnit[ Map[Function[{qf}, Map[qf, arr, {-1}]], context["regressionFunctions"] ], context ],
-      (*ELSE*)
-      $QRMonFailure
+    Block[{dim = None},
+
+      If[!KeyExistsQ[context, "regressionFunctions"],
+        Echo["Cannot find regression quantiles.", "QRMonEvaluate:"];
+        Return[$QRMonFailure]
+      ];
+
+      If[KeyExistsQ[context, "data"],
+        dim = Last @ Dimensions @ context["data"]
+      ];
+
+      Which[
+        dim == 2 && VectorQ[arr, AtomQ],
+        QRMonUnit[ Map[Function[{qf}, Map[qf, arr, {-1}]], context["regressionFunctions"] ], context ],
+
+        dim > 2 && VectorQ[arr, AtomQ],
+        QRMonUnit[ Map[fNormalize[# @@ arr]&, context["regressionFunctions"] ], context ],
+
+        dim > 2 && ArrayQ[arr, d_ /; d > 1, NumericQ] && Last[Dimensions @ arr] == dim,
+        QRMonUnit[ Map[Function[{qf}, Map[fNormalize[qf @@ #]&, arr, {-2}]], context["regressionFunctions"] ], context ],
+
+        True,
+        Echo["Regression quantiles arity and argument dimensions do not match.", "QRMonEvaluate:"];
+        $QRMonFailure
+      ]
     ];
 
 QRMonEvaluate[___][__] := $QRMonFailure;
@@ -732,6 +778,7 @@ QRPlot3D[data_List, funcs_Association, opts___] :=
         BoundaryStyle -> None,
         PlotLegends -> Keys[funcs]]
     ];
+
 
 (**************************************************************)
 (* Plot                                                       *)
@@ -859,13 +906,6 @@ QRMonDateListPlot[opts : OptionsPattern[]][xs_, context_] := QRMonPlot["DateList
 
 QRMonDateListPlot[__][__] := $QRMonFailure;
 
-
-(**************************************************************)
-(* Normalize basis functions application                      *)
-(**************************************************************)
-(*Applying a NURBS basis function would produce list of one element. *)
-
-fNormalize = If[ListQ @ #, First @ #, #, #]&;
 
 (**************************************************************)
 (* Errors                                                     *)
