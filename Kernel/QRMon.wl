@@ -709,6 +709,31 @@ QRMonEvaluate[___][__] := $QRMonFailure;
 
 
 (**************************************************************)
+(* Plot3D                                                       *)
+(**************************************************************)
+
+Clear[QRPlot3D];
+QRPlot3D[data_List, funcs_Association, opts___] :=
+    Show[
+      ListPointPlot3D[data,
+        FilterRules[{opts}, Options[ListPointPlot3D]],
+        BoxRatios -> {1, 1, 1/1.5},
+        PlotStyle -> LightDarkSwitched[GrayLevel[0.4], GrayLevel[0.6]],
+        RegionBoundaryStyle -> None,
+        PlotRange -> All,
+        ImageSize -> Medium],
+      Plot3D[
+        Evaluate@Through[Values[funcs][x, y]], {x, Min[data[[All, 1]]],
+        Max[data[[All, 1]]]}, {y, Min[data[[All, 2]]], Max[data[[All, 2]]]},
+        Evaluate[FilterRules[{opts}, Options[Plot3D]]],
+        PlotRange -> All, PlotStyle -> {Opacity[0.7]},
+        Mesh -> True, PlotTheme -> "LightMesh",
+        PerformanceGoal -> "Speed",
+        BoundaryStyle -> None,
+        PlotLegends -> Keys[funcs]]
+    ];
+
+(**************************************************************)
 (* Plot                                                       *)
 (**************************************************************)
 
@@ -716,7 +741,12 @@ Clear[QRMonPlot];
 
 SyntaxInformation[QRMonPlot] = { "ArgumentsPattern" -> {OptionsPattern[]} };
 
-Options[QRMonPlot] = Join[ {"Echo" -> True, "DateListPlot" -> False}, Options[ListPlot] ];
+Options[QRMonPlot] = Join[
+  {"Echo" -> True, "DateListPlot" -> False},
+  Options[ListPlot],
+  Normal @ KeyDrop[Options[ListPointPlot3D], Keys[Options[ListPlot]]],
+  Normal @ KeyDrop[Options[Plot3D], Join[Keys[Options[ListPlot]], Keys[Options[ListPointPlot3D]]]]
+];
 
 QRMonPlot[QRMonPlot] := $QRMonFailure;
 
@@ -732,12 +762,20 @@ QRMonPlot[opts : OptionsPattern[]][xs_, context_] :=
       (* Data dimension *)
       dim = Last @ Dimensions @ data;
 
-      If[dim > 2,
-        Echo["Plotting is for two dimensional data only.", "QRMonPlot:"];
+      If[dim > 3,
+        Echo["Plotting is for two- and three dimensional data only.", "QRMonPlot:"];
         Return[$QRMonFailure]
       ];
 
-      If[ TrueQ[OptionValue[QRMonPlot, "DateListPlot"]], listPlotFunc = DateListPlot];
+      If[ TrueQ[OptionValue[QRMonPlot, "DateListPlot"]],
+        If[ dim == 2,
+          listPlotFunc = DateListPlot,
+          (*ELSE*)
+          If[ dim > 2,
+            Echo["Date list plots are for two dimensional data only.", "QRMonPlot:"];
+          ];
+        ]
+      ];
 
       listPlotOpts = Normal @ KeyTake[ {opts}, First /@ Options[listPlotFunc]];
       plotOpts = Normal @ KeyTake[ {opts}, First /@ Options[Plot]];
@@ -753,9 +791,15 @@ QRMonPlot[opts : OptionsPattern[]][xs_, context_] :=
 
       res =
           Which[
-            KeyExistsQ[context, "regressionFunctions"],
+            dim == 2 && KeyExistsQ[context, "regressionFunctions"],
             Show[{
-              listPlotFunc[data, listPlotOpts, Joined -> False, PlotRange -> All, ImageSize -> Medium, PlotTheme -> {"Default", "Frame"}],
+              listPlotFunc[data,
+                listPlotOpts,
+                PlotStyle-> {LightDarkSwitched[GrayLevel[0.4], GrayLevel[0.6]]},
+                Joined -> False,
+                PlotRange -> All,
+                ImageSize -> Medium,
+                PlotTheme -> {"Default", "Frame"}],
               Plot[Evaluate[Through[Values[context["regressionFunctions"]][x]]], {x, Min[data[[All, 1]]], Max[data[[All, 1]]]},
                 Evaluate[plotOpts],
                 PerformanceGoal -> "Speed",
@@ -763,8 +807,27 @@ QRMonPlot[opts : OptionsPattern[]][xs_, context_] :=
               ]
             }],
 
+            dim == 2,
+            listPlotFunc[data, listPlotOpts,
+              PlotStyle-> {LightDarkSwitched[GrayLevel[0.4], GrayLevel[0.6]]},
+              Joined -> False,
+              PlotRange -> All,
+              ImageSize -> Medium,
+              PlotTheme -> {"Default", "Frame"}],
+
+            KeyExistsQ[context, "regressionFunctions"],
+            QRPlot3D[data, context["regressionFunctions"], opts],
+
             True,
-            listPlotFunc[data, listPlotOpts, Joined -> False, PlotRange -> All, ImageSize -> Medium, PlotTheme -> {"Default", "Frame"}]
+            ListPointPlot3D[
+              data,
+              FilterRules[{opts}, Options[ListPointPlot3D]],
+              PlotStyle-> {LightDarkSwitched[GrayLevel[0.4], GrayLevel[0.6]]},
+              RegionBoundaryStyle -> None,
+              PlotRange -> All,
+              ImageSize -> Medium,
+              PlotTheme -> {"Default", "Frame"},
+              BoxRatios -> {1, 1, 1/1.5}]
           ];
 
 
@@ -1254,7 +1317,7 @@ QRMonPickPathPoints[threshold_?NumberQ, opts : OptionsPattern[] ][xs_, context_]
       dim = Last @ Dimensions @ data;
 
       If[ TrueQ[OptionValue[QRMonPickPathPoints, "RelativeErrors"]],
-        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[ (fNormalize[qf @@ #[[1;;(dim-1)]]] - #[[-1]]) / If[ #[[-1]] == 0, 1, #[[-1]] ], threshold] &]], qFuncs ],
+        res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[ (fNormalize[qf @@ #[[1;;(dim-1)]]] - #[[-1]]) / If[ #[[-1]] == 0, 1, #[[-1]] ]], threshold] &]], qFuncs ],
         (*ELSE*)
         res = Map[ Function[{qf}, Select[data, criteriaFunc[ Abs[fNormalize[qf @@ #[[1;;(dim-1)]]]  - #[[-1]]], threshold] &]], qFuncs ]
       ];
