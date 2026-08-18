@@ -1820,6 +1820,12 @@ QRMonLocalExtrema[ opts : OptionsPattern[] ][xs_, context_] :=
 
       data = QRMonTakeData[xs, context];
 
+      (* In principle this monadic function should work for multidimensional data. *)
+      If[ Last[Dimensions @ data] > 2,
+        Echo["Local extrema finding is implemented for two dimensional data only.", "QRMonLocalExtrema:"];
+        Return[$QRMonFailure]
+      ];
+
       (* Step 2 *)
       extrema1 = Reduce[fn[[1]]'[x] == 0, x, Reals];
       extrema1 = Cases[{ToRules[extrema1]}, _Rule, Infinity ];
@@ -1868,7 +1874,7 @@ QRMonFindLocalExtrema = QRMonLocalExtrema;
 (**************************************************************)
 
 (*
-   The function QRFindExtrema was originally defined in the package:
+   The function ChowTestStatistic was originally defined in the package:
 
       https://github.com/antononcube/MathematicaForPrediction/blob/master/Misc/ChowTestStatistic.m .
 *)
@@ -1966,6 +1972,11 @@ QRMonChowTestStatistic[splitPoints : (Automatic | {_?NumericQ ..} | _?NumericQ),
     Block[{data, localSplitPoints = splitPoints, localFuncs = funcs, localVar = var, x, ctStats},
 
       data = QRMonBind[QRMonGetData[xs, context], QRMonTakeValue];
+
+      If[ Last[Dimensions @ data] > 2,
+        Echo["Chow test statistic is implemented for two dimensional data only.", "QRMonChowTestStatistic:"];
+        Return[$QRMonFailure]
+      ];
 
       If[ TrueQ[localFuncs === Automatic],
         localFuncs = {1, x};
