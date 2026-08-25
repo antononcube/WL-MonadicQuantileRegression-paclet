@@ -1490,26 +1490,6 @@ QRMonSeparateToFractions[___][__] := $QRMonFailure;
 (* Bands sequential representation                            *)
 (**************************************************************)
 
-Clear[FindIntervalFunc];
-FindIntervalFunc[qBoundaries : {_?NumericQ ...}] :=
-    Block[{XXX, t = Partition[Join[{- Infinity}, qBoundaries, {Infinity}], 2, 1]},
-      Function[
-        Evaluate[
-          Piecewise[
-            MapThread[{#2, #1[[1]] < XXX <= #1[[2]]} &, {t, Range[1, Length[t]]}]
-          ] /. {XXX -> #}
-        ]
-      ]
-    ];
-
-Clear[FindQRRange];
-FindQRRange[{x_, y_}, funcs_List] :=
-    Block[{qfs, pfunc},
-      qfs = Through[funcs[x]];
-      pfunc = FindIntervalFunc[qfs];
-      pfunc[y]
-    ];
-
 Clear[QRMonBandsSequence];
 
 SyntaxInformation[QRMonBandsSequence] = { "ArgumentsPattern" -> {} };
@@ -1521,7 +1501,7 @@ QRMonBandsSequence[___][$QRMonFailure] := $QRMonFailure;
 QRMonBandsSequence[xs_, context_Association ] := QRMonBandsSequence[][xs, context];
 
 QRMonBandsSequence[][xs_, context_] :=
-    Block[{qstates},
+    Block[{qs, qstates},
 
       Which[
 
@@ -1534,7 +1514,16 @@ QRMonBandsSequence[][xs_, context_] :=
         $QRMonFailure,
 
         True,
-        qstates = FindQRRange[ #, Values[context["regressionFunctions"]] ]& /@ QRMonBind[ QRMonGetData[xs, context], QRMonTakeValue ];
+        qs = Fold[ QRMonBind, QRMonUnit[xs, context], {QRMonEvaluate[Most /@ context["data"]], QRMonTakeValue}];
+        qs = KeySort[qs];
+        qstates =
+            First /@
+                MapThread[
+                  Function[{qs, x},
+                    FirstPosition[Partition[{-Infinity, Sequence @@ qs, Infinity}, 2, 1], p : {_, _} /; p[[1]] < x <= p[[2]]]
+                  ],
+                  {Transpose[Values[qs]], Last /@ context["data"]}
+                ];
         QRMonUnit[ qstates, context ]
       ]
 
@@ -1550,6 +1539,18 @@ QRMonBandsSequence[__][__] :=
 (**************************************************************)
 (* Grid sequential representation                             *)
 (**************************************************************)
+
+Clear[FindIntervalFunc];
+FindIntervalFunc[qBoundaries : {_?NumericQ ...}] :=
+    Block[{XXX, t = Partition[Join[{- Infinity}, qBoundaries, {Infinity}], 2, 1]},
+      Function[
+        Evaluate[
+          Piecewise[
+            MapThread[{#2, #1[[1]] < XXX <= #1[[2]]} &, {t, Range[1, Length[t]]}]
+          ] /. {XXX -> #}
+        ]
+      ]
+    ];
 
 Clear[QRMonGridSequence];
 
@@ -1575,11 +1576,11 @@ QRMonGridSequence[Automatic][xs_, context_] :=
         $QRMonFailure,
 
         KeyExistsQ[context, "regressionFunctions"],
-        qvals = Quantile[ data[[All, 2]], Keys[context["regressionFunctions"]] ];
+        qvals = Quantile[ data[[All, -1]], Keys[context["regressionFunctions"]] ];
         QRMonGridSequence[ qvals ][xs, Join[context, <|"data" -> data|> ]],
 
         True,
-        Echo["Cannot find quantiles for the values mapping with Automatic grid argument.", "QRMonGridSequence"];
+        Echo["Cannot find quantiles for the values mapping with Automatic grid argument.", "QRMonGridSequence:"];
         $QRMonFailure
       ]
     ];
@@ -1592,7 +1593,7 @@ QRMonGridSequence[gridNCells_Integer][xs_, context_] :=
       Which[
 
         gridNCells < 1,
-        Echo["An integer first argument is expected to be positive.", "QRMonGridSequence"];
+        Echo["An integer first argument is expected to be positive.", "QRMonGridSequence:"];
         $QRMonFailure,
 
         ! TrueQ[data === $QRMonFailure],
@@ -1600,7 +1601,7 @@ QRMonGridSequence[gridNCells_Integer][xs_, context_] :=
         QRMonGridSequence[ rvals ][xs, Join[context, <|"data" -> data|> ]],
 
         True,
-        Echo["Cannot find data.", "QRMonGridSequence"];
+        Echo["Cannot find data.", "QRMonGridSequence:"];
         $QRMonFailure
       ]
     ];
