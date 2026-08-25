@@ -1501,7 +1501,7 @@ QRMonBandsSequence[___][$QRMonFailure] := $QRMonFailure;
 QRMonBandsSequence[xs_, context_Association ] := QRMonBandsSequence[][xs, context];
 
 QRMonBandsSequence[][xs_, context_] :=
-    Block[{qs, qstates},
+    Block[{qs, dim, qstates},
 
       Which[
 
@@ -1514,7 +1514,8 @@ QRMonBandsSequence[][xs_, context_] :=
         $QRMonFailure,
 
         True,
-        qs = Fold[ QRMonBind, QRMonUnit[xs, context], {QRMonEvaluate[Most /@ context["data"]], QRMonTakeValue}];
+        dim = Last @ Dimensions @ context["data"];
+        qs = Fold[ QRMonBind, QRMonUnit[xs, context], {QRMonEvaluate[If[dim == 2, context["data"][[All, 1]], Most /@ context["data"]]], QRMonTakeValue}];
         qs = KeySort[qs];
         qstates =
             First /@
