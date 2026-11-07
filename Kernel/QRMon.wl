@@ -336,12 +336,12 @@ QRMonRescale[opts : OptionsPattern[]][xs_, context_] :=
           data = Transpose @ MapAt[Rescale, Transpose @ data, List /@ Pick[Range[dim], axesOpt]]; 
           QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
 
-          Length[axesOpt] == dim && Apply[And, IntegerQ /@ axesOpt] && Apply[And, 1 <= # <= dim & /@ axesOpt ],
+          1 <= Length[axesOpt] <= dim && Apply[And, IntegerQ /@ axesOpt] && Apply[And, 1 <= # <= dim & /@ axesOpt ],
           data = Transpose @ MapAt[Rescale, Transpose @ data, List /@ axesOpt]; 
           QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
 
-          Length[axesOpt] == dim && Apply[And, IntegerQ /@ axesOpt],
-          Echo["The value of Axes is a list of integers that are not valid axes values.", "QRMonRescale:"];
+          Apply[And, IntegerQ /@ axesOpt],
+          Echo["The value of Axes is a list of integers that are not valid axes values without duplication.", "QRMonRescale:"];
           $QRMonFailure,
 
           True,
