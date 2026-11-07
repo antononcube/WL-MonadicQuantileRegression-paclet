@@ -269,7 +269,7 @@ Clear[QRMonRescale];
 
 SyntaxInformation[QRMonRescale] = { "ArgumentsPattern" -> { OptionsPattern[] } };
 
-Options[QRMonRescale] = {Axes -> {True, False}};
+Options[QRMonRescale] = {Axes -> Automatic};
 
 QRMonRescale[$QRMonFailure] := $QRMonFailure;
 
@@ -278,13 +278,13 @@ QRMonRescale[xs_, context_] := QRMonRescale[][xs, context];
 QRMonRescale[opts : OptionsPattern[]][xs_, context_] :=
     Block[{data, dim, axesOpt},
 
-      axesOpt = OptionValue[QRMonRescale, Axes];
-
       data = QRMonTakeData[ xs, context ];
+      If[data === $QRMonFailure, Return[$QRMonFailure]];
 
       dim = Last @ Dimensions @ data;
 
-      If[data === $QRMonFailure, Return[$QRMonFailure]];
+      axesOpt = OptionValue[QRMonRescale, Axes];
+      If[TrueQ[axesOpt === Automatic], axesOpt = Append[ConstantArray[True, dim-1], False]];
 
       If[dim == 2,
         (* The original 2D behavior *)
