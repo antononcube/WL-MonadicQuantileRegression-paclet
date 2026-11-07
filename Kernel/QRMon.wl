@@ -276,38 +276,79 @@ QRMonRescale[$QRMonFailure] := $QRMonFailure;
 QRMonRescale[xs_, context_] := QRMonRescale[][xs, context];
 
 QRMonRescale[opts : OptionsPattern[]][xs_, context_] :=
-    Block[{data, axesOpt},
+    Block[{data, dim, axesOpt},
 
       axesOpt = OptionValue[QRMonRescale, Axes];
 
       data = QRMonTakeData[ xs, context ];
 
+      dim = Last @ Dimensions @ data;
+
       If[data === $QRMonFailure, Return[$QRMonFailure]];
 
-      Which[
-        TrueQ[ axesOpt == {False, False}] || TrueQ[ !axesOpt ] || TrueQ[ axesOpt === None ],
-        QRMonUnit[xs, context],
+      If[dim == 2,
+        (* The original 2D behavior *)
+        Which[
+          TrueQ[ axesOpt == {False, False}] || TrueQ[ !axesOpt ] || TrueQ[ axesOpt === None ],
+          QRMonUnit[xs, context],
 
-        TrueQ[axesOpt] || TrueQ[axesOpt == {True, True}] ||
-            TrueQ[ ToLowerCase[axesOpt] == "both" || ToLowerCase[axesOpt] == "path" || axesOpt === All ] ||
-            TrueQ[ ListQ[axesOpt] && Length[Intersection[axesOpt, {"x", "y", "time"}]] == 2 ] ||
-            TrueQ[ ListQ[axesOpt] && Length[Intersection[axesOpt, {"x", "value", "time"}]] == 2 ],
-        data = Transpose[Rescale /@ Transpose[data]];
-        QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+          TrueQ[axesOpt] || TrueQ[axesOpt == {True, True}] ||
+              TrueQ[ ToLowerCase[axesOpt] == "both" || ToLowerCase[axesOpt] == "path" || axesOpt === All ] ||
+              TrueQ[ ListQ[axesOpt] && Length[Intersection[axesOpt, {"x", "y", "time"}]] == 2 ] ||
+              TrueQ[ ListQ[axesOpt] && Length[Intersection[axesOpt, {"x", "value", "time"}]] == 2 ],
+          data = Transpose[Rescale /@ Transpose[data]];
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
 
-        TrueQ[ axesOpt == {True, False}] ||
-            TrueQ[ axesOpt == "x" || axesOpt == "t"],
-        data = Transpose[{Rescale[data[[All, 1]]], data[[All, 2]]}];
-        QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+          TrueQ[ axesOpt == {True, False}] ||
+              TrueQ[ axesOpt == "x" || axesOpt == "t"],
+          data = Transpose[{Rescale[data[[All, 1]]], data[[All, 2]]}];
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
 
-        TrueQ[ axesOpt == {False, True}] ||
-            TrueQ[ axesOpt == "y" || axesOpt == "value"],
-        data = Transpose[{data[[All, 1]], Rescale[data[[All, 2]]]}];
-        QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+          TrueQ[ axesOpt == {False, True}] ||
+              TrueQ[ axesOpt == "y" || axesOpt == "value"],
+          data = Transpose[{data[[All, 1]], Rescale[data[[All, 2]]]}];
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
 
-        True,
-        $QRMonFailure
+          True,
+          $QRMonFailure
+        ],
+        (* ELSE *)
+        Which[
+          TrueQ[ axesOpt == ConstantArray[False, dim]] || TrueQ[ !axesOpt ] || TrueQ[ axesOpt === None ],
+          QRMonUnit[xs, context],
+
+          TrueQ[axesOpt] || TrueQ[axesOpt == ConstantArray[True, dim]] ||
+              TrueQ[ ToLowerCase[axesOpt] == "all" || ToLowerCase[axesOpt] == "path" || axesOpt === All ],
+          data = Transpose[Rescale /@ Transpose[data]];
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+
+          TrueQ[ axesOpt == Append[ConstantArray[True, dim-1], False]] || 
+              MemberQ[ {"regressor", "regressors", "independent", "input", "predictor", "predictors"}, axesOpt],
+          data = Transpose @ MapAt[Rescale, Transpose @ data, List /@ Range[dim - 1]];
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+
+          TrueQ[ axesOpt == Append[ConstantArray[False, dim-1], True]] ||
+              MemberQ[ {"regressand", "dependent", "response", "output", "predicted", "value"}, axesOpt],
+          data = Transpose @ MapAt[Rescale, Transpose @ data, {-1}]; 
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+
+          Length[axesOpt] == dim && Apply[And, BooleanQ /@ axesOpt],
+          data = Transpose @ MapAt[Rescale, Transpose @ data, List /@ Pick[Range[dim], axesOpt]]; 
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+
+          Length[axesOpt] == dim && Apply[And, IntegerQ /@ axesOpt] && Apply[And, 1 <= # <= dim & /@ axesOpt ],
+          data = Transpose @ MapAt[Rescale, Transpose @ data, List /@ axesOpt]; 
+          QRMonUnit[ data, Join[ context, <|"data" -> data|>] ],
+
+          Length[axesOpt] == dim && Apply[And, IntegerQ /@ axesOpt],
+          Echo["The value of Axes is a list of integers that are not valid axes values.", "QRMonRescale:"];
+          $QRMonFailure,
+
+          True,
+          $QRMonFailure
+        ]
       ]
+    
     ];
 
 QRMonRescale[___][__] := $QRMonFailure;
