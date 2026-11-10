@@ -38,7 +38,7 @@ Cell["", "FileManagerTopSpacer",
  CellGroupingRules->{"SectionGrouping", 99},
  TaggingRules->{},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1084585808,ExpressionUUID->"54fb88a0-b65d-4b21-98ee-5cf66af13e5d"],
+ CellID->1084585808,ExpressionUUID->"a3b65bb7-bc61-4396-9b85-669edd73ff42"],
 
 Cell[CellGroupData[{
 
@@ -63,7 +63,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"66c79ecb-df3f-435b-90b0-0e3796193073"]], \
+   "Text"}]],ExpressionUUID->"3a4e733c-1a3f-4f99-8d33-fc3d41338597"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -74,7 +74,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDocumentationIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->792479320,ExpressionUUID->"5f868eda-599d-44dc-9c39-955f6240e357"],
+ CellID->792479320,ExpressionUUID->"c95f0975-49eb-4702-9840-22c27aa96761"],
 
 Cell[CellGroupData[{
 
@@ -99,7 +99,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"cee753ef-99c4-48b1-a1ab-2b6a9ff51413"]], \
+   "Text"}]],ExpressionUUID->"6310cea9-0c3a-4ec9-a4b2-7364713819dc"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
@@ -110,7 +110,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1252242510,ExpressionUUID->"768b3bb6-4270-4614-a73a-0f20ff2e60ee"],
+ CellID->1252242510,ExpressionUUID->"74ef438c-c10f-4741-998c-55e535569908"],
 
 Cell[CellGroupData[{
 
@@ -135,7 +135,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "Guides"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"796504af-b6c9-4df1-a5ad-57aacbceba44"]], \
+   "Text"}]],ExpressionUUID->"c65c046f-de06-4058-aef6-7bc31c901b70"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -146,7 +146,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1100124970,ExpressionUUID->"439ce9e4-389e-4a01-a480-e236c776788e"],
+ CellID->1100124970,ExpressionUUID->"04251ce8-614a-4094-af68-0471c9123d5e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -172,7 +172,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->322165556,ExpressionUUID->"0ef04b26-d0ac-4d75-a232-5b3ba8df670e"]
+ CellID->322165556,ExpressionUUID->"41c307e1-6c76-4b5e-8279-df129855bf03"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -198,7 +198,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "ReferencePages"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"6c2550d1-9f58-4253-88af-e9960bd699ae"]], \
+   "Text"}]],ExpressionUUID->"facdb447-e75b-4924-843e-256aa6de8300"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -209,7 +209,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->2113653767,ExpressionUUID->"4dd37216-121d-4765-8cd1-69502a1d1aa8"],
+ CellID->2113653767,ExpressionUUID->"5ecb8c40-431e-4dd7-804a-b3d0e62acfe0"],
 
 Cell[CellGroupData[{
 
@@ -235,7 +235,7 @@ Cell[TextData[Cell[BoxData[
     "Symbols"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"e147db93-3ec9-41e2-ad30-c31dbeaa1abd"]], \
+   "Text"}]],ExpressionUUID->"96c1c524-258a-47f2-be7b-8f1edcd39cd4"]], \
 "FileManagerDirectory",
  CellMargins->{{69 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 130},
@@ -246,7 +246,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->504373295,ExpressionUUID->"db0efa5c-254b-48a8-a551-b324c19e1ccd"],
+ CellID->504373295,ExpressionUUID->"06af96e6-1034-44fd-8df4-32479ae737ba"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -272,7 +272,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->3485501,ExpressionUUID->"6d6cd73b-7a9a-4510-8050-0efdf8f1bc0d"],
+ CellID->3485501,ExpressionUUID->"ecdcfba8-170c-4176-a956-725de124c675"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -298,7 +298,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->598756838,ExpressionUUID->"4f82c9c7-4912-485b-8669-1005ce6f1cd5"],
+ CellID->598756838,ExpressionUUID->"b56564ae-6a7b-42e2-bb5e-f4d804bd7db3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -324,7 +324,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->197806424,ExpressionUUID->"a26a533e-5c38-4fd8-be5f-8fc21a6984c5"],
+ CellID->197806424,ExpressionUUID->"900c323d-7869-49d1-867a-822fe37d9efd"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -350,7 +350,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->227882612,ExpressionUUID->"5bbd7058-4303-4096-a1ea-38e797b2665e"],
+ CellID->227882612,ExpressionUUID->"937186e8-ce0a-4c88-b746-646647d452df"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -376,7 +376,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1059717283,ExpressionUUID->"f69f5c26-2d77-494a-a90a-3f3eb0a8ddbd"],
+ CellID->1059717283,ExpressionUUID->"a4dbc23a-d347-4104-b9db-218545525fa5"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -402,7 +402,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->994082518,ExpressionUUID->"9ad18e76-98cb-4d0d-aa42-3ddf4f84c2a6"],
+ CellID->994082518,ExpressionUUID->"0fc5d9f9-e192-4302-8144-967055b9ad2f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -428,7 +428,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->122106366,ExpressionUUID->"4a95f8f4-1aef-489c-8eee-ddbcae1b2b1c"],
+ CellID->122106366,ExpressionUUID->"12a1ba42-a905-4f35-a484-19f6c58e74fb"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -454,7 +454,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1394810477,ExpressionUUID->"de3feb24-94c6-424c-869f-f62f92812b2c"],
+ CellID->1394810477,ExpressionUUID->"91a50bfd-69f5-4178-8990-8bef0f29d96e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -480,7 +480,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->648196287,ExpressionUUID->"0d88021c-b1f5-403f-8af7-72b1ece14b1f"],
+ CellID->648196287,ExpressionUUID->"bacf7ebc-365f-432b-bff1-9104910de309"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -506,7 +506,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->50454378,ExpressionUUID->"f2fb87d0-1d88-49aa-a615-3afa7a5d91bd"],
+ CellID->50454378,ExpressionUUID->"f6c39ddd-78c0-4271-adc1-ad96ab7bdc1b"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -532,7 +532,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1878174128,ExpressionUUID->"fb88f9c8-4559-4158-b9cf-76937b5885fb"],
+ CellID->1878174128,ExpressionUUID->"5505798a-8016-487c-b59f-4f1eba98ec63"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -558,7 +558,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->610442043,ExpressionUUID->"f46b2a28-ed77-4f9c-a8fb-fac292f9260b"],
+ CellID->610442043,ExpressionUUID->"bae89e4c-66bc-413a-8c34-24c43e832c95"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -584,7 +584,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1170034982,ExpressionUUID->"ca86ef60-ae4b-4d86-9f8d-c9cbf7f9fe9e"],
+ CellID->1170034982,ExpressionUUID->"a9b97276-a6f5-4639-96fe-02b3e6388378"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -610,7 +610,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->270186895,ExpressionUUID->"d76dc1b1-d24a-4b74-b9ab-d27a58c6dbde"],
+ CellID->270186895,ExpressionUUID->"75593f88-d431-42e6-b603-7ff1bd0802c2"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -636,7 +636,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1250714507,ExpressionUUID->"4ecf11df-efca-449a-9f41-2aef9470c431"],
+ CellID->1250714507,ExpressionUUID->"2f16e71c-0105-46c5-a02b-b25c4b8d4f7c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -662,7 +662,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1188782313,ExpressionUUID->"b03f344e-5acd-4d34-a773-96f8141c1a13"],
+ CellID->1188782313,ExpressionUUID->"c7cbbeb1-35f7-4e6a-9529-f63f84aaab23"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -688,7 +688,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1823966550,ExpressionUUID->"3563d8ba-bcf8-4349-a9b8-c5bd39e1aa45"],
+ CellID->1823966550,ExpressionUUID->"01835c5a-87c0-43bb-8abd-d61ce9b9f9d3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -714,7 +714,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->76744925,ExpressionUUID->"eeaac002-f9fc-41bf-bbfc-d7dfbd57a41c"],
+ CellID->76744925,ExpressionUUID->"3b32e404-b2da-4adf-acc1-d99ff4ab67f9"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -740,7 +740,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1361766275,ExpressionUUID->"3447dbe8-920d-4514-b55e-4921154c0652"],
+ CellID->1361766275,ExpressionUUID->"b19b6921-3eec-4d23-a016-1b812b7bccb9"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -766,7 +766,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1678169694,ExpressionUUID->"b0082127-5371-4907-ba81-ec7582ae2592"],
+ CellID->1678169694,ExpressionUUID->"4acb2254-a8fb-4050-bce9-f09f8e5d659e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -792,7 +792,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->2095311007,ExpressionUUID->"5ba27d32-aa45-4812-abd2-f95ed1d910ff"],
+ CellID->2095311007,ExpressionUUID->"a4ba0c30-35ba-4c88-9f6c-3ec7cb39076f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -818,7 +818,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1455251143,ExpressionUUID->"cad8ff96-385d-420c-be14-abb71c23bb21"],
+ CellID->1455251143,ExpressionUUID->"f61dcabf-1f24-45a9-8a9b-5e70a9086169"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -844,7 +844,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->714704718,ExpressionUUID->"6f4a52d2-3383-4426-a3c8-9c01fe2a7a3d"],
+ CellID->714704718,ExpressionUUID->"7606ebe6-a2e0-4ff8-901a-ee227b819230"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -870,7 +870,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1377895338,ExpressionUUID->"32fccd7a-e11f-41a2-8631-f3b6b14ebfcd"],
+ CellID->1377895338,ExpressionUUID->"0ce9e773-0b88-4b53-88dd-b3d9842d5590"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -896,7 +896,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1877869601,ExpressionUUID->"e62f9fcd-6989-441c-9ed9-2b44a298b2ec"],
+ CellID->1877869601,ExpressionUUID->"8292c08f-3276-4f0c-9fcd-264194ffc2bd"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -922,7 +922,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1677625763,ExpressionUUID->"6a16df8f-c772-4601-ae15-4ffc854a355b"],
+ CellID->1677625763,ExpressionUUID->"bb197a5a-7f96-4fbc-a649-9bcbb5beee50"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -948,7 +948,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1934707695,ExpressionUUID->"d1660193-8e76-4c05-9d4e-b51ae2ec238b"],
+ CellID->1934707695,ExpressionUUID->"ab7a49f1-e0f3-4d09-b515-b6f82253a71e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -974,7 +974,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1543397278,ExpressionUUID->"905c9142-715f-4928-87a4-953005b54bcd"],
+ CellID->1543397278,ExpressionUUID->"2918384e-53a2-4d49-a286-f7fc4c9e8d8d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1000,7 +1000,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->374313814,ExpressionUUID->"e83e42ae-12a9-40e7-a8d5-5cdd783523e4"],
+ CellID->374313814,ExpressionUUID->"40070ac0-eba5-4815-89b6-75f4f90d2166"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1026,7 +1026,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1112669835,ExpressionUUID->"e4d4ff9a-2b38-4bb8-8064-c414f396d03d"],
+ CellID->1112669835,ExpressionUUID->"7b969698-1050-479f-954d-ef64cd049e0f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1052,7 +1052,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1309949028,ExpressionUUID->"50cfda2e-0662-4d7a-ac9e-01f9f7875fe3"],
+ CellID->1309949028,ExpressionUUID->"877f9135-3b7c-45a4-a450-2b18f011cc76"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1078,7 +1078,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->310964552,ExpressionUUID->"b9cd110a-55a0-4d01-a356-91eb4840fafc"],
+ CellID->310964552,ExpressionUUID->"13644598-3703-4f25-891d-1e39b63f2ddc"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1104,7 +1104,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1084896206,ExpressionUUID->"9cf4063b-3a0e-43b9-8ff9-20fc804b7960"],
+ CellID->1084896206,ExpressionUUID->"cdd9eb7d-6759-4ab1-86d8-76a0ad882dff"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1130,7 +1130,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1714371212,ExpressionUUID->"f33bc896-eabe-4482-9523-3aaa1526a439"],
+ CellID->1714371212,ExpressionUUID->"33797152-5bf1-4b82-83b7-4fa0e4ac033a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1156,7 +1156,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->648868285,ExpressionUUID->"8c9af94c-5257-498d-97d4-c1c0c0dddf71"],
+ CellID->648868285,ExpressionUUID->"2064a5da-9fc0-4a14-a094-36b8650206c4"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1182,7 +1182,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->607306529,ExpressionUUID->"14348045-4eb8-410f-bd93-81fa53982f38"],
+ CellID->607306529,ExpressionUUID->"d8734118-37ce-4f4e-8625-179c50623adc"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1208,7 +1208,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1108514502,ExpressionUUID->"76524e54-fa7c-434d-abe3-4b09eb26de29"],
+ CellID->1108514502,ExpressionUUID->"f61c2d02-7b31-425c-8ce6-ef5202e818fd"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1234,7 +1234,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1541256383,ExpressionUUID->"e0c915e1-774b-43b3-aa89-cd07aea9e6c8"],
+ CellID->1541256383,ExpressionUUID->"d252842f-046a-4772-94b7-7b490a885d2e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1260,7 +1260,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->948278967,ExpressionUUID->"d22be6ab-db6f-4b74-a127-df7938f46cae"],
+ CellID->948278967,ExpressionUUID->"f2677765-c05f-48e2-942b-31711fdbb2df"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1286,7 +1286,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1248453982,ExpressionUUID->"e55eda2f-b8fe-4d05-88b6-76586077ba31"],
+ CellID->1248453982,ExpressionUUID->"9c8f69b9-be1a-4527-96bf-23903e2bf3e8"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1312,7 +1312,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1850844284,ExpressionUUID->"257ffa86-9d1f-4fa5-8896-b1aa8ff695b6"],
+ CellID->1850844284,ExpressionUUID->"4523a248-07c2-4dda-8476-927138c7f8c7"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1338,7 +1338,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1582330638,ExpressionUUID->"ae9ec0d1-2b13-4ffb-b315-27860788621f"],
+ CellID->1582330638,ExpressionUUID->"860cfbbc-d698-4665-8b4a-536c5c0fd794"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1364,7 +1364,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1169638955,ExpressionUUID->"0fb54d0f-4ffa-421c-9143-c7aeb94c6c79"],
+ CellID->1169638955,ExpressionUUID->"afa4dd61-9394-4635-bae3-1fabaf2af3f9"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1390,7 +1390,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->56612047,ExpressionUUID->"03758ff6-c898-439e-828c-b0680e84c500"],
+ CellID->56612047,ExpressionUUID->"07266bc7-d868-4645-903d-b83f7d9634f7"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1416,7 +1416,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->143418308,ExpressionUUID->"b8c28c13-629a-4123-93f9-80fe46067a4f"],
+ CellID->143418308,ExpressionUUID->"d0b36ff0-bf79-446c-8506-2e4de417ea05"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1442,7 +1442,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->954850622,ExpressionUUID->"5e838345-a8be-4848-82ea-2f0d567b550a"],
+ CellID->954850622,ExpressionUUID->"212b4ccc-b173-4bec-b7c9-87b37b2c771f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1468,7 +1468,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->29109923,ExpressionUUID->"494acb74-50e0-4b52-968b-4ab59f7061f6"],
+ CellID->29109923,ExpressionUUID->"ba893bc8-a850-419a-b1ec-3f2b2e92c967"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1494,7 +1494,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1899315889,ExpressionUUID->"f3167c1a-afb1-41ed-b767-27aecdc7f0df"],
+ CellID->1899315889,ExpressionUUID->"3a09a1b0-3361-4fdd-bf0b-da7c3ee6df14"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1520,7 +1520,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1605217415,ExpressionUUID->"c033ffef-2ecf-4529-8242-69548d6ee043"],
+ CellID->1605217415,ExpressionUUID->"bd8070b9-103f-4594-bd01-a84732fbd278"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1546,7 +1546,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->52036644,ExpressionUUID->"e1e1daf0-3d27-4d0f-8235-d8e8dc4957d0"],
+ CellID->52036644,ExpressionUUID->"f70aeb52-8384-4002-9383-b54ed050de91"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1572,7 +1572,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->554031379,ExpressionUUID->"e5e2604b-2aa5-493a-acc0-8551505140d0"],
+ CellID->554031379,ExpressionUUID->"5dd263d0-6e84-4018-9bea-4b13bc982435"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1598,7 +1598,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->116293461,ExpressionUUID->"1f76c515-b62b-4d4d-9c6d-19d7651a4f0d"],
+ CellID->116293461,ExpressionUUID->"6959e190-c78a-4693-9fc1-e6920c2b8508"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1624,7 +1624,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->334080257,ExpressionUUID->"a3bad0c3-330d-40d3-a6b1-6cc6219b0f6e"],
+ CellID->334080257,ExpressionUUID->"b56c34a7-e0c1-4096-a4da-9c40ac3428fc"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1650,7 +1650,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1364626141,ExpressionUUID->"10d80b1f-59de-4f27-bc72-87d0a6f94da1"],
+ CellID->1364626141,ExpressionUUID->"7894a52b-43aa-4e87-a102-946c7722f8d3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1676,7 +1676,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->146201827,ExpressionUUID->"802e381c-6758-411b-8704-a09222860e34"],
+ CellID->146201827,ExpressionUUID->"e1ddbd70-bd2a-4858-8278-f885b42069ac"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1702,7 +1702,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->492814221,ExpressionUUID->"8b65c3e4-ed42-47f2-ab5e-9ce2ee93d4ee"],
+ CellID->492814221,ExpressionUUID->"9b050753-2145-4f66-b6e3-81f953c423e6"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1728,7 +1728,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->2031669515,ExpressionUUID->"464b9543-f68c-4522-a65c-f85a419481c3"],
+ CellID->2031669515,ExpressionUUID->"06e02771-8140-4103-a4af-c65c7d838f06"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1754,7 +1754,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1279551305,ExpressionUUID->"ff903221-2c60-4e14-b1e1-b8710c8f076a"],
+ CellID->1279551305,ExpressionUUID->"8c598832-8054-4e35-abfa-69010aa847b8"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1780,7 +1780,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->517542077,ExpressionUUID->"498e5bf6-ac4e-41ad-823f-affb4da2eccb"],
+ CellID->517542077,ExpressionUUID->"c35f983b-2feb-4bf3-91c9-f88d105d3775"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1806,7 +1806,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->170940193,ExpressionUUID->"bb384a99-b295-4e7a-a2b5-14d621bb5007"],
+ CellID->170940193,ExpressionUUID->"ea75e182-8e26-437f-a514-9fa231372c1c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1832,7 +1832,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1806187712,ExpressionUUID->"31fd609b-42c7-4c92-b9ca-58aa7fde02c1"],
+ CellID->1806187712,ExpressionUUID->"d6a32ea7-7978-4791-86b4-b26c928206d9"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1858,7 +1858,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1915525239,ExpressionUUID->"8ca6c9b8-79ee-4b8b-8b41-f1bf9dd70e36"],
+ CellID->1915525239,ExpressionUUID->"ce7ce0e1-993a-43e5-8ad6-6f130b7f4db3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1884,7 +1884,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1305339696,ExpressionUUID->"21c8915f-9703-46e3-a637-e8b8b44af31f"],
+ CellID->1305339696,ExpressionUUID->"38410a05-0da8-4785-91c6-fb6123dcac2c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1910,7 +1910,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->151332920,ExpressionUUID->"44224d1d-c776-41b2-953b-27dd8cb5c7ea"],
+ CellID->151332920,ExpressionUUID->"81929af8-4cb7-4525-9007-4715aa7a4d03"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1936,7 +1936,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->831748392,ExpressionUUID->"ede38608-a670-42a1-ab7c-36ea98499d8a"],
+ CellID->831748392,ExpressionUUID->"c5dc53c0-c71e-479c-9a1f-a7924c6db016"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1962,7 +1962,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1224166021,ExpressionUUID->"79569826-09b2-41e3-be0a-e9a56f8c3ad4"],
+ CellID->1224166021,ExpressionUUID->"9e1abab1-f5e3-4845-901c-fbbe25ff2137"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1988,7 +1988,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1664976687,ExpressionUUID->"7a70f6bf-ab24-463f-92bd-c5d72c0e9f96"],
+ CellID->1664976687,ExpressionUUID->"ce0c8132-3a1a-4f9a-8294-18c1f910413f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2014,7 +2014,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1551257999,ExpressionUUID->"ea898e36-a4fc-45e1-a69d-0ac44468694f"],
+ CellID->1551257999,ExpressionUUID->"5a93681c-35fb-40cd-b759-bf0406ef229f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2040,7 +2040,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1541714613,ExpressionUUID->"e7cb0232-a4cf-4ad6-9e8e-261b85e541f9"],
+ CellID->1541714613,ExpressionUUID->"1bb18077-a4b9-4ef8-8718-534e5813efcc"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2066,7 +2066,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->59815989,ExpressionUUID->"89243aba-aa5a-443d-9a08-356ab2e697f1"],
+ CellID->59815989,ExpressionUUID->"3ba539a4-bdbf-42be-ae2b-81692107c7ac"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2092,7 +2092,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1908374147,ExpressionUUID->"06fef5e7-6a3f-427c-a26d-305831d0de82"]
+ CellID->1908374147,ExpressionUUID->"63c7f3a6-8ccf-4b8d-8dea-f6f6a85ac609"]
 }, Open  ]]
 }, Open  ]],
 
@@ -2117,7 +2117,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "Tutorials"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"e29211b8-a04a-4aea-acbd-fbf46404f961"]], \
+   "Text"}]],ExpressionUUID->"93a3cc03-25be-4a7d-85bb-7cd71ec0a6be"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -2128,7 +2128,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerEmptyDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1376020684,ExpressionUUID->"dba9b18a-bfb2-4f29-b6eb-5e303ebc5c4e"]
+ CellID->1376020684,ExpressionUUID->"5ac4ae65-b944-4cbb-894d-176d14bd89a3"]
 }, Open  ]]
 }, Open  ]],
 
@@ -2155,7 +2155,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Kernel"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"0a34af89-a147-4f2b-b093-5956ac306ac7"]], \
+   "Text"}]],ExpressionUUID->"72d86f09-66ff-4cb6-9364-7afd2c1f616d"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -2166,7 +2166,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerKernelIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->506352546,ExpressionUUID->"b08dae33-10f6-45e0-a54f-fac8bf972d6b"],
+ CellID->506352546,ExpressionUUID->"20a9669d-b64d-4908-a13c-59f1f37dd2fa"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2190,7 +2190,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1334485675,ExpressionUUID->"b5d4f193-8d4c-4780-ae0e-9b652bd8513a"],
+ CellID->1334485675,ExpressionUUID->"4371db83-2adb-432d-80ae-4926fb88ad5f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2214,7 +2214,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1937031208,ExpressionUUID->"1d615106-2977-40d6-a915-36dd941f884b"],
+ CellID->1937031208,ExpressionUUID->"b38aa9df-9f27-4d08-a8fe-31e96aa6337e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2238,7 +2238,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1342461000,ExpressionUUID->"3d69a0e9-2d97-4c80-b084-c5296e6957ea"],
+ CellID->1342461000,ExpressionUUID->"87a52088-2ba0-48e4-bcfb-be54fd61abeb"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2262,7 +2262,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->381530457,ExpressionUUID->"aee75c05-1c3a-45d5-8f05-9799b56ea563"]
+ CellID->381530457,ExpressionUUID->"9af2fa37-6b79-466d-a27f-86be100eb035"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2287,7 +2287,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->909280213,ExpressionUUID->"726d007e-ef06-4cf6-9b79-8f83062d8e70"],
+ CellID->909280213,ExpressionUUID->"b82ca3e5-b541-4af0-a640-3c890ac385a7"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2311,7 +2311,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerPacletInfoIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1978907983,ExpressionUUID->"ac9728ba-644f-47ee-a3af-222bafcdc171"],
+ CellID->1978907983,ExpressionUUID->"88f96279-c180-4a99-8425-693f8050fdc0"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2335,7 +2335,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerTXTIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->778907839,ExpressionUUID->"14a36194-7fe4-4fcb-a561-9bb5761fdb7a"],
+ CellID->778907839,ExpressionUUID->"b2237b40-b60e-4c1f-9f4f-71c9aaacadae"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2359,13 +2359,13 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1427229192,ExpressionUUID->"732feaa8-aa4f-40ac-8ed3-7d6a2d8c7012"],
+ CellID->1427229192,ExpressionUUID->"a059ef70-3946-4d45-ad6e-21c47734ce5a"],
 
 Cell["", "FileManagerBottomSpacer",
  CellGroupingRules->{"SectionGrouping", 100},
  TaggingRules->{},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->48692954,ExpressionUUID->"df5af099-ed42-469e-81e7-22cdcf654fdd"]
+ CellID->48692954,ExpressionUUID->"60313c5a-083c-4fa2-b605-13cd04784564"]
 }, Open  ]]
 }, Open  ]],
 
@@ -24824,8 +24824,8 @@ Cell["Additional information about limitations, issues, etc.", "Text",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1151, 749},
-WindowMargins->{{Automatic, 1130}, {Automatic, 58}},
+WindowSize->{1215, 1174},
+WindowMargins->{{782, Automatic}, {Automatic, 96}},
 DockedCells->{
   Cell[
    BoxData[
@@ -24861,8 +24861,8 @@ DockedCells->{
                     DateString[
                     TimeZoneConvert[
                     DateObject[
-                    3.996677821656392`16.354274129685194*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    4.0033064593322`16.354993826455296*^9, TimeZone -> 0]], {
+                    "MonthName", " ", "DayShort", ", ", "Year", " ", 
                     "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
                     StandardForm], SingleEvaluation -> True, Evaluator -> 
                    "System"], FontSlant -> Italic, FontColor -> 
@@ -24972,7 +24972,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "aa699a5f-5b7c-4567-a50e-524acdb2ae3b", 1334485675, 
+                    "ffce9ffd-e794-4b24-b32f-2eaefb81cf76", 1334485675, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -25024,7 +25024,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "b5eff86a-9c96-4398-b777-d9367edf8187", 1342461000, 
+                    "42cf9f70-cdb2-4752-a2e8-d655bc39a8e3", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -25044,7 +25044,7 @@ List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)",
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
                     "\!\(\*StyleBox[\"\\\" (L202,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
@@ -25065,7 +25065,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L410,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L344,C11) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25076,29 +25076,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "0bfffe5f-3824-4d9b-bd4e-6c183e83d68d", 1342461000, 
+                    "ee7adb5f-6565-4e39-bf7e-1c0808c1af0c", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 410, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 410, 
-                    "SourceColumnEnd" -> 13, "Message" -> 
+                    "Editor" -> Automatic, "SourceLineStart" -> 344, 
+                    "SourceColumnStart" -> 11, "SourceLineEnd" -> 344, 
+                    "SourceColumnEnd" -> 15, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L410,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L344,C11) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{410, 9}, {410, 13}}, 
+                    CodeParser`Source -> {{344, 11}, {344, 15}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L410,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L344,C11) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25117,7 +25117,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L419,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L451,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25128,29 +25128,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "9a2626bb-1606-4acc-bcc6-8aed03baa6b5", 1342461000, 
+                    "cce81286-3baa-4f9c-bcb4-1784adfeb115", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 419, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 419, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 451, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 451, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L419,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L451,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{419, 9}, {419, 13}}, 
+                    CodeParser`Source -> {{451, 9}, {451, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L419,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L451,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25169,7 +25169,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L453,C7) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L460,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25180,29 +25180,81 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "143aeafe-2e26-4b5d-9b76-3fdd1f0c0475", 1342461000, 
+                    "c3d27f5e-5361-4130-b56d-8d1abc6d4931", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 453, 
-                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 453, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 460, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 460, 
+                    "SourceColumnEnd" -> 13, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L460,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{460, 9}, {460, 13}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L460,C9) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[
+                    1342461000]; Null], TemplateBox[{
+                    StyleBox[
+                    PaneBox[
+                    TemplateBox[{
+                    RGBColor[
+                    0.4901733406265805, 0.4901733406265805, 
+                    0.4901733406265805]}, "HintPodIconHint"], 
+                    ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                    BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
+                    All, StripOnInput -> False], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> Medium, 
+                    ShowStringCharacters -> True, StripOnInput -> False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L494,C7) \
+\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
+False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "9a0ef46e-c7ab-49b4-b550-03e676966ec9", 1342461000, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 494, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 494, 
                     "SourceColumnEnd" -> 11, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L453,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L494,C7) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{453, 7}, {453, 11}}, 
+                    CodeParser`Source -> {{494, 7}, {494, 11}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L453,C7) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L494,C7) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25221,7 +25273,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L522,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L563,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25232,29 +25284,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "2f094c41-78e1-471d-84c2-dbf218e1c341", 1342461000, 
+                    "1ed4beed-de29-4ce8-b81e-be7b01b0e469", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 522, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 522, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 563, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 563, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L522,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L563,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{522, 9}, {522, 13}}, 
+                    CodeParser`Source -> {{563, 9}, {563, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L522,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L563,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25273,7 +25325,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L531,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L572,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25284,29 +25336,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "c2b70bda-d832-400f-957a-24692facfb1f", 1342461000, 
+                    "741b581b-d944-4fd6-82dd-01b05d36799a", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 531, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 531, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 572, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 572, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L531,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L572,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{531, 9}, {531, 13}}, 
+                    CodeParser`Source -> {{572, 9}, {572, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L531,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L572,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25325,7 +25377,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L540,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L581,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25336,29 +25388,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "3c537bab-82d7-46dd-a03d-dfdd7d6388b4", 1342461000, 
+                    "135f580d-3d4f-45ec-bb03-a6ad359c9094", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 540, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 540, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 581, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 581, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L540,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L581,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{540, 9}, {540, 13}}, 
+                    CodeParser`Source -> {{581, 9}, {581, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L540,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L581,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25377,7 +25429,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L637,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L678,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25388,29 +25440,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "17da9cbe-76f5-4893-94ec-ffbfab3cb884", 1342461000, 
+                    "4c7c7a95-166f-4c7a-bbe4-9111851491e6", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 637, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 637, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 678, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 678, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L637,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L678,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{637, 9}, {637, 13}}, 
+                    CodeParser`Source -> {{678, 9}, {678, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L637,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L678,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25429,7 +25481,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L673,C7) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L714,C7) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -25440,81 +25492,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "9277beda-7b0e-497e-9cb6-53550b5c58f1", 1342461000, 
+                    "169d0e20-7cdc-4a90-9e42-eb149ed983ec", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 673, 
-                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 673, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 714, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 714, 
                     "SourceColumnEnd" -> 11, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L673,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L714,C7) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{673, 7}, {673, 11}}, 
+                    CodeParser`Source -> {{714, 7}, {714, 11}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L673,C7) \\\"\", \
-Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
-Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
-Rule[StripOnInput, False]]\)"|>]; 
-                    DefinitionNotebookClient`PackageScope`seekAfter[
-                    1342461000]; Null], TemplateBox[{
-                    StyleBox[
-                    PaneBox[
-                    TemplateBox[{
-                    RGBColor[
-                    0.4901733406265805, 0.4901733406265805, 
-                    0.4901733406265805]}, "HintPodIconHint"], 
-                    ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
-                    BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
-                    All, StripOnInput -> False], "\" \"", 
-                    TemplateBox[{"\"Suspicious use of session symbol \"", 
-                    StyleBox[
-                    "Echo", "Program", FontWeight -> Medium, 
-                    ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L718,C9) \
-\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
-Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
-False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
-                    DefinitionNotebookClient`WithCurrentNotebook[
-                    EvaluationNotebook[], 
-                    DefinitionNotebookClient`LoadDefinitionNotebook[
-                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
-                    DefinitionNotebookClient`PackageScope`setHint[
-                    "Suggestion", "Paclet", 
-                    DefinitionNotebookClient`$CurrentNotebook, 
-                    "cbe3b348-f717-4905-85ee-d1f6a815ee0f", 1342461000, 
-                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
-                    "File" -> 
-                    "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 718, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 718, 
-                    "SourceColumnEnd" -> 13, "Message" -> 
-                    "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L718,C9) \\\"\", Rule[FontOpacity, 0.65`], \
-Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
-List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
-                    "SourceInformation" -> 
-                    CodeInspector`InspectionObject[
-                    "SuspiciousSessionSymbol", 
-                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{718, 9}, {718, 13}}, 
-                    ConfidenceLevel -> 0.55, "File" -> 
-                    "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
-                    "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L718,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L714,C7) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -25544,7 +25544,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "6fea09d3-a6f4-4118-a0e5-a553d59b7ea3", 381530457, 
+                    "586e4dea-c231-43f5-a246-0102a6d4e52c", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -25596,7 +25596,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "b838ddb3-53b8-460f-9cb8-f2af42059d0e", 381530457, 
+                    "bf269fa7-4703-474b-8a61-9cddc6f11edc", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -25648,7 +25648,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "6fb6fb70-4c02-48fb-aeb2-1fbbac9d3c7b", 381530457, 
+                    "dab9813f-a682-4647-82a5-640e3696ea72", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -25700,7 +25700,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "8ad8a3b2-6be0-4d6b-a393-fd14cf9e759c", 381530457, 
+                    "b716a653-3945-4fa0-b961-3175446d88f7", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -25791,8 +25791,8 @@ Rule[StripOnInput, False]]\)"|>];
                     Not[
                     FreeQ[
                     DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "45e540de-dbd3-49f9-88f0-a75015ebc85b"]]]]]], Appearance -> 
-                   None, BoxID -> "45e540de-dbd3-49f9-88f0-a75015ebc85b", 
+                    "c8d71573-fe06-46f3-8bfe-c5dd42e8841f"]]]]]], Appearance -> 
+                   None, BoxID -> "c8d71573-fe06-46f3-8bfe-c5dd42e8841f", 
                    Evaluator -> Automatic, Method -> "Preemptive"], 
                   MouseAppearanceTag["LinkHand"]]}}, 
                GridBoxAlignment -> {
@@ -25820,8 +25820,8 @@ Rule[StripOnInput, False]]\)"|>];
                     DateString[
                     TimeZoneConvert[
                     DateObject[
-                    3.996677821656392`16.354274129685194*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    4.0033064593322`16.354993826455296*^9, TimeZone -> 0]], {
+                    "MonthName", " ", "DayShort", ", ", "Year", " ", 
                     "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
                     StandardForm], SingleEvaluation -> True, Evaluator -> 
                    "System"], FontSlant -> Italic, FontColor -> 
@@ -25931,7 +25931,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "aa699a5f-5b7c-4567-a50e-524acdb2ae3b", 1334485675, 
+                    "ffce9ffd-e794-4b24-b32f-2eaefb81cf76", 1334485675, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -25983,7 +25983,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "b5eff86a-9c96-4398-b777-d9367edf8187", 1342461000, 
+                    "42cf9f70-cdb2-4752-a2e8-d655bc39a8e3", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -26003,7 +26003,7 @@ List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)",
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
                     "\!\(\*StyleBox[\"\\\" (L202,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
@@ -26024,7 +26024,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L410,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L344,C11) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26035,29 +26035,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "0bfffe5f-3824-4d9b-bd4e-6c183e83d68d", 1342461000, 
+                    "ee7adb5f-6565-4e39-bf7e-1c0808c1af0c", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 410, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 410, 
-                    "SourceColumnEnd" -> 13, "Message" -> 
+                    "Editor" -> Automatic, "SourceLineStart" -> 344, 
+                    "SourceColumnStart" -> 11, "SourceLineEnd" -> 344, 
+                    "SourceColumnEnd" -> 15, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L410,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L344,C11) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{410, 9}, {410, 13}}, 
+                    CodeParser`Source -> {{344, 11}, {344, 15}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L410,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L344,C11) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26076,7 +26076,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L419,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L451,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26087,29 +26087,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "9a2626bb-1606-4acc-bcc6-8aed03baa6b5", 1342461000, 
+                    "cce81286-3baa-4f9c-bcb4-1784adfeb115", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 419, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 419, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 451, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 451, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L419,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L451,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{419, 9}, {419, 13}}, 
+                    CodeParser`Source -> {{451, 9}, {451, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L419,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L451,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26128,7 +26128,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L453,C7) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L460,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26139,29 +26139,81 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "143aeafe-2e26-4b5d-9b76-3fdd1f0c0475", 1342461000, 
+                    "c3d27f5e-5361-4130-b56d-8d1abc6d4931", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 453, 
-                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 453, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 460, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 460, 
+                    "SourceColumnEnd" -> 13, "Message" -> 
+                    "Suspicious use of session symbol \
+``Echo``.\!\(\*StyleBox[\"\\\" (L460,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                    "SourceInformation" -> 
+                    CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{460, 9}, {460, 13}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
+                    "Position" -> 
+                    "\!\(\*StyleBox[\"\\\" (L460,C9) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"|>]; 
+                    DefinitionNotebookClient`PackageScope`seekAfter[
+                    1342461000]; Null], TemplateBox[{
+                    StyleBox[
+                    PaneBox[
+                    TemplateBox[{
+                    RGBColor[
+                    0.4901733406265805, 0.4901733406265805, 
+                    0.4901733406265805]}, "HintPodIconHint"], 
+                    ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                    BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
+                    All, StripOnInput -> False], "\" \"", 
+                    TemplateBox[{"\"Suspicious use of session symbol \"", 
+                    StyleBox[
+                    "Echo", "Program", FontWeight -> Medium, 
+                    ShowStringCharacters -> True, StripOnInput -> False], 
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L494,C7) \
+\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
+False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+                    DefinitionNotebookClient`WithCurrentNotebook[
+                    EvaluationNotebook[], 
+                    DefinitionNotebookClient`LoadDefinitionNotebook[
+                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                    DefinitionNotebookClient`PackageScope`setHint[
+                    "Suggestion", "Paclet", 
+                    DefinitionNotebookClient`$CurrentNotebook, 
+                    "9a0ef46e-c7ab-49b4-b550-03e676966ec9", 1342461000, 
+                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                    "File" -> 
+                    "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                    "Editor" -> Automatic, "SourceLineStart" -> 494, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 494, 
                     "SourceColumnEnd" -> 11, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L453,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L494,C7) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{453, 7}, {453, 11}}, 
+                    CodeParser`Source -> {{494, 7}, {494, 11}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L453,C7) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L494,C7) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26180,7 +26232,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L522,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L563,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26191,29 +26243,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "2f094c41-78e1-471d-84c2-dbf218e1c341", 1342461000, 
+                    "1ed4beed-de29-4ce8-b81e-be7b01b0e469", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 522, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 522, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 563, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 563, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L522,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L563,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{522, 9}, {522, 13}}, 
+                    CodeParser`Source -> {{563, 9}, {563, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L522,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L563,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26232,7 +26284,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L531,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L572,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26243,29 +26295,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "c2b70bda-d832-400f-957a-24692facfb1f", 1342461000, 
+                    "741b581b-d944-4fd6-82dd-01b05d36799a", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 531, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 531, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 572, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 572, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L531,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L572,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{531, 9}, {531, 13}}, 
+                    CodeParser`Source -> {{572, 9}, {572, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L531,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L572,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26284,7 +26336,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L540,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L581,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26295,29 +26347,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "3c537bab-82d7-46dd-a03d-dfdd7d6388b4", 1342461000, 
+                    "135f580d-3d4f-45ec-bb03-a6ad359c9094", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 540, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 540, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 581, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 581, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L540,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L581,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{540, 9}, {540, 13}}, 
+                    CodeParser`Source -> {{581, 9}, {581, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L540,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L581,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26336,7 +26388,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L637,C9) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L678,C9) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26347,29 +26399,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "17da9cbe-76f5-4893-94ec-ffbfab3cb884", 1342461000, 
+                    "4c7c7a95-166f-4c7a-bbe4-9111851491e6", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 637, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 637, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 678, 
+                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 678, 
                     "SourceColumnEnd" -> 13, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L637,C9) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L678,C9) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{637, 9}, {637, 13}}, 
+                    CodeParser`Source -> {{678, 9}, {678, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L637,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L678,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26388,7 +26440,7 @@ Rule[StripOnInput, False]]\)"|>];
                     StyleBox[
                     "Echo", "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L673,C7) \
+                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L714,C7) \
 \\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
 False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
@@ -26399,81 +26451,29 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "9277beda-7b0e-497e-9cb6-53550b5c58f1", 1342461000, 
+                    "169d0e20-7cdc-4a90-9e42-eb149ed983ec", 1342461000, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 673, 
-                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 673, 
+                    "Editor" -> Automatic, "SourceLineStart" -> 714, 
+                    "SourceColumnStart" -> 7, "SourceLineEnd" -> 714, 
                     "SourceColumnEnd" -> 11, "Message" -> 
                     "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L673,C7) \\\"\", Rule[FontOpacity, 0.65`], \
+``Echo``.\!\(\*StyleBox[\"\\\" (L714,C7) \\\"\", Rule[FontOpacity, 0.65`], \
 Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
                     "SourceInformation" -> 
                     CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{673, 7}, {673, 11}}, 
+                    CodeParser`Source -> {{714, 7}, {714, 11}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                     "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L673,C7) \\\"\", \
-Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
-Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
-Rule[StripOnInput, False]]\)"|>]; 
-                    DefinitionNotebookClient`PackageScope`seekAfter[
-                    1342461000]; Null], TemplateBox[{
-                    StyleBox[
-                    PaneBox[
-                    TemplateBox[{
-                    RGBColor[
-                    0.4901733406265805, 0.4901733406265805, 
-                    0.4901733406265805]}, "HintPodIconHint"], 
-                    ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
-                    BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
-                    All, StripOnInput -> False], "\" \"", 
-                    TemplateBox[{"\"Suspicious use of session symbol \"", 
-                    StyleBox[
-                    "Echo", "Program", FontWeight -> Medium, 
-                    ShowStringCharacters -> True, StripOnInput -> False], 
-                    "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L718,C9) \
-\\\\\\\"\\\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
-Inherited]], Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", \
-False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
-                    DefinitionNotebookClient`WithCurrentNotebook[
-                    EvaluationNotebook[], 
-                    DefinitionNotebookClient`LoadDefinitionNotebook[
-                    "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
-                    DefinitionNotebookClient`PackageScope`setHint[
-                    "Suggestion", "Paclet", 
-                    DefinitionNotebookClient`$CurrentNotebook, 
-                    "cbe3b348-f717-4905-85ee-d1f6a815ee0f", 1342461000, 
-                    "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
-                    "File" -> 
-                    "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic, "SourceLineStart" -> 718, 
-                    "SourceColumnStart" -> 9, "SourceLineEnd" -> 718, 
-                    "SourceColumnEnd" -> 13, "Message" -> 
-                    "Suspicious use of session symbol \
-``Echo``.\!\(\*StyleBox[\"\\\" (L718,C9) \\\"\", Rule[FontOpacity, 0.65`], \
-Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
-List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
-                    "SourceInformation" -> 
-                    CodeInspector`InspectionObject[
-                    "SuspiciousSessionSymbol", 
-                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{718, 9}, {718, 13}}, 
-                    ConfidenceLevel -> 0.55, "File" -> 
-                    "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
-                    "Position" -> 
-                    "\!\(\*StyleBox[\"\\\" (L718,C9) \\\"\", \
+                    "\!\(\*StyleBox[\"\\\" (L714,C7) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"|>]; 
@@ -26503,7 +26503,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "6fea09d3-a6f4-4118-a0e5-a553d59b7ea3", 381530457, 
+                    "586e4dea-c231-43f5-a246-0102a6d4e52c", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -26555,7 +26555,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "b838ddb3-53b8-460f-9cb8-f2af42059d0e", 381530457, 
+                    "bf269fa7-4703-474b-8a61-9cddc6f11edc", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -26607,7 +26607,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "6fb6fb70-4c02-48fb-aeb2-1fbbac9d3c7b", 381530457, 
+                    "dab9813f-a682-4647-82a5-640e3696ea72", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -26659,7 +26659,7 @@ False]]], Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :>
                     DefinitionNotebookClient`PackageScope`setHint[
                     "Suggestion", "Paclet", 
                     DefinitionNotebookClient`$CurrentNotebook, 
-                    "8ad8a3b2-6be0-4d6b-a393-fd14cf9e759c", 381530457, 
+                    "b716a653-3945-4fa0-b961-3175446d88f7", 381530457, 
                     "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                     "File" -> 
                     "/Volumes/Macintosh \
@@ -26750,8 +26750,8 @@ Rule[StripOnInput, False]]\)"|>];
                     Not[
                     FreeQ[
                     DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "45e540de-dbd3-49f9-88f0-a75015ebc85b"]]]]]], Appearance -> 
-                   None, BoxID -> "45e540de-dbd3-49f9-88f0-a75015ebc85b", 
+                    "c8d71573-fe06-46f3-8bfe-c5dd42e8841f"]]]]]], Appearance -> 
+                   None, BoxID -> "c8d71573-fe06-46f3-8bfe-c5dd42e8841f", 
                    Evaluator -> Automatic, Method -> "Preemptive"], 
                   MouseAppearanceTag["LinkHand"]]}}, 
                GridBoxAlignment -> {
@@ -26859,12 +26859,12 @@ Rule[StripOnInput, False]]\)"|>];
                     TagBox[
                     TemplateBox[{"\"Version\"", "\": \""}, "RowDefault"], 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"1.1.2\"", "SummaryItem"]}]}, {
+                    TagBox["\"1.1.4\"", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox[
                     TemplateBox[{"\"SubmissionID\"", "\": \""}, "RowDefault"],
                      "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"6695\"", "SummaryItem"]}]}, {
+                    TagBox["\"4118\"", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox[
                     
@@ -26901,31 +26901,30 @@ Rule[StripOnInput, False]]\)"|>];
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                     Short[#, 0.75]& ], 
-                    "OEM6eJztWM1u20YQtixKsmRFcRMXRXsSCKNFDwps17HdXlyZthIDcSJol\
-bRFECArcigtSi6J3aUd9R166rWHvlV7bh+\
-gj9DO8keSKQdwZRftQbxQ4Px9Ozsz30BuQa716OVx8A6kW5IfnHEFIhSgqGIBx89uQZZ7gVZwDWk8Y\
-1K5q7Lcp0P8Qioksm2QkqyTyPepGD8F6pDCa7coN07GnPrMPg+\
-cyANtvjoxLxJQstEfhyBBvQ1C4FtbstShnoRMuplJwR+AQxAObG2RUg/9j1FnvQ9+\
-6OHHBGHiuCjvdykHAh7YKhBXYxo9hJEFKcnKE8Gcq8bZu6KdaFFZVo8jpbI01NITJX4/\
-6Zx2BbtACG87IuDqlDs9kEEkbCDVzukxUz4NJdlIE4NGL/\
-CcIDR4DeUEPDoGRzaSEJ2I2zrj78uO0RcRTI5Ra4chUEE5Jt94HvCppHpMJRA19sBdyZ29enpBvYhi\
-ZmS1HanAxyu2J9LyOahR4JBaVwDmVrGLGadtjw25D1xlCZVlC3SlZO+\
-p6plPh0DYD4AZq6QZm1hdiVvqMx+kWImf+\
-teTL2hYtyIh0PErBAzkXgfza9HwKbDhSEModYNLjFmQm+2BDLxIway+\
-vHdOh5y5zI5r2PoLr3utI6gfX2pRrsXp0eVbMn//+ScTHVZPmMCa0WdGee/JsRV4gRAfxc+vR+Jh/\
-PxxJL6Nn9+OrI8nJ64TJVj4gp/xMFLTKk6EDQuhI7AudRzGh3lxLYYV48ndYz2WnFMxZFzOlrF+\
-WyvWSv73+7GUp8We+SlM3llvF/O9nW+y1JQ0zKzMdYWaxDC/\
-apqkhm5OwKWRp8iHacmfKfDbnAfJKCHFP3/\
-8ZWZ0rJldanugzMns0Pq3QVY2X748O1kc0aems7u7e0B37NbB9vZ2a8/Zc1uHe7t7LXfncH/\
-78fYXOweHgxzeLPMbaYrnOiXTIBWsqcjncuaISVMYz8CdqhmIe17nmoat6U84RUBBvqzup2A0wrgVb\
-4xlPs7NAWVRSUhtXes3jmqt/vNgM3POyM25TTIKLnUj8KE1wiFp6zmVT9H68wiJRWCDfT8na+\
-Bgx5bFicCkHiDF6S3Hrsdc0XdJ0+ZN/+\
-UyKPaD8P9bABv6TjzGoRtIlpJZcsEFqzDRSpjsP2FgywvkwgycH91LCl5S8AIUXFlS8B1T8C3wVs1X\
-2EAIZHHIFXPn0c6j3bvD1DBJNPCZ1LBuk8uyub//5eO7w7VhJh1qCYjjLY4sZoA7vMNz5GGceIsD+\
-tz8DtupGcbd0BRpczWZbA4AR0YzjAYekyNw7i6bJRPliyPenIyAabEsN9PlZrrcTBfYTKdbUn7pu2a\
-nmnFP6mm/6XXVy6+VD6/8AZasRdlCSApvUH3y79mD+\
-WZul1ukPkvzpJyQdYsYmmPJ1k2YskUqKcGRUkxTLY15yi7E0BzRIo2roz3Z0dE4nazksxvOx2kFJH/\
-C0YE3VwFrpw67VvAgsfmGqVG6sskEyN//tPPN"}, "ClickToCopyTemplate"]}, {
+                    "OEM6eJztWM1uI0UQjtd/\
+seP1ht0gBCdrFIE4eBUHQyIuwZnEu5E2u5bbuwtCSNueqbFbzPSMunuSNe/\
+AiSsH3grO8AA8AlTPn51xVgpOEBw8l7Gm/r6urqqvZKcgN4f08th/C9Ipy/fOuAIRCFBUMZ/\
+jZ6cgK0NfKzglWXrGpHLuycqITvALqZLQskBKskVCz6Ni9hSoTQrfOkW5fTLj1GPWuW+\
+HLmjze5l5kYCSzdEsAAnqjR8A392V5T51JaTSnVQK3hhsgnBgd5eUh+h/hjpbI/ACFz/\
+GCGPHRflgQDkQcMFSvrgaszREGGmQsqw+Ecy+apy+q9qJFlVk7ThUKk1DPTlR7Pej/\
+ulAsAuE8KYvfK5OuT0E6YfCAlLrnx4z5dFAku0kMWj0As8JQoPXUE7ApTOwZTMO0Q+5pTP+\
+ruyURiKE7Bj1XhAAFZRj8kvPfT6X1I6pBKJmLjgbubPXTi+\
+oG1LMjKz1QuV7eMVWJq2cg5r6NqkPBGBuFbtYcNpz2YR7wFWaUFkxQVdK+\
+p6rnnl0AoT9AJixapKxzOpK3PKIeSDFRvQ0vsq+\
+oGHDDIVAx68QMJD7fcyvSYOnwCZTDaE88C8xZkHu9MbSd0MFi/ry/jmdcOYwK6ph8y+87s2+\
+oF50qUW5GaVHl2/Z+P3nnwx0WDthAmtGnxnlwyfHpu/6QnwQPb8eiUfR88eR+\
+Dp6fjsyP8xO3CBKsOAFP+NBqOZVHAubJkJHYANq24xP8uJ6BCvCk7vHRiQ5p2LCuFwsY/02N8yN/\
+O93Y6nMiz31U8jeaW8X872db7LElDSNtMx1hRqkZHzZMkgd3ZyAQ0NXkfeTkj9T4PU49+NRQop//\
+vjLwujYNAbUckEZ2ezQ+rdBVjFevjw7WR3Rx4a9v79/QDtW+2Bvb6/dtbtO+7C73207ncMv9j7f+\
+6xzcDjO4U0zv52keKlTUg1SxZoKPS4Xjhg3RekZOHO1EuJe1rmmYev6E04RUJAvqwcJGI0wasUbY1m\
+Oc3NAaVQSUEvX+o2jmvf+\
+ebCFOVfKzbkdMvUvdSPwiTnFIWnpOZVP0dbzEIlFYIN9vyRr4mDHlsWJwKQeIMX5LUeuZ1zRt3HT5k\
+3/5TIojvzg/1sA2/pOXMZh4EuWkFl8wQWzkGnFTPafMLDp+\
+nJlBs6P7jUFryl4BQqurin4jin4FnhrxitsIASyOuSq0Xncedy9O0xNg4Rjj0kN6za5rBjdTufw7nB\
+tG3GHmgKieKsjixjgDu/wHHkYJ97qgD41vsF2agVRN7RE0lwtJltjwJHRCsKxy+QU7LvLZtlA+\
+eqId7IRMC+W9Wa63kzXm+kKm+l8S8ovfdfsVAvuSSPpN72uuvm18tGVP8DitShdCEnhO1TP/\
+j17uNzMvUqbNBZpnlRism6TkuZYsnsTpmyTakJwpBzRVFtjnrMLKWmOaJPm1dEe7+honExW8skN5+\
+O8AuI/4ejYXaqAzVObXSt4GNu8ZmqarGwyBvI3tuLzuQ=="}, "ClickToCopyTemplate"]}, {
                     "\"\[FilledVerySmallSquare]\"", "\"Resource object:\"", 
                     TemplateBox[{
                     TagBox[
@@ -27142,7 +27141,7 @@ svthfJj/YHyY/2F8WPjAzIOFH0p8AQA7u3Ea
                     ImageSize -> 12, BaselinePosition -> Scaled[0.1], 
                     ImageSize -> {Automatic, 35}}], 
                     StyleBox[
-                    RowBox[{"\"Anto\"", "\[Ellipsis]", "\"ssion\""}], 
+                    RowBox[{"\"AntonAn\"", "\[Ellipsis]", "\"gression\""}], 
                     FontFamily -> Dynamic[
                     CurrentValue["PanelFontFamily"]], FontSize -> 
                     0.8 Inherited, ShowStringCharacters -> False, 
@@ -27163,85 +27162,62 @@ svthfJj/YHyY/2F8WPjAzIOFH0p8AQA7u3Ea
                     DefaultBaseStyle -> {Background -> None}, 
                     BaselinePosition -> Baseline, Method -> "Preemptive"], 
                     "]"}], Short[#, 0.75]& ], 
-                    "OEM6eJztHGtsHMX5znc+v50HgapA6WnjQmh7seM4cUAqd/b5lTZODq/\
-DKwl473bOXry3e5nZs32phNwClSg0TQsUSkswbUGUHxUgVQoUsCNaUYRKKxpoWlpwCK8oJYkqHgHR0\
-pnZ19zenW9t3CSVbhLdena+me898+\
-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\
-PembHjmrwKpPAMhv4rrUDRVoR/qWHO/\
-qgiilLg8IyiaJIMBMAyxAeDFOUy1lSDia7lVY2tWt6xuu5hj9Iwl34NVKGd5zERc1VRrrJqMGbI0FF\
-dBUquEbEGO1kcbsLyVEQAlDYjWrBX8iDpOBKgMR0cEKCRIMs0p4RqqcOJqJD+\
-F9ZDdBMaAbBz2h8Jzq8IcXGrIJy+JZ0LwVRhHJqUgS4LGFX+CpA3mx+\
-rLh6kmGUdZYr2C2FIXkIEGnLQsMWgh2mXtrzQp+\
-SnLIvQUyG2aWHmyIynDiLWUObEaTvmnMO8nS1hpbkI+\
-Y70VHOcccmPyJMXr2uQxfExIYJnmosJQu59whW8J1wVQApsJWdw92laOV5PauABBMEUcKJhUYdD0oa\
-DtRMFxFY4mZayRIgSeClssoPsz3xjdYo1WzB8ZUw7w56JxtwPVbc6k4gD2C3A0b6wxhudqMQgSEjGA\
-qM/WMl06q2jCBMWdN/V/bAa+QTV95hrAUnPDjKlIMmo+\
-uoK9bHhCCz6npVAVlVW04EKVM6AqV6rKlapypapcqSpXqsqVqnKlqlypWpiGypWqcqWqXKkqV6rKla\
-pypapcqSpXqsqVqnKlavEqVXXlSlW5UnVG5IbLlaozoFJVksB67hsgi1cR0UL2AXvlBsP9z+\
-YKkMnx3q/yVRzdC8jf+\
-RRRbfpen3yQ93FKKRDyhxsIvoEjW0MQ4W0AIHqnnuOlVEambHGoEu8HUMuVnMeV2JZxXWoiQ/\
-xamJdmk47v+5i7JuBGNC2NLm1uhkZBA60eV+\
-UkPukSspoRVyfUVLNuigMgTYotKszasM0iDnzbhTWJUHtLS0uoTWxLhja0tbaFkms2rG9Z17J2TfuG\
-eDPHJ04BFr6+D7sYxJvT6NaBTQsR7gpuC5SGJbyRYxuSAd7p3HtOA9faHuxIw2BrS+\
-tabmGq3YSVg7Tg1rSI/5gX6kuCX8/IBHXbglBXc1u3buxyj/FCzo1GFkTKco6GIWJwDB+\
-R89q7qjh6kC8QqyH7BWHF/4pitT2wCgcPJIDUK0D53+0zqEKcVVrMIrxWVJawtw+\
-Z9ce4OtHUhFbOCSNKKN3UlDSqi1+aez1akcTQ1SigVyfxvJp+NYOAioWBKQ1QqmkwQ45FZ+\
-CFIarNoBHHZ1aBzQ5g9GP1HfKYUNsBoTo+AgTRPn0NvuEXbz56+b4LXgrrUbuxTE75Ds+PqXJ2WC/\
-S+nPpiH5qIJq1KnlRT9STPzxdYAZLI1MaXEvbM+RuJaWcUNQJdkkA0qca5/\
-tZVgRhzDwcdoy8Mz3HiB7o/XV6vtisNaeda4bnGDGw2WFlwUck++\
-Eh2mjfjMkqfsJShnMiOl2ktvaweJO0vRXGIXclDbn5gL658XVdkiCrw3rtOicC5mV8jOOHHVmQFJex\
-8XM2E65i92idfc+MEi3VWUONA+\
-TBEI8N4AeJDGLezdAfBHXaC1u6FapTyH4B4lMF5QnLp69pmGrFAn0t/xn9ZTPd/\
-nYYXkfb8bLzlZ1vEZyPtbXzaXsyDO/\
-bS9qrYXjyQ9LePo3e6NIXFuqey6NqKk3o6J5IG48Y5inr8kQu7Nbs7wgUCg1syiiuC+bENUatgAJ+\
-ZU5AaIQ0/YIGpYlkvYOoXKM9Ybqpx+MY8XjYpF/uXLqr3Hw0nOf+\
-tvObIEXw2hDTRVctNtemzIm3ADdOvNOl8U4X43e6NL/\
-5c01SS8u5NF7nBleAm6IQ4dLclLaA4tyUtoDi3JS2gILc1G7BkawsZFlXqkR1HYqUEowfubDTtqW8y\
-zwIot5oPZNgXm6/pNctA/KAjvLeyVvSBZJCRta6MlBP0trT85O09E1Gf+4ZXIHO7QVqCmB/\
-TQxiXCipwpT1YyOnMfh2qjtPIZaJ5Jn1iaLOwqxWOkSopszphDYy53aBb1EsWqCwAJyfMVzIrS7EBD\
-i/Pb6kbZ+KcMQ60aM4AMDoY4JIznUbW84rs2flHIZ6qSP/ZVf7PVhHsrdIVcMKiepoSITRk+\
-xdqbgosFETZPbN8CJPJawPLFIchBy/FoRBV8+\
-pywwN9UwQbJFu8gp8k5u8znxCHrfZhwKadCp5qbF7FoeY40VpV29DBy7PgAxTtqkaVFVZk9L8Rb1AC\
-2ojICjnZImCahLflVDQzFTmvTiOV6BRnTtZ1fOaoIgCFI0abO674xsVScP2Ke2iDo03mDmiURe6xtJ\
-rMKRinB+Lr1ashYwsL8ili+4OBSJ3/UFTv0/3qPz77ENCBeOr+JS1gfK/VeBFAT4hyEDM9+\
-lCVbgCScDyV3bKX9k5RWbw//yVHSb+dnwbpkD4wSzP1xseR77HM6+dhvfuIGFb7rHaUR3i/\
-eTlBP5Cd28TYHBSOnF3cIb4ehMd4ZEP6CWvEF91hX6g8JW0hBHCkYhdveVb5luTDfHL7TLaJlV/\
-IwQz6yN1sXazFDc+\
-Pp5fhFPj19t1N7q1NwtpqRmTFeJrdXJ7JBpm1UXJJOO3C7tLLhpfnxDj61o3hJItSSHUlmiPhzasF8\
-VQ2yUtSRHLqLVl3doQT5yLaJNu/hMafxGrhaGiWhiyzV7/5UIhLueZfXW3KBUcWK7PuVLSRoxDB+\
-lfHfsvegH0Fg=="}, "ClickToCopyTemplate"]}}, 
+                    "OEM6eJztG31sW0fdjp3vpF/\
+LNrENZL1GoyCcOF9NWonZjhMnFU1rcsm6re3I8/M5fs3ze+7dcxwXqQpsQhrbSqEtK4N26aBo9A/\
+UVULqvlMGGmhiSKVARIEl6zpRjbUV2kZXDcbdPZ/9/JKqThqa/eGfIl9+d7/7fd+\
+H7ydH7biiX0x1amMQR0vxyg2qDlECQV3UZU0l3VE7LuvXKEHUiZ0bZaxHS3DZgDhMesCyfoi1JJLg5\
+vAOKOmgGiTjcRGle6EYAfatUQde0ZVWxbgs9WmRpAIpl5IsFweAOl42kE5ADPUhLQHV+\
+npcGhQVDPloHR+F8TCMAKIVrK8Hpf2Ef5rQVA/\
+AeEIhnYaiBmMHXh4SVQigQlTSUL5MZz9RgwspxeU9SI7kT+\
+ZtOWVCh8pwZWdS17k3qjIWGXzvCHaHkDxKVBgKIk3Vu9UI9wmoDHZ3ynpcTGCwIuMYMmkzsRMiqjxV\
+pQsqYhpG8DJDRDCpStTx1/\
+KOcwAlYdaMKn8iAUUkqhLEzk2amhup7BQxBHpagVGbxfbK7lFRSYrEM7jSn9S1OIm0lB0t64N6TIuA\
+qhCCxLe6PGpi6lfkYTUOVZ07FJcFIE0Y3uZIN8TFYQjkXZB4rDzjseysPLmlA3IcYmRjUOPL9pCJNY\
+EkQoTxvURhCGqDxL8BMdEL5eEYVaE0pKWITDuu84expiR1aKbHtX3isCpHZYmlcuATEtMK5hIjctU9\
+SEzEZAlTdGXGSXZcOUD6RlSIMfp63c97ZnZFvNn0IWslKEowqKF4to8w7e/\
+pDGiKhtArL1O46EUeBtNe9BkGv/VSL2xOiJKspzOWXqZslwVlRYERovYoNK2wU7aSUoetxGaz5/\
+6u0Vdm7TO6a2m33eEgmOXTgmZFri4pK2GKTcg+8jld8rO1PhO+\
+7amHdtA2sW9SZThKxxmdsDJFW3WnG5vxqdfu2+\
+6z8ssKOf3ePeZJexWvZGZqsw3FzEI5nlUqMz8rxMyPCCk3LLExyXsO/zhtaHZqlLZv2E5iwxIXs+\
+TjvXtUn4n+rpcPjhhKvSnljV/40G+en8efCL2rhAl5hJm/p/c/GaKQQdTbvYu2V3d/juEN3wMML/\
+vGTMyM22zHY2Z62+l4ex6/12famBL/vYgzlrfSdtP+M3l4VskMfp9jYpsZH/\
+uFe5uZ31j1r7aa5R18+9tbzfqM129ZTduRF3/D8KEeJDC54bcZ7rrDJpidwvETh+404+\
+MHAu2yeT73D+fP/cflh84dSZn1mxaeTZn15zi3j+Pcfo5z/3B+3H958Sp4nZ94lsKMF33/\
+AIXzXnT1IwoXClznp2wOuzNv4Z5a7bCXGlk73s0U+84fDceeeO8B5rCrX4iYcd+eo4M+E/34cx8/\
+6LPOL9igOgZnvOizDP7mRfv3UTh34waNn52Kmg3iOFd42vnwdrNBHOcG580v2KCPrlD4hxf96IcU3v\
+WiBxlcvHGDJs52sFSbuPIU2xemgy1MwcsPvM9SmY+P/\
+7oXsoiA23rnGmfzCzboNgbveNEfTlN4axFTbvyib4gqNPmXmSQz6Nj9LFI/GX8Um/EVR15iuzOnf+\
+aLbTt91vkFG3T4EAWSabcz+PNiptylvyfMBnGcKzwhHJXNBnGcG5w3v2CDtjH4pxc9/\
+xyFC160m8EipNx09BMWAd+Lr40xhVc+xhSsD+\
+9kRxofX1Nzp84MOPbO0FzjbH7BBrUxOG8yqJnBW4sQoQMt7Iyd3mkcH6HwYSMyL/giZtx2+F9sU+\
+D0k1Xrv+azzi/YIGMvOOtFgME5b2ZV/enGDfKlekbNBnGcK3z8zU5kNojj3OC8+\
+QUbtJUB2dzuYUAunk/+gMJinENHLrMI+\
+G45yna5vR0fsLVk2243rmSZ8cmfbme73PSqqZG5xtn8m5pyjpxB1BontWZy1HDv+BNXmHaeRx5m7j/\
+5Qb/mM43vDZzZ6bPSL7n22ex3PcxOjtDJbUzLUOT3wLwabA/1Bn1W+pt6qZlT+9pHjZvJl59g2k5+\
+63fGgf5YF7PmmW++zvDJJ98wbjJm+iXXflqcuZ9q47rUYGTKq08zLT09UyyTXGeOMXwMv8pikkd/\
+U0/3ubSf2N3OfDk5dYGu3onzrS0MPz74XWO/rd2yibZTf32JnXx59Euv/YeQaTmk76PtwWWVwwxP/\
+Ptdthftf38Na3sTrxjam+mj5ZZ3j2o/\
+TkBJ76evAQF7ttvpHyPf9bOvTpmHlU5RGhlGWlKNWB5WSoNIjFtfW6pY54AsjWDrO8yn8R1kDuVmax\
+RYnaWrDYhSDPLnEquvaoCO5MRmdYOaSOp8sCz3subIxSGTTfw9MTfC3xMrhE3EketdArg182C2QYdx\
+v6pqxnskcFx6fCJHb30BzDAEawS/qmsq+9BGG/s0VYzI0leToqrLCuyHw4iEnLATgENwCVYuGUWBU/\
+jlCwKQYrqewOsbG1HmWQ83pDQlSgIuKVoy0iBp8caQKClQ74cJDcu6htI52sYI2f/\
+bxSbJ3e7xeNytkdaou6O1udUdbepY62nztDS1d4QbQU1vOgGRIqsjg/0bQRXxTxeMikkl96JK/\
+WByVIkgWIcK8S59TSzYu4TeMCxfFKHa83xB8pYLXRBLJDko88LFNgtAi+\
+opEUFXnEbOFdWQiwfPlYueK6WhkaiipfA1FGTpuSKTh7PeLjkFKCe7WDKu4uwbcKYlnzCaI3MSO2fT\
+zPGEWkW7uiBxHLSuleUZZZiapnV3fV1myylcIS4V0J1YHcYFSw2UzF+\
+Y6eXZadmB60BMS9HdQh0OxEQkSvTl2Oqi6k3JeBiiPhGNzBpbFiJz9RCCkkwTIODIRZmxTqu6OMZkz\
+5r6f04Dx4CW+PQmwAoaE7K7wBDdoIzyghFgu/\
+kkZLWFJamJBBQNL7gmYj27i0WRYlGkWBQpFkWKRZFiUaRYFCkWRRYWoWJRpFgUKRZFikWRYlGkWBQp\
+FkWKRZFiUaRYFFm8okhlsShSLIosSVHkugrWCF+BacIlgueTcvy/HOdMioNbhTnUFID9S6BcYElI/\
+5+tERFx6Aiwt9H2aUp9u9BHYi9HyPJXKQtRcUVEXWScVs0aE3ApiGkoP1eArSAPrBS6NClJn3TFeQX\
+pWmsGCjdhuSzJolyAc+uEzUgelmn4+qECRTyPtVcrNLe7/AnkavY0twgLC+\
+1GEhysuwYTJHnmJ7rN5U8OU9FrFyS6WrgXIjyvRV8uNDU0NTQvSFyFMDi4oatwWXcLhSTAXKoUy6zF\
+MmuxzHrdMmvuqmutYM5x9zSxBzWZFUdrr0rUUiO9Je/3dcbdllc3gX07kWr5jZ6/\
+wg2c9EIJ7i7sPkjI6U4C6gvZH9yghoujNoIy48Bxg/\
+LM5gdK2ZbmBtWmaxDwzPdy4warcofYRs24xRNjHfRUaucHYSqVmn0EauEduVMvjUmGNIoJubGpweMG\
+VYa65JsY/WpSHaCTMj9t7L4u07Bn3bqop7Xd3bZ2XcTdGhZFd1hq6XCLzc0trU1Rqb0tSkTQxUWjGS\
+DfV+CYDj5vjsLQNaMwlEt744eNYliZlfYV3RF5zoFVxpwtsh5jclUdG+X+/wFqsgwu"}, 
+                    "ClickToCopyTemplate"]}}, 
                     GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
                     False, GridBoxItemSize -> {
                     "Columns" -> {Automatic, Automatic, Fit}, 
@@ -27277,7 +27253,7 @@ lfHfsvegH0Fg=="}, "ClickToCopyTemplate"]}},
              DateString[
               TimeZoneConvert[
                DateObject[
-               3.996677821656392`16.354274129685194*^9, TimeZone -> 0]], {
+               4.0033064593322`16.354993826455296*^9, TimeZone -> 0]], {
               "MonthName", " ", "DayShort", ", ", "Year", " ", "Hour12Short", 
                ":", "Minute", " ", "AMPMLowerCase"}], SingleEvaluation -> 
              True, Evaluator -> "System"], FontSlant -> Italic, FontColor -> 
@@ -27363,7 +27339,7 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "aa699a5f-5b7c-4567-a50e-524acdb2ae3b", 1334485675, 
+                  "ffce9ffd-e794-4b24-b32f-2eaefb81cf76", 1334485675, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
@@ -27413,7 +27389,7 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "b5eff86a-9c96-4398-b777-d9367edf8187", 1342461000, 
+                  "42cf9f70-cdb2-4752-a2e8-d655bc39a8e3", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
@@ -27432,7 +27408,7 @@ False]]], Rule[StripOnInput, False]]\)", "SourceInformation" ->
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
                    "\!\(\*StyleBox[\"\\\" (L202,C9) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
@@ -27453,7 +27429,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000];
                    Style[
                     RawBoxes["Echo"], "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L410,C9) \\\"\", \
+                   ".\!\(\*StyleBox[\"\\\" (L344,C11) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"}]}] :> 
@@ -27464,28 +27440,82 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "0bfffe5f-3824-4d9b-bd4e-6c183e83d68d", 1342461000, 
+                  "ee7adb5f-6565-4e39-bf7e-1c0808c1af0c", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 410, 
-                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 410, 
-                   "SourceColumnEnd" -> 13, "Message" -> 
+                   "Editor" -> Automatic, "SourceLineStart" -> 344, 
+                   "SourceColumnStart" -> 11, "SourceLineEnd" -> 344, 
+                   "SourceColumnEnd" -> 15, "Message" -> 
                    "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L410,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+\"\\\" (L344,C11) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, \
+Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                   "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{344, 11}, {344, 15}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L344,C11) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"|>]; 
+                DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
+                Null], Row[{
+                 Style[
+                  Pane[
+                   RawBoxes[
+                    TemplateBox[{
+                    RGBColor[
+                    0.4901733406265805, 0.4901733406265805, 
+                    0.4901733406265805]}, "HintPodIconHint"]], 
+                   ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                   BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
+                  All], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> Medium, 
+                    ShowStringCharacters -> True], 
+                   ".\!\(\*StyleBox[\"\\\" (L451,C9) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"}]}] :> 
+              DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "cce81286-3baa-4f9c-bcb4-1784adfeb115", 1342461000, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 451, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 451, 
+                   "SourceColumnEnd" -> 13, "Message" -> 
+                   
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L451,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
 False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
                    CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{410, 9}, {410, 13}}, 
+                    CodeParser`Source -> {{451, 9}, {451, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L410,C9) \\\"\", Rule[FontOpacity, \
+                   "\!\(\*StyleBox[\"\\\" (L451,C9) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
 False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
@@ -27504,7 +27534,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000];
                    Style[
                     RawBoxes["Echo"], "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L419,C9) \\\"\", \
+                   ".\!\(\*StyleBox[\"\\\" (L460,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"}]}] :> 
@@ -27515,28 +27545,28 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "9a2626bb-1606-4acc-bcc6-8aed03baa6b5", 1342461000, 
+                  "c3d27f5e-5361-4130-b56d-8d1abc6d4931", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 419, 
-                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 419, 
+                   "Editor" -> Automatic, "SourceLineStart" -> 460, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 460, 
                    "SourceColumnEnd" -> 13, "Message" -> 
                    "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L419,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+\"\\\" (L460,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
 False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
                    CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{419, 9}, {419, 13}}, 
+                    CodeParser`Source -> {{460, 9}, {460, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L419,C9) \\\"\", Rule[FontOpacity, \
+                   "\!\(\*StyleBox[\"\\\" (L460,C9) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
 False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
@@ -27555,7 +27585,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000];
                    Style[
                     RawBoxes["Echo"], "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L453,C7) \\\"\", \
+                   ".\!\(\*StyleBox[\"\\\" (L494,C7) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"}]}] :> 
@@ -27566,28 +27596,28 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "143aeafe-2e26-4b5d-9b76-3fdd1f0c0475", 1342461000, 
+                  "9a0ef46e-c7ab-49b4-b550-03e676966ec9", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 453, 
-                   "SourceColumnStart" -> 7, "SourceLineEnd" -> 453, 
+                   "Editor" -> Automatic, "SourceLineStart" -> 494, 
+                   "SourceColumnStart" -> 7, "SourceLineEnd" -> 494, 
                    "SourceColumnEnd" -> 11, "Message" -> 
                    "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L453,C7) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+\"\\\" (L494,C7) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
 False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
                    CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{453, 7}, {453, 11}}, 
+                    CodeParser`Source -> {{494, 7}, {494, 11}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L453,C7) \\\"\", Rule[FontOpacity, \
+                   "\!\(\*StyleBox[\"\\\" (L494,C7) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
 False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
@@ -27606,7 +27636,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000];
                    Style[
                     RawBoxes["Echo"], "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L522,C9) \\\"\", \
+                   ".\!\(\*StyleBox[\"\\\" (L563,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"}]}] :> 
@@ -27617,28 +27647,28 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "2f094c41-78e1-471d-84c2-dbf218e1c341", 1342461000, 
+                  "1ed4beed-de29-4ce8-b81e-be7b01b0e469", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 522, 
-                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 522, 
+                   "Editor" -> Automatic, "SourceLineStart" -> 563, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 563, 
                    "SourceColumnEnd" -> 13, "Message" -> 
                    "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L522,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+\"\\\" (L563,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
 False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
                    CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{522, 9}, {522, 13}}, 
+                    CodeParser`Source -> {{563, 9}, {563, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L522,C9) \\\"\", Rule[FontOpacity, \
+                   "\!\(\*StyleBox[\"\\\" (L563,C9) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
 False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
@@ -27657,7 +27687,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000];
                    Style[
                     RawBoxes["Echo"], "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L531,C9) \\\"\", \
+                   ".\!\(\*StyleBox[\"\\\" (L572,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"}]}] :> 
@@ -27668,28 +27698,28 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "c2b70bda-d832-400f-957a-24692facfb1f", 1342461000, 
+                  "741b581b-d944-4fd6-82dd-01b05d36799a", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 531, 
-                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 531, 
+                   "Editor" -> Automatic, "SourceLineStart" -> 572, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 572, 
                    "SourceColumnEnd" -> 13, "Message" -> 
                    "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L531,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+\"\\\" (L572,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
 False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
                    CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{531, 9}, {531, 13}}, 
+                    CodeParser`Source -> {{572, 9}, {572, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L531,C9) \\\"\", Rule[FontOpacity, \
+                   "\!\(\*StyleBox[\"\\\" (L572,C9) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
 False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
@@ -27708,7 +27738,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000];
                    Style[
                     RawBoxes["Echo"], "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L540,C9) \\\"\", \
+                   ".\!\(\*StyleBox[\"\\\" (L581,C9) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"}]}] :> 
@@ -27719,28 +27749,80 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "3c537bab-82d7-46dd-a03d-dfdd7d6388b4", 1342461000, 
+                  "135f580d-3d4f-45ec-bb03-a6ad359c9094", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 540, 
-                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 540, 
+                   "Editor" -> Automatic, "SourceLineStart" -> 581, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 581, 
+                   "SourceColumnEnd" -> 13, "Message" -> 
+                   
+                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
+\"\\\" (L581,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                   CodeInspector`InspectionObject[
+                    "SuspiciousSessionSymbol", 
+                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
+                    CodeParser`Source -> {{581, 9}, {581, 13}}, 
+                    ConfidenceLevel -> 0.55, "File" -> 
+                    "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
+                   "Position" -> 
+                   "\!\(\*StyleBox[\"\\\" (L581,C9) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
+                Null], Row[{
+                 Style[
+                  Pane[
+                   RawBoxes[
+                    TemplateBox[{
+                    RGBColor[
+                    0.4901733406265805, 0.4901733406265805, 
+                    0.4901733406265805]}, "HintPodIconHint"]], 
+                   ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                   BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
+                  All], " ", 
+                 Row[{"Suspicious use of session symbol ", 
+                   Style[
+                    RawBoxes["Echo"], "Program", FontWeight -> Medium, 
+                    ShowStringCharacters -> True], 
+                   ".\!\(\*StyleBox[\"\\\" (L678,C9) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)"}]}] :> 
+              DefinitionNotebookClient`WithCurrentNotebook[
+                EvaluationNotebook[], 
+                DefinitionNotebookClient`LoadDefinitionNotebook[
+                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+                DefinitionNotebookClient`PackageScope`setHint[
+                 "Suggestion", "Paclet", 
+                  DefinitionNotebookClient`$CurrentNotebook, 
+                  "4c7c7a95-166f-4c7a-bbe4-9111851491e6", 1342461000, 
+                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
+                  "File" -> 
+                   "/Volumes/Macintosh \
+HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
+                   "Editor" -> Automatic, "SourceLineStart" -> 678, 
+                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 678, 
                    "SourceColumnEnd" -> 13, "Message" -> 
                    "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L540,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+\"\\\" (L678,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
 False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
                    CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{540, 9}, {540, 13}}, 
+                    CodeParser`Source -> {{678, 9}, {678, 13}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L540,C9) \\\"\", Rule[FontOpacity, \
+                   "\!\(\*StyleBox[\"\\\" (L678,C9) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
 False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
@@ -27759,7 +27841,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000];
                    Style[
                     RawBoxes["Echo"], "Program", FontWeight -> Medium, 
                     ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L637,C9) \\\"\", \
+                   ".\!\(\*StyleBox[\"\\\" (L714,C7) \\\"\", \
 Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
 Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
 Rule[StripOnInput, False]]\)"}]}] :> 
@@ -27770,130 +27852,28 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "17da9cbe-76f5-4893-94ec-ffbfab3cb884", 1342461000, 
+                  "169d0e20-7cdc-4a90-9e42-eb149ed983ec", 1342461000, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 637, 
-                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 637, 
-                   "SourceColumnEnd" -> 13, "Message" -> 
-                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L637,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
-Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
-False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
-                   CodeInspector`InspectionObject[
-                    "SuspiciousSessionSymbol", 
-                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{637, 9}, {637, 13}}, 
-                    ConfidenceLevel -> 0.55, "File" -> 
-                    "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
-                   "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L637,C9) \\\"\", Rule[FontOpacity, \
-0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
-List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
-False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
-                Null], Row[{
-                 Style[
-                  Pane[
-                   RawBoxes[
-                    TemplateBox[{
-                    RGBColor[
-                    0.4901733406265805, 0.4901733406265805, 
-                    0.4901733406265805]}, "HintPodIconHint"]], 
-                   ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
-                   BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
-                  All], " ", 
-                 Row[{"Suspicious use of session symbol ", 
-                   Style[
-                    RawBoxes["Echo"], "Program", FontWeight -> Medium, 
-                    ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L673,C7) \\\"\", \
-Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
-Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
-Rule[StripOnInput, False]]\)"}]}] :> 
-              DefinitionNotebookClient`WithCurrentNotebook[
-                EvaluationNotebook[], 
-                DefinitionNotebookClient`LoadDefinitionNotebook[
-                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
-                DefinitionNotebookClient`PackageScope`setHint[
-                 "Suggestion", "Paclet", 
-                  DefinitionNotebookClient`$CurrentNotebook, 
-                  "9277beda-7b0e-497e-9cb6-53550b5c58f1", 1342461000, 
-                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
-                  "File" -> 
-                   "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 673, 
-                   "SourceColumnStart" -> 7, "SourceLineEnd" -> 673, 
+                   "Editor" -> Automatic, "SourceLineStart" -> 714, 
+                   "SourceColumnStart" -> 7, "SourceLineEnd" -> 714, 
                    "SourceColumnEnd" -> 11, "Message" -> 
                    "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L673,C7) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+\"\\\" (L714,C7) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
 Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
 False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
                    CodeInspector`InspectionObject[
                     "SuspiciousSessionSymbol", 
                     "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{673, 7}, {673, 11}}, 
+                    CodeParser`Source -> {{714, 7}, {714, 11}}, 
                     ConfidenceLevel -> 0.55, "File" -> 
                     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
+                    "Editor" -> Automatic|>], "Hash" -> 7356522437121146193, 
                    "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L673,C7) \\\"\", Rule[FontOpacity, \
-0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
-List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
-False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
-                Null], Row[{
-                 Style[
-                  Pane[
-                   RawBoxes[
-                    TemplateBox[{
-                    RGBColor[
-                    0.4901733406265805, 0.4901733406265805, 
-                    0.4901733406265805]}, "HintPodIconHint"]], 
-                   ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
-                   BaselinePosition -> Scaled[0.1]], LightDarkAutoColorRules -> 
-                  All], " ", 
-                 Row[{"Suspicious use of session symbol ", 
-                   Style[
-                    RawBoxes["Echo"], "Program", FontWeight -> Medium, 
-                    ShowStringCharacters -> True], 
-                   ".\!\(\*StyleBox[\"\\\" (L718,C9) \\\"\", \
-Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
-Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
-Rule[StripOnInput, False]]\)"}]}] :> 
-              DefinitionNotebookClient`WithCurrentNotebook[
-                EvaluationNotebook[], 
-                DefinitionNotebookClient`LoadDefinitionNotebook[
-                 "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
-                DefinitionNotebookClient`PackageScope`setHint[
-                 "Suggestion", "Paclet", 
-                  DefinitionNotebookClient`$CurrentNotebook, 
-                  "cbe3b348-f717-4905-85ee-d1f6a815ee0f", 1342461000, 
-                  "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
-                  "File" -> 
-                   "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                   "Editor" -> Automatic, "SourceLineStart" -> 718, 
-                   "SourceColumnStart" -> 9, "SourceLineEnd" -> 718, 
-                   "SourceColumnEnd" -> 13, "Message" -> 
-                   "Suspicious use of session symbol ``Echo``.\!\(\*StyleBox[\
-\"\\\" (L718,C9) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
-Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
-False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
-                   CodeInspector`InspectionObject[
-                    "SuspiciousSessionSymbol", 
-                    "Suspicious use of session symbol ``Echo``.", "Warning", <|
-                    CodeParser`Source -> {{718, 9}, {718, 13}}, 
-                    ConfidenceLevel -> 0.55, "File" -> 
-                    "/Volumes/Macintosh \
-HD/Users/antonov/WL-MonadicQuantileRegression-paclet/Kernel/QRMon.wl", 
-                    "Editor" -> Automatic|>], "Hash" -> 5790433655273457655, 
-                   "Position" -> 
-                   "\!\(\*StyleBox[\"\\\" (L718,C9) \\\"\", Rule[FontOpacity, \
+                   "\!\(\*StyleBox[\"\\\" (L714,C7) \\\"\", Rule[FontOpacity, \
 0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
 List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
 False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[1342461000]; 
@@ -27923,7 +27903,7 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "6fea09d3-a6f4-4118-a0e5-a553d59b7ea3", 381530457, 
+                  "586e4dea-c231-43f5-a246-0102a6d4e52c", 381530457, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
@@ -27974,7 +27954,7 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "b838ddb3-53b8-460f-9cb8-f2af42059d0e", 381530457, 
+                  "bf269fa7-4703-474b-8a61-9cddc6f11edc", 381530457, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
@@ -28025,7 +28005,7 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "6fb6fb70-4c02-48fb-aeb2-1fbbac9d3c7b", 381530457, 
+                  "dab9813f-a682-4647-82a5-640e3696ea72", 381530457, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
@@ -28076,7 +28056,7 @@ Rule[StripOnInput, False]]\)"}]}] :>
                 DefinitionNotebookClient`PackageScope`setHint[
                  "Suggestion", "Paclet", 
                   DefinitionNotebookClient`$CurrentNotebook, 
-                  "8ad8a3b2-6be0-4d6b-a393-fd14cf9e759c", 381530457, 
+                  "b716a653-3945-4fa0-b961-3175446d88f7", 381530457, 
                   "CodeInspectionFileIssue/SuspiciousSessionSymbol", <|
                   "File" -> 
                    "/Volumes/Macintosh \
@@ -28115,6 +28095,7 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[381530457];
                   0.282842712474619}}], 
                  
                  Polygon[{{0.42426406871192845`, -0.282842712474619}, {
+                  
                   0.282842712474619, -0.42426406871192845`}, \
 {-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
                   0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
@@ -28161,8 +28142,8 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[381530457];
                   Not[
                    FreeQ[
                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "45e540de-dbd3-49f9-88f0-a75015ebc85b"]]]]]], Appearance -> 
-             None, BoxID -> "45e540de-dbd3-49f9-88f0-a75015ebc85b"], 
+                    "c8d71573-fe06-46f3-8bfe-c5dd42e8841f"]]]]]], Appearance -> 
+             None, BoxID -> "c8d71573-fe06-46f3-8bfe-c5dd42e8841f"], 
             "LinkHand"]}}, Alignment -> {Left, Baseline}], 
         Grid[{{"", 
            Style[
@@ -28262,12 +28243,12 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[381530457];
                     TagBox[
                     TemplateBox[{"\"Version\"", "\": \""}, "RowDefault"], 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"1.1.2\"", "SummaryItem"]}]}, {
+                    TagBox["\"1.1.4\"", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox[
                     TemplateBox[{"\"SubmissionID\"", "\": \""}, "RowDefault"],
                      "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"6695\"", "SummaryItem"]}]}, {
+                    TagBox["\"4118\"", "SummaryItem"]}]}, {
                     RowBox[{
                     TagBox[
                     
@@ -28305,31 +28286,30 @@ False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[381530457];
                     Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                    Short[#, 0.75]& ], 
-                  "OEM6eJztWM1u20YQtixKsmRFcRMXRXsSCKNFDwps17HdXlyZthIDcSJolbR\
-FECArcigtSi6J3aUd9R166rWHvlV7bh+\
-gj9DO8keSKQdwZRftQbxQ4Px9Ozsz30BuQa716OVx8A6kW5IfnHEFIhSgqGIBx89uQZZ7gVZwDWk8Y\
-1K5q7Lcp0P8Qioksm2QkqyTyPepGD8F6pDCa7coN07GnPrMPg+\
-cyANtvjoxLxJQstEfhyBBvQ1C4FtbstShnoRMuplJwR+AQxAObG2RUg/9j1FnvQ9+\
-6OHHBGHiuCjvdykHAh7YKhBXYxo9hJEFKcnKE8Gcq8bZu6KdaFFZVo8jpbI01NITJX4/\
-6Zx2BbtACG87IuDqlDs9kEEkbCDVzukxUz4NJdlIE4NGL/\
-CcIDR4DeUEPDoGRzaSEJ2I2zrj78uO0RcRTI5Ra4chUEE5Jt94HvCppHpMJRA19sBdyZ29enpBvYhi\
-ZmS1HanAxyu2J9LyOahR4JBaVwDmVrGLGadtjw25D1xlCZVlC3SlZO+\
-p6plPh0DYD4AZq6QZm1hdiVvqMx+kWImf+\
-teTL2hYtyIh0PErBAzkXgfza9HwKbDhSEModYNLjFmQm+2BDLxIway+\
-vHdOh5y5zI5r2PoLr3utI6gfX2pRrsXp0eVbMn//+ScTHVZPmMCa0WdGee/JsRV4gRAfxc+vR+Jh/\
-PxxJL6Nn9+OrI8nJ64TJVj4gp/xMFLTKk6EDQuhI7AudRzGh3lxLYYV48ndYz2WnFMxZFzOlrF+\
-WyvWSv73+7GUp8We+SlM3llvF/O9nW+y1JQ0zKzMdYWaxDC/\
-apqkhm5OwKWRp8iHacmfKfDbnAfJKCHFP3/\
-8ZWZ0rJldanugzMns0Pq3QVY2X748O1kc0aems7u7e0B37NbB9vZ2a8/Zc1uHe7t7LXfncH/\
-78fYXOweHgxzeLPMbaYrnOiXTIBWsqcjncuaISVMYz8CdqhmIe17nmoat6U84RUBBvqzup2A0wrgVb\
-4xlPs7NAWVRSUhtXes3jmqt/vNgM3POyM25TTIKLnUj8KE1wiFp6zmVT9H68wiJRWCDfT8na+\
-Bgx5bFicCkHiDF6S3Hrsdc0XdJ0+ZN/+\
-UyKPaD8P9bABv6TjzGoRtIlpJZcsEFqzDRSpjsP2FgywvkwgycH91LCl5S8AIUXFlS8B1T8C3wVs1X\
-2EAIZHHIFXPn0c6j3bvD1DBJNPCZ1LBuk8uyub//5eO7w7VhJh1qCYjjLY4sZoA7vMNz5GGceIsD+\
-tz8DtupGcbd0BRpczWZbA4AR0YzjAYekyNw7i6bJRPliyPenIyAabEsN9PlZrrcTBfYTKdbUn7pu2a\
-nmnFP6mm/6XXVy6+VD6/8AZasRdlCSApvUH3y79mD+\
-WZul1ukPkvzpJyQdYsYmmPJ1k2YskUqKcGRUkxTLY15yi7E0BzRIo2roz3Z0dE4nazksxvOx2kFJH/\
-C0YE3VwFrpw67VvAgsfmGqVG6sskEyN//tPPN"}, "ClickToCopyTemplate"]]}, {
+                  "OEM6eJztWM1uI0UQjtd/\
+seP1ht0gBCdrFIE4eBUHQyIuwZnEu5E2u5bbuwtCSNueqbFbzPSMunuSNe/\
+AiSsH3grO8AA8AlTPn51xVgpOEBw8l7Gm/r6urqqvZKcgN4f08th/C9Ipy/fOuAIRCFBUMZ/\
+jZ6cgK0NfKzglWXrGpHLuycqITvALqZLQskBKskVCz6Ni9hSoTQrfOkW5fTLj1GPWuW+\
+HLmjze5l5kYCSzdEsAAnqjR8A392V5T51JaTSnVQK3hhsgnBgd5eUh+h/hjpbI/ACFz/\
+GCGPHRflgQDkQcMFSvrgaszREGGmQsqw+Ecy+apy+q9qJFlVk7ThUKk1DPTlR7Pej/\
+ulAsAuE8KYvfK5OuT0E6YfCAlLrnx4z5dFAku0kMWj0As8JQoPXUE7ApTOwZTMO0Q+5pTP+\
+ruyURiKE7Bj1XhAAFZRj8kvPfT6X1I6pBKJmLjgbubPXTi+\
+oG1LMjKz1QuV7eMVWJq2cg5r6NqkPBGBuFbtYcNpz2YR7wFWaUFkxQVdK+\
+p6rnnl0AoT9AJixapKxzOpK3PKIeSDFRvQ0vsq+\
+oGHDDIVAx68QMJD7fcyvSYOnwCZTDaE88C8xZkHu9MbSd0MFi/ry/jmdcOYwK6ph8y+87s2+\
+oF50qUW5GaVHl2/Z+P3nnwx0WDthAmtGnxnlwyfHpu/6QnwQPb8eiUfR88eR+\
+Dp6fjsyP8xO3CBKsOAFP+NBqOZVHAubJkJHYANq24xP8uJ6BCvCk7vHRiQ5p2LCuFwsY/02N8yN/\
+O93Y6nMiz31U8jeaW8X872db7LElDSNtMx1hRqkZHzZMkgd3ZyAQ0NXkfeTkj9T4PU49+NRQop//\
+vjLwujYNAbUckEZ2ezQ+rdBVjFevjw7WR3Rx4a9v79/QDtW+2Bvb6/dtbtO+7C73207ncMv9j7f+\
+6xzcDjO4U0zv52keKlTUg1SxZoKPS4Xjhg3RekZOHO1EuJe1rmmYev6E04RUJAvqwcJGI0wasUbY1m\
+Oc3NAaVQSUEvX+o2jmvf+\
+ebCFOVfKzbkdMvUvdSPwiTnFIWnpOZVP0dbzEIlFYIN9vyRr4mDHlsWJwKQeIMX5LUeuZ1zRt3HT5k\
+3/5TIojvzg/1sA2/pOXMZh4EuWkFl8wQWzkGnFTPafMLDp+\
+nJlBs6P7jUFryl4BQqurin4jin4FnhrxitsIASyOuSq0Xncedy9O0xNg4Rjj0kN6za5rBjdTufw7nB\
+tG3GHmgKieKsjixjgDu/wHHkYJ97qgD41vsF2agVRN7RE0lwtJltjwJHRCsKxy+QU7LvLZtlA+\
+eqId7IRMC+W9Wa63kzXm+kKm+l8S8ovfdfsVAvuSSPpN72uuvm18tGVP8DitShdCEnhO1TP/\
+j17uNzMvUqbNBZpnlRism6TkuZYsnsTpmyTakJwpBzRVFtjnrMLKWmOaJPm1dEe7+honExW8skN5+\
+O8AuI/4ejYXaqAzVObXSt4GNu8ZmqarGwyBvI3tuLzuQ=="}, "ClickToCopyTemplate"]]}, {
               "\[FilledVerySmallSquare]", "Resource object:", 
                RawBoxes[
                 TemplateBox[{
@@ -28548,7 +28528,7 @@ svthfJj/YHyY/2F8WPjAzIOFH0p8AQA7u3Ea
                     ImageSize -> 12, BaselinePosition -> Scaled[0.1], 
                     ImageSize -> {Automatic, 35}}], 
                     StyleBox[
-                    RowBox[{"\"Anto\"", "\[Ellipsis]", "\"ssion\""}], 
+                    RowBox[{"\"AntonAn\"", "\[Ellipsis]", "\"gression\""}], 
                     FontFamily -> Dynamic[
                     CurrentValue["PanelFontFamily"]], FontSize -> 
                     0.8 Inherited, ShowStringCharacters -> False, 
@@ -28570,85 +28550,62 @@ svthfJj/YHyY/2F8WPjAzIOFH0p8AQA7u3Ea
                     DefaultBaseStyle -> {Background -> None}, 
                     BaselinePosition -> Baseline, Method -> "Preemptive"], 
                     "]"}], Short[#, 0.75]& ], 
-                  "OEM6eJztHGtsHMX5znc+v50HgapA6WnjQmh7seM4cUAqd/b5lTZODq/\
-DKwl473bOXry3e5nZs32phNwClSg0TQsUSkswbUGUHxUgVQoUsCNaUYRKKxpoWlpwCK8oJYkqHgHR0\
-pnZ19zenW9t3CSVbhLdena+me898+\
-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\
-PembHjmrwKpPAMhv4rrUDRVoR/qWHO/\
-qgiilLg8IyiaJIMBMAyxAeDFOUy1lSDia7lVY2tWt6xuu5hj9Iwl34NVKGd5zERc1VRrrJqMGbI0FF\
-dBUquEbEGO1kcbsLyVEQAlDYjWrBX8iDpOBKgMR0cEKCRIMs0p4RqqcOJqJD+\
-F9ZDdBMaAbBz2h8Jzq8IcXGrIJy+JZ0LwVRhHJqUgS4LGFX+CpA3mx+\
-rLh6kmGUdZYr2C2FIXkIEGnLQsMWgh2mXtrzQp+\
-SnLIvQUyG2aWHmyIynDiLWUObEaTvmnMO8nS1hpbkI+\
-Y70VHOcccmPyJMXr2uQxfExIYJnmosJQu59whW8J1wVQApsJWdw92laOV5PauABBMEUcKJhUYdD0oa\
-DtRMFxFY4mZayRIgSeClssoPsz3xjdYo1WzB8ZUw7w56JxtwPVbc6k4gD2C3A0b6wxhudqMQgSEjGA\
-qM/WMl06q2jCBMWdN/V/bAa+QTV95hrAUnPDjKlIMmo+\
-uoK9bHhCCz6npVAVlVW04EKVM6AqV6rKlapypapcqSpXqsqVqnKlqlypWpiGypWqcqWqXKkqV6rKla\
-pypapcqSpXqsqVqnKlavEqVXXlSlW5UnVG5IbLlaozoFJVksB67hsgi1cR0UL2AXvlBsP9z+\
-YKkMnx3q/yVRzdC8jf+\
-RRRbfpen3yQ93FKKRDyhxsIvoEjW0MQ4W0AIHqnnuOlVEambHGoEu8HUMuVnMeV2JZxXWoiQ/\
-xamJdmk47v+5i7JuBGNC2NLm1uhkZBA60eV+\
-UkPukSspoRVyfUVLNuigMgTYotKszasM0iDnzbhTWJUHtLS0uoTWxLhja0tbaFkms2rG9Z17J2TfuG\
-eDPHJ04BFr6+D7sYxJvT6NaBTQsR7gpuC5SGJbyRYxuSAd7p3HtOA9faHuxIw2BrS+\
-tabmGq3YSVg7Tg1rSI/5gX6kuCX8/IBHXbglBXc1u3buxyj/FCzo1GFkTKco6GIWJwDB+\
-R89q7qjh6kC8QqyH7BWHF/4pitT2wCgcPJIDUK0D53+0zqEKcVVrMIrxWVJawtw+\
-Z9ce4OtHUhFbOCSNKKN3UlDSqi1+aez1akcTQ1SigVyfxvJp+NYOAioWBKQ1QqmkwQ45FZ+\
-CFIarNoBHHZ1aBzQ5g9GP1HfKYUNsBoTo+AgTRPn0NvuEXbz56+b4LXgrrUbuxTE75Ds+PqXJ2WC/\
-S+nPpiH5qIJq1KnlRT9STPzxdYAZLI1MaXEvbM+RuJaWcUNQJdkkA0qca5/\
-tZVgRhzDwcdoy8Mz3HiB7o/XV6vtisNaeda4bnGDGw2WFlwUck++\
-Eh2mjfjMkqfsJShnMiOl2ktvaweJO0vRXGIXclDbn5gL658XVdkiCrw3rtOicC5mV8jOOHHVmQFJex\
-8XM2E65i92idfc+MEi3VWUONA+\
-TBEI8N4AeJDGLezdAfBHXaC1u6FapTyH4B4lMF5QnLp69pmGrFAn0t/xn9ZTPd/\
-nYYXkfb8bLzlZ1vEZyPtbXzaXsyDO/\
-bS9qrYXjyQ9LePo3e6NIXFuqey6NqKk3o6J5IG48Y5inr8kQu7Nbs7wgUCg1syiiuC+bENUatgAJ+\
-ZU5AaIQ0/YIGpYlkvYOoXKM9Ybqpx+MY8XjYpF/uXLqr3Hw0nOf+\
-tvObIEXw2hDTRVctNtemzIm3ADdOvNOl8U4X43e6NL/\
-5c01SS8u5NF7nBleAm6IQ4dLclLaA4tyUtoDi3JS2gILc1G7BkawsZFlXqkR1HYqUEowfubDTtqW8y\
-zwIot5oPZNgXm6/pNctA/KAjvLeyVvSBZJCRta6MlBP0trT85O09E1Gf+4ZXIHO7QVqCmB/\
-TQxiXCipwpT1YyOnMfh2qjtPIZaJ5Jn1iaLOwqxWOkSopszphDYy53aBb1EsWqCwAJyfMVzIrS7EBD\
-i/Pb6kbZ+KcMQ60aM4AMDoY4JIznUbW84rs2flHIZ6qSP/ZVf7PVhHsrdIVcMKiepoSITRk+\
-xdqbgosFETZPbN8CJPJawPLFIchBy/FoRBV8+\
-pywwN9UwQbJFu8gp8k5u8znxCHrfZhwKadCp5qbF7FoeY40VpV29DBy7PgAxTtqkaVFVZk9L8Rb1AC\
-2ojICjnZImCahLflVDQzFTmvTiOV6BRnTtZ1fOaoIgCFI0abO674xsVScP2Ke2iDo03mDmiURe6xtJ\
-rMKRinB+Lr1ashYwsL8ili+4OBSJ3/UFTv0/3qPz77ENCBeOr+JS1gfK/VeBFAT4hyEDM9+\
-lCVbgCScDyV3bKX9k5RWbw//yVHSb+dnwbpkD4wSzP1xseR77HM6+dhvfuIGFb7rHaUR3i/\
-eTlBP5Cd28TYHBSOnF3cIb4ehMd4ZEP6CWvEF91hX6g8JW0hBHCkYhdveVb5luTDfHL7TLaJlV/\
-IwQz6yN1sXazFDc+\
-Pp5fhFPj19t1N7q1NwtpqRmTFeJrdXJ7JBpm1UXJJOO3C7tLLhpfnxDj61o3hJItSSHUlmiPhzasF8\
-VQ2yUtSRHLqLVl3doQT5yLaJNu/hMafxGrhaGiWhiyzV7/5UIhLueZfXW3KBUcWK7PuVLSRoxDB+\
-lfHfsvegH0Fg=="}, "ClickToCopyTemplate"]]}}, Alignment -> Left, 
+                  "OEM6eJztG31sW0fdjp3vpF/\
+LNrENZL1GoyCcOF9NWonZjhMnFU1rcsm6re3I8/M5fs3ze+7dcxwXqQpsQhrbSqEtK4N26aBo9A/\
+UVULqvlMGGmhiSKVARIEl6zpRjbUV2kZXDcbdPZ/9/JKqThqa/eGfIl9+d7/7fd+\
+H7ydH7biiX0x1amMQR0vxyg2qDlECQV3UZU0l3VE7LuvXKEHUiZ0bZaxHS3DZgDhMesCyfoi1JJLg5\
+vAOKOmgGiTjcRGle6EYAfatUQde0ZVWxbgs9WmRpAIpl5IsFweAOl42kE5ADPUhLQHV+\
+npcGhQVDPloHR+F8TCMAKIVrK8Hpf2Ef5rQVA/\
+AeEIhnYaiBmMHXh4SVQigQlTSUL5MZz9RgwspxeU9SI7kT+\
+ZtOWVCh8pwZWdS17k3qjIWGXzvCHaHkDxKVBgKIk3Vu9UI9wmoDHZ3ynpcTGCwIuMYMmkzsRMiqjxV\
+pQsqYhpG8DJDRDCpStTx1/\
+KOcwAlYdaMKn8iAUUkqhLEzk2amhup7BQxBHpagVGbxfbK7lFRSYrEM7jSn9S1OIm0lB0t64N6TIuA\
+qhCCxLe6PGpi6lfkYTUOVZ07FJcFIE0Y3uZIN8TFYQjkXZB4rDzjseysPLmlA3IcYmRjUOPL9pCJNY\
+EkQoTxvURhCGqDxL8BMdEL5eEYVaE0pKWITDuu84expiR1aKbHtX3isCpHZYmlcuATEtMK5hIjctU9\
+SEzEZAlTdGXGSXZcOUD6RlSIMfp63c97ZnZFvNn0IWslKEowqKF4to8w7e/\
+pDGiKhtArL1O46EUeBtNe9BkGv/VSL2xOiJKspzOWXqZslwVlRYERovYoNK2wU7aSUoetxGaz5/\
+6u0Vdm7TO6a2m33eEgmOXTgmZFri4pK2GKTcg+8jld8rO1PhO+\
+7amHdtA2sW9SZThKxxmdsDJFW3WnG5vxqdfu2+\
+6z8ssKOf3ePeZJexWvZGZqsw3FzEI5nlUqMz8rxMyPCCk3LLExyXsO/zhtaHZqlLZv2E5iwxIXs+\
+TjvXtUn4n+rpcPjhhKvSnljV/40G+en8efCL2rhAl5hJm/p/c/GaKQQdTbvYu2V3d/juEN3wMML/\
+vGTMyM22zHY2Z62+l4ex6/12famBL/vYgzlrfSdtP+M3l4VskMfp9jYpsZH/\
+uFe5uZ31j1r7aa5R18+9tbzfqM129ZTduRF3/D8KEeJDC54bcZ7rrDJpidwvETh+404+\
+MHAu2yeT73D+fP/cflh84dSZn1mxaeTZn15zi3j+Pcfo5z/3B+3H958Sp4nZ94lsKMF33/\
+AIXzXnT1IwoXClznp2wOuzNv4Z5a7bCXGlk73s0U+84fDceeeO8B5rCrX4iYcd+eo4M+E/34cx8/\
+6LPOL9igOgZnvOizDP7mRfv3UTh34waNn52Kmg3iOFd42vnwdrNBHOcG580v2KCPrlD4hxf96IcU3v\
+WiBxlcvHGDJs52sFSbuPIU2xemgy1MwcsPvM9SmY+P/\
+7oXsoiA23rnGmfzCzboNgbveNEfTlN4axFTbvyib4gqNPmXmSQz6Nj9LFI/GX8Um/EVR15iuzOnf+\
+aLbTt91vkFG3T4EAWSabcz+PNiptylvyfMBnGcKzwhHJXNBnGcG5w3v2CDtjH4pxc9/\
+xyFC160m8EipNx09BMWAd+Lr40xhVc+xhSsD+\
+9kRxofX1Nzp84MOPbO0FzjbH7BBrUxOG8yqJnBW4sQoQMt7Iyd3mkcH6HwYSMyL/giZtx2+F9sU+\
+D0k1Xrv+azzi/YIGMvOOtFgME5b2ZV/enGDfKlekbNBnGcK3z8zU5kNojj3OC8+\
+QUbtJUB2dzuYUAunk/+gMJinENHLrMI+\
+G45yna5vR0fsLVk2243rmSZ8cmfbme73PSqqZG5xtn8m5pyjpxB1BontWZy1HDv+BNXmHaeRx5m7j/\
+5Qb/mM43vDZzZ6bPSL7n22ex3PcxOjtDJbUzLUOT3wLwabA/1Bn1W+pt6qZlT+9pHjZvJl59g2k5+\
+63fGgf5YF7PmmW++zvDJJ98wbjJm+iXXflqcuZ9q47rUYGTKq08zLT09UyyTXGeOMXwMv8pikkd/\
+U0/3ubSf2N3OfDk5dYGu3onzrS0MPz74XWO/rd2yibZTf32JnXx59Euv/YeQaTmk76PtwWWVwwxP/\
+Ptdthftf38Na3sTrxjam+mj5ZZ3j2o/\
+TkBJ76evAQF7ttvpHyPf9bOvTpmHlU5RGhlGWlKNWB5WSoNIjFtfW6pY54AsjWDrO8yn8R1kDuVmax\
+RYnaWrDYhSDPLnEquvaoCO5MRmdYOaSOp8sCz3subIxSGTTfw9MTfC3xMrhE3EketdArg182C2QYdx\
+v6pqxnskcFx6fCJHb30BzDAEawS/qmsq+9BGG/s0VYzI0leToqrLCuyHw4iEnLATgENwCVYuGUWBU/\
+jlCwKQYrqewOsbG1HmWQ83pDQlSgIuKVoy0iBp8caQKClQ74cJDcu6htI52sYI2f/\
+bxSbJ3e7xeNytkdaou6O1udUdbepY62nztDS1d4QbQU1vOgGRIqsjg/0bQRXxTxeMikkl96JK/\
+WByVIkgWIcK8S59TSzYu4TeMCxfFKHa83xB8pYLXRBLJDko88LFNgtAi+\
+opEUFXnEbOFdWQiwfPlYueK6WhkaiipfA1FGTpuSKTh7PeLjkFKCe7WDKu4uwbcKYlnzCaI3MSO2fT\
+zPGEWkW7uiBxHLSuleUZZZiapnV3fV1myylcIS4V0J1YHcYFSw2UzF+\
+Y6eXZadmB60BMS9HdQh0OxEQkSvTl2Oqi6k3JeBiiPhGNzBpbFiJz9RCCkkwTIODIRZmxTqu6OMZkz\
+5r6f04Dx4CW+PQmwAoaE7K7wBDdoIzyghFgu/\
+kkZLWFJamJBBQNL7gmYj27i0WRYlGkWBQpFkWKRZFiUaRYFCkWRRYWoWJRpFgUKRZFikWRYlGkWBQp\
+FkWKRZFiUaRYFFm8okhlsShSLIosSVHkugrWCF+BacIlgueTcvy/HOdMioNbhTnUFID9S6BcYElI/\
+5+tERFx6Aiwt9H2aUp9u9BHYi9HyPJXKQtRcUVEXWScVs0aE3ApiGkoP1eArSAPrBS6NClJn3TFeQX\
+pWmsGCjdhuSzJolyAc+uEzUgelmn4+qECRTyPtVcrNLe7/AnkavY0twgLC+\
+1GEhysuwYTJHnmJ7rN5U8OU9FrFyS6WrgXIjyvRV8uNDU0NTQvSFyFMDi4oatwWXcLhSTAXKoUy6zF\
+MmuxzHrdMmvuqmutYM5x9zSxBzWZFUdrr0rUUiO9Je/3dcbdllc3gX07kWr5jZ6/\
+wg2c9EIJ7i7sPkjI6U4C6gvZH9yghoujNoIy48Bxg/\
+LM5gdK2ZbmBtWmaxDwzPdy4warcofYRs24xRNjHfRUaucHYSqVmn0EauEduVMvjUmGNIoJubGpweMG\
+VYa65JsY/WpSHaCTMj9t7L4u07Bn3bqop7Xd3bZ2XcTdGhZFd1hq6XCLzc0trU1Rqb0tSkTQxUWjGS\
+DfV+CYDj5vjsLQNaMwlEt744eNYliZlfYV3RF5zoFVxpwtsh5jclUdG+X+/wFqsgwu"}, 
+                 "ClickToCopyTemplate"]]}}, Alignment -> Left, 
              ItemSize -> {{Automatic, Automatic, Fit}, Automatic}], FontColor -> 
             GrayLevel[0.500000001565661], FontSize -> 12]}}, 
          ItemSize -> {{Automatic, Fit}, Automatic}, Alignment -> Left, 
@@ -28706,68 +28663,68 @@ Fu6DuJJG2H9mK2QZ3X1Y8rjKVdsLU11Qbnfn/Mae/TiO1RZHs2bny+6Vwq5Sfi8TnHKi+1+K4NOh"]\
    "LastBuiltArchive" -> 
     "/Volumes/Macintosh \
 HD/Users/antonov/WL-MonadicQuantileRegression-paclet/build/AntonAntonov__\
-MonadicQuantileRegression-1.1.2.paclet", "FileHashes" -> 
+MonadicQuantileRegression-1.1.4.paclet", "FileHashes" -> 
     ByteArray[CompressedData["
-1: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
-DoLofMCVAxVH
+1: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
+BJ0ahvaChw5C
       "]]}},
 CreateCellID->True,
 DynamicEvaluationTimeout->60,
@@ -29856,6 +29813,7 @@ AsyncronousResourceInformationUpdates = False,
                 
                 TemplateBox[{
                  "\"Documentation Tools\"", 
+                  
                   "\"\[ThinSpace]\[ThinSpace]\[ThinSpace]\[FilledDownTriangle]\
 \""}, "RowDefault"], "Text", FontFamily -> "Source Sans Pro", FontSize -> 11, 
                 FontColor -> LightDarkSwitched[
@@ -29935,7 +29893,6 @@ g2ipRNeYaPw6WuaJlhmra+1oWcXPejruJ+WSuuxs30ojpF5t/jt3ACMerg==
              "\"Open Palette\"" :> 
               With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                 Quiet[
-                 
                  Block[{$ContextPath = RSNB`$cp$, 
                    ResourceSystemClient`$\
 AsyncronousResourceInformationUpdates = False, 
@@ -30249,8 +30206,7 @@ h/Fh4QMzDxZ+6PEFAOibv7E=
                  False]}}, 
               GridBoxAlignment -> {
                "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, AutoDelete -> 
-              False, 
-              GridBoxItemSize -> {
+              False, GridBoxItemSize -> {
                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"],
              "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]", 
             "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]", 
@@ -30873,7 +30829,8 @@ eU8aPfbS9kxawAvxnrSCx3c3XzbS6JX4RFrAS34B53ckaw==
                     AspectRatio -> 1.15], "\"Submit to Repository\""}}, 
                     GridBoxAlignment -> {
                     "Columns" -> {{Left}}, "Rows" -> {{Center}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
+                    False, 
+                    GridBoxItemSize -> {
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
                     GridBoxSpacings -> {
                     "Columns" -> {{0}}, "ColumnsIndexed" -> {2 -> 0.5}, 
@@ -35229,7 +35186,6 @@ directory.\""}, "PacletDirectoryChooserErrorTemplate"]], "AttachedMessage"],
                     If[
                     And[RSNB`nbDir =!= RSNB`oldDir, 
                     MemberQ[$Packages, "PacletResource`DefinitionNotebook`"]], 
-                    
                     With[{RSNB`nb$ = EvaluationNotebook[], 
                     RSNB`$cp$ = $ContextPath}, 
                     Quiet[
@@ -35734,6 +35690,7 @@ RefreshNotebookPacletFiles[RSNB`nbo, RSNB`cell]]]],
                     If[
                     And[RSNB`nbDir =!= RSNB`oldDir, 
                     MemberQ[$Packages, "PacletResource`DefinitionNotebook`"]], 
+                    
                     With[{RSNB`nb$ = EvaluationNotebook[], 
                     RSNB`$cp$ = $ContextPath}, 
                     Quiet[
@@ -35831,6 +35788,7 @@ directory.\""}, "PacletDirectoryChooserErrorTemplate"]], "AttachedMessage"],
                     With[{RSNB`nb$ = EvaluationNotebook[], 
                     RSNB`$cp$ = $ContextPath}, 
                     Quiet[
+                    
                     Block[{$ContextPath = RSNB`$cp$, 
                     ResourceSystemClient`$\
 AsyncronousResourceInformationUpdates = False, 
@@ -36005,7 +35963,6 @@ directory.\""}, "PacletDirectoryChooserErrorTemplate"]], "AttachedMessage"],
                     FaceForm[
                     RGBColor[1., 1., 1., 1.]]}, StripOnInput -> False], 
                     StyleBox[{
-                    
                     FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}}}, {{{12.383, 36.391}, {35.711, 36.391}, {35.711, 
                     13.063}, {12.383, 13.063}, {12.383, 36.391}}}]}, {
@@ -36489,6 +36446,7 @@ GRPf1sw3cDj8VSOm/5G9w5vAHXKt3IZQ/0HDoQHBFwFFwBcEHxR9zQlGcP3o
              1, 0}, {0, 1, 0}}}, {{{17.125, 14.139}, {17.125, 19.86}, {16.875,
               19.86}, {16.875, 14.139}, {17., 13.92}, {21.952, 11.843}, {
              22.049, 12.074}}}], 
+            
             FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 
              1, 0}, {0, 1, 0}}}, {{{7.125, 14.139}, {7.125, 19.86}, {6.875, 
              19.86}, {6.875, 14.139}, {1.952, 12.074}, {2.048, 11.843}, {7., 
@@ -36731,7 +36689,8 @@ GRPf1sw3cDj8VSOm/5G9w5vAHXKt3IZQ/0HDoQHBFwFFwBcEHxR9zQlGcP3o
              Appearance -> Automatic, Evaluator -> Automatic]}}, 
           GridBoxAlignment -> {
            "Columns" -> {{Automatic}}, "Rows" -> {{Center}}}, AutoDelete -> 
-          False, GridBoxItemSize -> {
+          False, 
+          GridBoxItemSize -> {
            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
           GridBoxSpacings -> {
            "ColumnsIndexed" -> {2 -> 0.2}, "Rows" -> {{Automatic}}}, 
